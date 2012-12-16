@@ -1,0 +1,20 @@
+<template name="importPageTemplate">
+    <div data-role="page" id="importPage">
+        <div class="doesnt-overlap-header">
+            <input class="hidden" type="file" id="import_files_input" name="files[]" multiple />
+            <div class="row">
+                <div class="twelve columns">
+                    <div class="dotted drop-zone panel with-rounded-corners" id="drop_zone">Drop file here to import.</div>
+                </div>
+            </div>
+
+            <div class="spacer row"></div>
+            <div class="row">
+                <div class="twelve columns">
+                    <div class="panel with-rounded-corners" id="file_contents_panel"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</template>

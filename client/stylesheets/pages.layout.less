@@ -1,0 +1,56 @@
+  @sidebar-width: 20%;
+  @header-height: 40px;
+  @footer-height: 50px;
+  @tag-filter-height: 44px;
+  @main-pane-width: 80%;
+
+
+.ui-page{
+  overflow-y: none;
+}
+.content{
+    position: fixed;
+    top: @header-height;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+}
+#main-pane {
+    position: absolute;
+    top: 43px;
+    bottom: 0;
+    left: @sidebar-width;
+    width: 80%;
+    padding-left: 0;
+    overflow: auto;
+}
+
+#side-pane {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: @sidebar-width;
+    right: auto;
+    overflow: auto;
+    background: #eee;
+    border-right: 1px solid #999;
+    background: #ddd;
+}
+#top-tag-filter {
+    position: absolute;
+    height: @tag-filter-height;
+    bottom: auto;
+    background: #ddd;
+    border-bottom: 1px solid #999;
+}
+
+#top-tag-filter, #bottom-pane {
+    position: absolute;
+    left: @sidebar-width;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+}

@@ -1,0 +1,77 @@
+/*content area*/
+.ui-content { border-width: 0; overflow: visible; overflow-x: hidden; padding: 15px; }
+
+
+/*headers, content panels*/
+.ui-bar, .ui-body { position: relative; padding: .4em 15px; overflow: hidden; display: block; clear:both; }
+.ui-bar { font-size: 16px; margin: 0; }
+.ui-bar h1, .ui-bar h2, .ui-bar h3, .ui-bar h4, .ui-bar h5, .ui-bar h6 { margin: 0; padding: 0; font-size: 16px; display: inline-block; }
+.ui-header, .ui-footer { position: relative; border-left-width: 0; border-right-width: 0; zoom: 1; }
+.ui-header .ui-btn-left,
+.ui-header .ui-btn-right,
+.ui-footer .ui-btn-left,
+.ui-footer .ui-btn-right { position: absolute; top: 3px; }
+.ui-header .ui-btn-left,
+.ui-footer .ui-btn-left { left: 5px; }
+.ui-header .ui-btn-right,
+.ui-footer .ui-btn-right { right: 5px; }
+.ui-footer .ui-btn-icon-notext,
+.ui-header .ui-btn-icon-notext { top: 6px; }
+.ui-header .ui-title, .ui-footer .ui-title { min-height: 1.1em; text-align: center; font-size: 16px; display: block; margin: .6em 30% .8em; padding: 0; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; outline: 0 !important; }
+.ui-footer .ui-title { margin: .6em 15px .8em; }
+
+
+/* non-js content hiding */
+.ui-nojs { position: absolute; left: -9999px; }
+
+/* accessible content hiding */
+.ui-hide-label label.ui-input-text, .ui-hide-label label.ui-select, .ui-hide-label label.ui-slider, .ui-hide-label label.ui-submit, .ui-hide-label .ui-controlgroup-label,
+.ui-hidden-accessible { position: absolute !important; left: -9999px; clip: rect(1px 1px 1px 1px); clip: rect(1px,1px,1px,1px); }
+
+
+
+
+
+/* fixed page header & footer configuration */
+.ui-header-fixed,
+.ui-footer-fixed {
+    left: 0;
+    right: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+.ui-page-pre-in {
+    opacity: 0;
+}
+.ui-header-fixed {
+    top: 0;
+}
+.ui-footer-fixed {
+    bottom: 0;
+}
+.ui-header-fullscreen,
+.ui-footer-fullscreen {
+    opacity: .9;
+}
+.ui-page-header-fixed {
+    padding-top: 2.6875em;
+}
+.ui-page-footer-fixed {
+    padding-bottom: 2.6875em;
+}
+.ui-page-header-fullscreen .ui-content,
+.ui-page-footer-fullscreen .ui-content {
+    padding: 0;
+}
+.ui-fixed-hidden {
+    position: absolute;
+}
+.ui-page-header-fullscreen .ui-fixed-hidden,
+.ui-page-footer-fullscreen .ui-fixed-hidden {
+    left: -99999em;
+}
+.ui-header-fixed .ui-btn,
+.ui-footer-fixed .ui-btn {
+    z-index: 10;
+}

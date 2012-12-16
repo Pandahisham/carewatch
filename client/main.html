@@ -1,0 +1,75 @@
+<head>
+  <title>Mongo Data Browser</title>
+</head>
+
+
+<body>
+    <div id="headerBar" data-role="header" data-theme="none">
+        <ul class="nav-bar header-nav-bar">
+            <li><a href="#">mongo-data-browser.herokuapp.com</a></li>
+            <li style="position: fixed; right: 0px;"><a href="#">{{loginButtons align="right"}}</a></li>
+        </ul>
+    </div>
+    <div id="footerActionBar" data-role="footer" data-theme="none" class="nav-bar">
+        <ul class="nav-bar footer-nav-bar">
+            <!--<li><a href="#connectPage" data-name="connectPageLink" data-transition="slide">Connect</a></li>-->
+            <li><a href="#importPage" data-name="resourcesPageLink" data-transition="slide">Import</a></li>
+            <li><a href="#parsePage" data-name="parsePageLink" data-transition="slide">Parse</a></li>
+            <li><a href="#listviewPage" data-name="listviewPageLink" data-transition="slide">List</a></li>
+            <li><a href="#displayPage" data-name="displayPageLink" data-transition="slide">Display</a></li>
+            <li><a href="#browsePage" data-name="browsePageLink" data-transition="slide">Browse</a></li>
+            <li><a href="#visualizationPage" data-name="visualizationPageLink" data-transition="slide">Visualize</a></li>
+            <li><a href="#editPage" data-name="editPageLink" data-transition="slide">Edit</a></li>
+            <li><a href="#exportPage" data-name="exportPageLink" data-transition="slide">Export</a></li>
+        </ul>
+    </div>
+    <!--<div class="data-page" data-role="page" id="homePage">-->
+
+    <!--</div>-->
+
+    {{> connectPageTemplate }}
+    {{> importPageTemplate }}
+    {{> editPageTemplate }}
+    {{> visualizationPageTemplate }}
+    {{> exportPageTemplate }}
+    {{> listviewPageTemplate }}
+    {{> displayPageTemplate }}
+    {{> browsePageTemplate }}
+    {{> parsePageTemplate }}
+
+</body>
+
+<template name="app_container">
+    {{#if loggedIn}}
+    {{> home_page }}
+    {{else }}
+    {{> guest_page }}
+    {{/if }}
+</template>
+
+<template name="home_page">
+    <div id="top-tag-filter">
+        {{> tag_filter}}
+    </div>
+    <div id="main-pane">
+        {{> todos}}
+    </div>
+
+    <div id="side-pane">
+        {{> lists }}
+    </div>
+</template>
+
+
+<template name="tag_filter">
+  <div id="tag-filter" class="tag-list">
+    <!--<div class="label">Show:</div>-->
+    {{#each tags}}
+      <div class="tag {{selected}}">
+        {{tag_text}} <span class="count">({{count}})</span>
+      </div>
+    {{/each}}
+  </div>
+</template>
+
+
