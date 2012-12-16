@@ -1,22 +1,22 @@
 ////////// Lists //////////
 
-Template.lists.lists = function () {
+Template.categories.categories = function () {
     return Lists.find({}, {sort: {name: 1}});
 };
-Template.lists.count = function () {
+Template.categories.count = function () {
     //TODO:  add tally of number of todos in a list
     return Todos.find({list_id: this._id}).count();
 };
 
-Template.lists.events({
-    'mousedown .list': function (evt) { // select list
+Template.categories.events({
+    'mousedown .category': function (evt) { // select list
         Router.setList(this._id);
     },
-    'click .list': function (evt) {
+    'click .category': function (evt) {
         // prevent clicks on <a> from refreshing the page.
         evt.preventDefault();
     },
-    'dblclick .list': function (evt, tmpl) { // start editing list name
+    'dblclick .category': function (evt, tmpl) { // start editing list name
         Session.set('editing_listname', this._id);
         Meteor.flush(); // force DOM redraw, so we can focus the edit field
         activateInput(tmpl.find("#list-name-input"));
@@ -24,8 +24,8 @@ Template.lists.events({
 });
 
 // Attach events to keydown, keyup, and blur on "New list" input box.
-Template.lists.events(okCancelEvents(
-    '#new-list',
+Template.categories.events(okCancelEvents(
+    '#new-category',
     {
         ok: function (text, evt) {
             var id = Lists.insert({name: text});
@@ -34,8 +34,8 @@ Template.lists.events(okCancelEvents(
         }
     }));
 
-Template.lists.events(okCancelEvents(
-    '#list-name-input',
+Template.categories.events(okCancelEvents(
+    '#category-name-input',
     {
         ok: function (value) {
             Lists.update(this._id, {$set: {name: value}});
@@ -46,14 +46,14 @@ Template.lists.events(okCancelEvents(
         }
     }));
 
-Template.lists.selected = function () {
+Template.categories.selected = function () {
     return Session.equals('list_id', this._id) ? 'selected' : '';
 };
 
-Template.lists.name_class = function () {
+Template.categories.name_class = function () {
     return this.name ? '' : 'empty';
 };
 
-Template.lists.editing = function () {
+Template.categories.editing = function () {
     return Session.equals('editing_listname', this._id);
 };

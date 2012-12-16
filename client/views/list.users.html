@@ -1,0 +1,34 @@
+
+<template name="userslist">
+    <div class="row">
+        Number of Users: {{ user_count}}
+    </div>
+    <div class="row">
+        <div id="items-view">
+            <ul id="item-list">
+                {{#each users}}
+                {{> user_item}}
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+
+</template>
+
+<template name="user_item">
+    <li class="user">
+        <ul class="inline-list">
+            {{#if editing}}
+            <li class="edit">
+                <input id="user-input" type="text" value="{{_id}}" />
+            </li>
+            {{else}}
+            <li class="destroy"></li>
+            <li class="display">
+                <span class="user-text">{{_id}}</span>
+                <span class="user-text">{{emails }}</span>
+            </li>
+            {{/if}}
+        </ul>
+    </li>
+</template>

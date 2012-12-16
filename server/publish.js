@@ -7,13 +7,6 @@ Meteor.publish('lists', function () {
 });
 
 
-// Todos -- {text: String,
-//           done: Boolean,
-//           tags: [String, ...],
-//           list_id: String,
-//           timestamp: Number}
-//Todos = new Meteor.Collection("todos");
-
 // Publish all items for requested list_id.
 Meteor.publish('todos', function (list_id) {
   //return Todos.find({list_id: list_id});
@@ -22,3 +15,30 @@ Meteor.publish('todos', function (list_id) {
     );
 });
 
+//Meteor.publish("allUserData", function () {
+//    return Meteor.users.find({}, {fields: {
+//        '_id': 1,
+//        'username': 1,
+//        'emails': 1,
+//        'sex': 1,
+//        'dateOfBirth': 1,
+//        'age': 1
+//    }});
+//});
+
+Meteor.publish("usersDirectory", function () {
+    return Meteor.users.find({}, {fields: {
+        '_id': true,
+        'username': true,
+        'emails': true,
+        'emails[0].address': true
+    }});
+});
+Meteor.publish("users", function () {
+    return Meteor.users.find({}, {fields: {
+        '_id': true,
+        'username': true,
+        'emails': true,
+        'emails[0].address': true
+    }});
+});

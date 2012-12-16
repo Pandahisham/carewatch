@@ -27,6 +27,8 @@ Meteor.subscribe('lists', function () {
       Router.setList(list._id);
   }
 });
+Meteor.subscribe('usersDirectory');
+
 // Always be subscribed to the todos for the selected list.
 Meteor.autosubscribe(function () {
   var list_id = Session.get('list_id');
@@ -39,14 +41,15 @@ Meteor.autosubscribe(function () {
 
 Template.app_container.loggedIn = function () {
     console.log('loggedIn called');
-    if(Meteor.userId() != null){
-        console.log('Meteor.userId() is null');
+    if(Meteor.userId()){
+        console.log('Meteor.userId(): ' + Meteor.userId());
         return true;
     }else{
-        console.log('Meteor.userId(): ' + Meteor.userId());
+        console.log('Meteor.userId() is null');
         return false;
     }
 };
+
 
 
 Meteor.startup(function () {

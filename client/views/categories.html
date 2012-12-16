@@ -1,0 +1,27 @@
+<template name="categories">
+    <h3>Queues</h3>
+    <div id="categories">
+        {{#each categories}}
+            <div class="category {{selected}}">
+                <div class="note">
+                {{#if editing}}
+                <div class="edit">
+                    <input class="category-name-input" id="category-name-input" type="text" value="{{name}}" />
+                </div>
+                {{else}}
+                <div class="display">
+                    <a class="category-name {{name_class}}" href="/{{_id}}">
+                        {{name}}
+                    </a>
+                    <p class="category-count">{{count}}</p>
+
+                </div>
+                {{/if}}
+            </div>
+        </div>
+        {{/each}}
+    </div>
+    <div id="createList" style="display:none;">
+        <input type="text" id="category-list" placeholder="New list" />
+    </div>
+</template>
