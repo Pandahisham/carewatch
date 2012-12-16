@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6af491ff-1daf-446b-9c77-0fbce59cf6d4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.display.js" afterPath="$PROJECT_DIR$/client/lib/page.display.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.profile.js" afterPath="$PROJECT_DIR$/client/lib/page.profile.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.js" afterPath="$PROJECT_DIR$/client/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/page.profile.html" afterPath="$PROJECT_DIR$/client/views/page.profile.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/publish.js" afterPath="$PROJECT_DIR$/server/publish.js" />
     </list>
     <ignored path="second-opinion.iws" />
@@ -30,7 +27,7 @@
       <file leaf-file-name="page.profile.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/views/page.profile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="49" selection-start="684" selection-end="684" vertical-scroll-proportion="-10.625">
+            <state line="17" column="49" selection-start="684" selection-end="684" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -48,7 +45,7 @@
       <file leaf-file-name="page.display.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/lib/page.display.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="874" selection-end="874" vertical-scroll-proportion="0.0">
+            <state line="5" column="36" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -66,7 +63,7 @@
       <file leaf-file-name="publish.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/publish.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="20" selection-start="1097" selection-end="1097" vertical-scroll-proportion="0.0">
+            <state line="52" column="19" selection-start="1383" selection-end="1383" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -75,7 +72,7 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="34" selection-start="984" selection-end="984" vertical-scroll-proportion="0.6273063">
+            <state line="33" column="34" selection-start="951" selection-end="951" vertical-scroll-proportion="0.6088561">
               <folding />
             </state>
           </provider>
@@ -145,7 +142,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -236,6 +232,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -243,8 +240,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="web-ide.project.structure" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -305,7 +302,6 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32637364" sideWeight="0.99868596" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22693452" sideWeight="0.992891" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -316,6 +312,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32637364" sideWeight="0.99868596" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -392,9 +389,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/page.import.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="581" selection-end="673" vertical-scroll-proportion="-8.75">
-          <folding />
-        </state>
+        <state line="14" column="0" selection-start="581" selection-end="673" vertical-scroll-proportion="-8.75" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/main.html">
@@ -406,49 +401,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/stylesheets/page.profile.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="68" selection-end="68" vertical-scroll-proportion="0.06968641">
-          <folding />
-        </state>
+        <state line="4" column="0" selection-start="68" selection-end="68" vertical-scroll-proportion="0.06968641" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/stylesheets/syntax.custom.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="10" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="23" column="10" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/stylesheets/foundation/foundation.grid.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.meteor/local/build/app/packages/accounts-base/accounts_common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="46" selection-start="959" selection-end="959" vertical-scroll-proportion="0.13363533">
-          <folding />
-        </state>
+        <state line="28" column="46" selection-start="959" selection-end="959" vertical-scroll-proportion="0.13363533" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.meteor/local/build/app/packages/accounts-base/accounts_server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="241" column="21" selection-start="8171" selection-end="8171" vertical-scroll-proportion="0.18963337">
-          <folding />
-        </state>
+        <state line="241" column="21" selection-start="8171" selection-end="8171" vertical-scroll-proportion="0.18963337" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="45" selection-start="960" selection-end="960" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="35" column="45" selection-start="960" selection-end="960" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/page.profile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="49" selection-start="684" selection-end="684" vertical-scroll-proportion="-10.625">
+        <state line="17" column="49" selection-start="684" selection-end="684" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -462,7 +445,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/lib/page.display.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="874" selection-end="874" vertical-scroll-proportion="0.0">
+        <state line="5" column="36" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -476,14 +459,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/publish.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="20" selection-start="1097" selection-end="1097" vertical-scroll-proportion="0.0">
+        <state line="52" column="19" selection-start="1383" selection-end="1383" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="34" selection-start="984" selection-end="984" vertical-scroll-proportion="0.6273063">
+        <state line="33" column="34" selection-start="951" selection-end="951" vertical-scroll-proportion="0.6088561">
           <folding />
         </state>
       </provider>

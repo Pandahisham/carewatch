@@ -35,13 +35,21 @@ Meteor.publish("usersDirectory", function () {
     }});
 });
 
+//Meteor.publish('userProfile', function (userId) {
+//    return Meteor.users.find({_id: this.userId}, {fields: {
+//        '_id': 1,
+//        'username': 1,
+//        'profile': 1,
+//        'emails': 1,
+//        'emails.address': 1,
+//        'emails[0].address': 1
+//    }});
+//});
 Meteor.publish('userProfile', function (userId) {
     return Meteor.users.find({_id: this.userId}, {fields: {
         '_id': 1,
         'username': 1,
         'profile': 1,
-        'emails': 1,
-        'emails.address': 1,
-        'emails[0].address': 1
+        'emails': 1
     }});
 });

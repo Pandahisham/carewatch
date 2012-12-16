@@ -29,10 +29,10 @@ Meteor.subscribe('lists', function () {
 });
 
 Meteor.subscribe('usersDirectory');
-Meteor.subscribe('userProfile');
 
 // Always be subscribed to the todos for the selected list.
 Meteor.autosubscribe(function () {
+    Meteor.subscribe('userProfile', Meteor.userId());
   var list_id = Session.get('list_id');
   if (list_id)
     Meteor.subscribe('todos', list_id);
