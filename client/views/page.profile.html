@@ -1,7 +1,7 @@
 <template name="profilePageTemplate">
     <div data-role="page"  id="profilePage">
 
-        <!-- Call to Action Panel -->
+
 
 
 
@@ -25,9 +25,9 @@
 
 
                                     {{#if editing}}
-                                    <li class="edit"><input id="todo-input-text" type="text" placeholder="email" value="{{text}}" /></li>
+                                    <li class="edit"><input id="todo-input-text" type="text" placeholder="email" value="{{user_email}}" /></li>
                                     {{else}}
-                                    <li class="display"><span class="todo-text">{{text}}</span></li>
+                                    <li class="display"><span class="todo-text">{{user_email}}</span></li>
                                     {{/if}}
 
                                     <!--{{#if editing}}-->

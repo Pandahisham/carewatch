@@ -34,11 +34,14 @@ Meteor.publish("usersDirectory", function () {
         'emails[0].address': true
     }});
 });
-Meteor.publish("users", function () {
-    return Meteor.users.find({}, {fields: {
-        '_id': true,
-        'username': true,
-        'emails': true,
-        'emails[0].address': true
+
+Meteor.publish('userProfile', function (userId) {
+    return Meteor.users.find({_id: this.userId}, {fields: {
+        '_id': 1,
+        'username': 1,
+        'profile': 1,
+        'emails': 1,
+        'emails.address': 1,
+        'emails[0].address': 1
     }});
 });

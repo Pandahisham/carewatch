@@ -7,7 +7,7 @@ Template.profilePageTemplate.events(okCancelEvents(
     '#profileItems',
     {
         ok: function (value) {
-            Meteor.users.update(Meteor.userId(), {$set: {profile: value}});
+            Meteor.users.update(Meteor.userId(), {$set: {profile: { sometext: value }}});
             Session.set('editing_profile_text', null);
         },
         cancel: function () {
@@ -33,7 +33,13 @@ Template.profilePageTemplate.user_id = function () {
     return currentUser._id;
 };
 Template.profilePageTemplate.user_email = function () {
-    return JSON.stringify(Meteor.user());
+    var currentUser = Meteor.user();
+    if(currentUser){
+        log_event("currentUser.profile.sometext: " + currentUser.profile, LogLevel.Trace)
+        //var object = jQuery.parseJSON(JSON.stringify(currentUser));
+        //return object.emails[0].address;
+        return JSON.stringify(currentUser);
+    }
 };
 
 

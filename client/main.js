@@ -27,7 +27,9 @@ Meteor.subscribe('lists', function () {
       Router.setList(list._id);
   }
 });
+
 Meteor.subscribe('usersDirectory');
+Meteor.subscribe('userProfile');
 
 // Always be subscribed to the todos for the selected list.
 Meteor.autosubscribe(function () {

@@ -4,9 +4,11 @@ Template.displayPageTemplate.user_id = function () {
 };
 Template.displayPageTemplate.user_email = function () {
     var currentUser = Meteor.user();
-    return currentUser;
-    //return displayEmail(currentUser);
-    //return "zip";
+    //var emails = new currentUser.emails[0];
+    //var object = jQuery.parseJSON(JSON.stringify(currentUser));
+    return Meteor.user().emails[0].address;
+    //var sampleUser = {_id: "123", emails: [{ address: "foo@bar.com"}], profile: "something"};
+    //return currentUser.emails[0].address;
 };
 
 Template.displayPageTemplate.user_info = function () {
