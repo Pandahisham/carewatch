@@ -29,6 +29,7 @@ Meteor.subscribe('lists', function () {
 });
 
 Meteor.subscribe('usersDirectory');
+Meteor.subscribe('userProfile', Meteor.userId());
 
 // Always be subscribed to the todos for the selected list.
 Meteor.autosubscribe(function () {

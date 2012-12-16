@@ -50,6 +50,7 @@ Meteor.publish('userProfile', function (userId) {
         '_id': 1,
         'username': 1,
         'profile': 1,
-        'emails': 1
+        'emails': 1,
+        'emails[0].address': true
     }});
 });
