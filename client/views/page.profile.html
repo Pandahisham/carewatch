@@ -1,12 +1,13 @@
 <template name="profilePageTemplate">
-    <div data-role="page"  id="profilePage">
+    <div data-role="page" id="profilePage">
 
 
 
 
 
                 <div class="doesnt-overlap-header row">
-                    <h4>User Profile</h4>
+                    <h4 class="padded-horizontal">User Profile</h4>
+                </div>
 
                     <div class="row">
                         <div class="two columns">
@@ -17,38 +18,34 @@
                         </div>
                         <div class="ten columns">
                             <div class="panel row">
-                                <ul id="profileItems">
+                                <ul id="profileItems" class="profile-items">
 
-                                    <li class="display"><span class="profile-text">{{user_id}}</span></li>
-                                    <li class="display"><span class="profile-text">{{user_email}}</span></li>
-                                    <li class="display"><span class="profile-text">{{user_name}}</span></li>
-
+                                    <li class="display"><span class="profile-item">{{user_id}}</span></li>
 
                                     {{#if editing}}
                                     <li class="edit"><input id="todo-input-text" type="text" placeholder="email" value="{{user_email}}" /></li>
                                     {{else}}
-                                    <li class="display"><span class="todo-text">{{user_email}}</span></li>
+                                    <li class="display"><span class="profile-item">{{user_email}}</span></li>
                                     {{/if}}
 
-                                    <!--{{#if editing}}-->
-                                    <!--<li class="edit"><input id="todo-input-name" type="text" placeholder="name" value="{{name}}" /></li>-->
-                                    <!--{{else}}-->
-                                    <!--<li class="display"><span class="todo-text">{{name}}</span></li>-->
-                                    <!--{{/if}}-->
+                                    {{#if editing}}
+                                    <li class="edit"><input id="profile-input-name" type="text" placeholder="Full Name" value="{{user_name}}" /></li>
+                                    {{else}}
+                                    <li class="display"><span id="profile-display-name" class="profile-item">{{user_name}}</span></li>
+                                    {{/if}}
 
-                                    <!--{{#if editing}}-->
-                                    <!--<li class="edit"><input id="todo-input-age" placeholder="age" type="text" value="{{age}}" /></li>-->
-                                    <!--{{else}}-->
-                                    <!--<li class="display"><span class="todo-text">{{age}}</span></li>-->
-                                    <!--{{/if}}-->
 
                                 </ul>
                                 <!--<textarea rows="4" type="text" id="guest-todo" placeholder="Be sure to include symptoms, history, and your contact information...." />-->
 
                             </div>
+                            <div class="spacer row"></div>
+                            <div id="json-content" class="row panel">
+                                {{ user_json }}
+                            </div>
                         </div>
                     </div>
-                </div>
+
 
     </div>
 </template>

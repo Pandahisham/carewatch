@@ -13,28 +13,20 @@
     <div id="footerActionBar" data-role="footer" data-theme="none" class="nav-bar">
         <ul class="nav-bar footer-nav-bar">
             <!--<li><a href="#connectPage" data-name="connectPageLink" data-transition="slide">Connect</a></li>-->
-            <li><a href="#profilePage" data-name="profilePageLink" data-transition="slide">Profile</a></li>
-            <li><a href="#listviewPage" data-name="listviewPageLink" data-transition="slide">List</a></li>
-            <li><a href="#displayPage" data-name="displayPageLink" data-transition="slide">Display</a></li>
-            <li><a href="#browsePage" data-name="browsePageLink" data-transition="slide">Browse</a></li>
-            <li><a href="#visualizationPage" data-name="visualizationPageLink" data-transition="slide">Visualize</a></li>
-            <li><a href="#editPage" data-name="editPageLink" data-transition="slide">Edit</a></li>
-            <li><a href="#importPage" data-name="resourcesPageLink" data-transition="slide">Import</a></li>
-            <li><a href="#parsePage" data-name="parsePageLink" data-transition="slide">Parse</a></li>
+            <li><a href="#profilePage" onclick="showProfilePage();">User Profile</a></li>
+            <li><a href="#communityPage" onclick="showCommunityPage();">Healthcare Community</a></li>
+            <li><a href="#visualizationPage" onclick="showVisualizationPage();">Visualize</a></li>
+            <li><a href="#historyPage" onclick="showHistoryPage();">Medical History</a></li>
         </ul>
     </div>
     <!--<div class="data-page" data-role="page" id="homePage">-->
 
     <!--</div>-->
 
-    {{> connectPageTemplate }}
     {{> profilePageTemplate }}
+    {{> historyPageTemplate }}
+    {{> communityPageTemplate }}
     {{> visualizationPageTemplate }}
-    {{> editPageTemplate }}
-    {{> listviewPageTemplate }}
-    {{> displayPageTemplate }}
-    {{> browsePageTemplate }}
-    {{> parsePageTemplate }}
 
 </body>
 
@@ -47,15 +39,11 @@
 </template>
 
 <template name="home_page">
-    <div id="top-tag-filter">
+    <div class="row">
+        {{> health_entries}}
+    </div>
+    <div class="bottom-anchored row">
         {{> tag_filter}}
-    </div>
-    <div id="main-pane">
-        {{> todos}}
-    </div>
-
-    <div id="side-pane">
-        {{> categories }}
     </div>
 </template>
 

@@ -57,4 +57,6 @@ Template.app_container.loggedIn = function () {
 
 Meteor.startup(function () {
     Backbone.history.start({pushState: true});
+    hidePages();
+    showProfilePage();
 });

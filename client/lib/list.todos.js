@@ -1,16 +1,16 @@
 ////////// Todos //////////
 
-Template.todos.any_list_selected = function () {
+Template.health_entries.any_list_selected = function () {
     return !Session.equals('list_id', null);
 };
 
-Template.todos.events(okCancelEvents(
+Template.health_entries.events(okCancelEvents(
     '#new-todo',
     {
         ok: function (text, evt) {
-            console.log('ok called on new todo item');
+            log_event('ok called on new todo item', LogLevel.Trace);
             var tag = Session.get('tag_filter');
-            console.log('tags: ' + tag);
+            log_event('tags: ' + tag, LogLevel.Trace);
 
 //            Todos.insert({
 //                text: text,
@@ -19,7 +19,7 @@ Template.todos.events(okCancelEvents(
 //                timestamp: (new Date()).getTime(),
 //                tags: tag ? [tag] : []
 //            });
-            console.log('text.length: ' + text.length);
+            log_event('text.length: ' + text.length, LogLevel.Trace);
             if (text.length) {
                 console.log('text: ' + text);
                 console.log('list_id: ' + Session.get('list_id'));
@@ -99,7 +99,7 @@ Template.guest_todos.events(okCancelEvents(
     })
 );
 
-Template.todos.todos = function () {
+Template.health_entries.health_items = function () {
     // Determine which todos to display in main pane,
     // selected based on list_id and tag_filter.
 
@@ -115,30 +115,30 @@ Template.todos.todos = function () {
     return Todos.find(sel, {sort: {timestamp: 1}});
 };
 
-Template.todo_item.tag_objs = function () {
+Template.health_entry.tag_objs = function () {
     var todo_id = this._id;
     return _.map(this.tags || [], function (tag) {
         return {todo_id: todo_id, tag: tag};
     });
 };
 
-Template.todo_item.done_class = function () {
+Template.health_entry.done_class = function () {
     return this.done ? 'done' : '';
 };
 
-Template.todo_item.done_checkbox = function () {
+Template.health_entry.done_checkbox = function () {
     return this.done ? 'checked="checked"' : '';
 };
 
-Template.todo_item.editing = function () {
+Template.health_entry.editing = function () {
     return Session.equals('editing_itemname', this._id);
 };
 
-Template.todo_item.adding_tag = function () {
+Template.health_entry.adding_tag = function () {
     return Session.equals('editing_addtag', this._id);
 };
 
-Template.todo_item.events({
+Template.health_entry.events({
     'click .check': function () {
         Todos.update(this._id, {$set: {done: !this.done}});
     },
@@ -171,7 +171,7 @@ Template.todo_item.events({
     }
 });
 
-Template.todo_item.events(okCancelEvents(
+Template.health_entry.events(okCancelEvents(
     '#todo-input',
     {
         ok: function (value) {
@@ -183,7 +183,7 @@ Template.todo_item.events(okCancelEvents(
         }
     }));
 
-Template.todo_item.events(okCancelEvents(
+Template.health_entry.events(okCancelEvents(
     '#edittag-input',
     {
         ok: function (value) {

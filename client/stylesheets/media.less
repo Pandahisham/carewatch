@@ -25,9 +25,37 @@
         background: #4D4D4D !important;
         z-index: 1000;
     }
+    .columns{
+      float: none;
+    }
+    .panel{
+      width: 100%;
+    }
 
     // grid adjustments
    [class*="column"] + [class*="column"]:last-child { float: none; }
    [class*="column"] + [class*="column"].first-child { float: left; }
+
+}
+
+@media only screen and (max-width: 480px) {
+  .footer-nav-bar{
+    position: fixed;
+    bottom: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    width: 100%;
+  }
+  .header-nav-bar{
+    background: #4D4D4D !important;
+    z-index: 1000;
+  }
+  .columns{
+    float: none;
+  }
+
+// grid adjustments
+  [class*="column"] + [class*="column"]:last-child { float: none; }
+  [class*="column"] + [class*="column"].first-child { float: left; }
 
 }

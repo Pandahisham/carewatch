@@ -1,48 +1,51 @@
 
 Template.profilePageTemplate.editing = function () {
-    //return Session.equals('editing_profilename', this._id);
-    return true;
+    return Session.equals('editing_profile_text', "true");
 };
 Template.profilePageTemplate.events(okCancelEvents(
     '#profileItems',
     {
         ok: function (value) {
-            Meteor.users.update(Meteor.userId(), {$set: {profile: { sometext: value }}});
-            Session.set('editing_profile_text', null);
+            Meteor.users.update(Meteor.userId(), {$set: { emails: [{address: value }] }});
+            Session.set('editing_profile_text', "false");
+            //Meteor.flush(); // update DOM before focus
         },
         cancel: function () {
-            Session.set('editing_profile_text', null);
+            Session.set('editing_profile_text', "false");
         }
     })
 );
 
 Template.profilePageTemplate.events({
-    'dblclick .display .todo-text': function (evt, tmpl) {
-        Session.set('editing_profile_text', this._id);
+    'dblclick .display': function (evt, tmpl) {
+        Session.set('editing_profile_text', "true");
         Meteor.flush(); // update DOM before focus
-        activateInput(tmpl.find("#todo-input"));
+        activateInput(tmpl.find("#todo-input-text"));
     }
 });
 
 Template.profilePageTemplate.user_name = function () {
-    var currentUser = Meteor.user();
-    return currentUser.username;
+    if(Meteor.user().profile){
+        return Meteor.user().profile.name;
+    }else{
+        return "Meteor.user().profile not available right now."
+    }
 };
 Template.profilePageTemplate.user_id = function () {
-    var currentUser = Meteor.user();
-    return currentUser._id;
+    return Meteor.user()._id;
 };
 Template.profilePageTemplate.user_email = function () {
-    var currentUser = Meteor.user();
-    if(currentUser){
-        log_event("currentUser.profile.sometext: " + currentUser.profile, LogLevel.Trace)
-        //var object = jQuery.parseJSON(JSON.stringify(currentUser));
-        //return object.emails[0].address;
-        return JSON.stringify(currentUser);
+    if(Meteor.user().emails){
+        return Meteor.user().emails[0].address;
+    }else{
+        return "User email address not available right now.";
     }
 };
 
-
+Template.profilePageTemplate.user_json = function () {
+    var selectedUser = Meteor.user();
+    return JSON.stringify(selectedUser);
+};
 
 // --------------------------------------------------------
 

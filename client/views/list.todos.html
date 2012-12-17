@@ -1,24 +1,25 @@
 
-<template name="todos">
+<template name="health_entries">
+    <div class="row">
+        <input type="text" id="new-todo" placeholder="New item" />
+    </div>
+
     <div class="row">
 
         {{#if any_list_selected}}
         <div id="items-view">
             <ul id="item-list">
-                {{#each todos}}
-                {{> todo_item}}
+                {{#each health_items}}
+                {{> health_entry}}
                 {{/each}}
             </ul>
-        </div>
-        <div id="new-todo-box">
-            <input type="text" id="new-todo" placeholder="New item" />
         </div>
         {{/if}}
     </div>
 
 </template>
 
-<template name="todo_item">
+<template name="health_entry">
     <li class="todo {{done_class}}">
         <ul class="inline-list">
             {{#if editing}}

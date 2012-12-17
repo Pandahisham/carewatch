@@ -1,5 +1,5 @@
 if (Meteor.isClient) {
-    Template.browsePageTemplate.users = function () {
+    Template.communityTemplate.users = function () {
         //return Players.find({}, {sort: {score: -1, name: 1}});
         return Meteor.users.find();
     };
