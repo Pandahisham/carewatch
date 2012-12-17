@@ -6,17 +6,17 @@
 <body>
     <div id="headerBar" data-role="header" data-theme="none">
         <ul class="nav-bar header-nav-bar">
-            <li><a href="#">mongo-data-browser.herokuapp.com</a></li>
+            <li><a href="#">healthrecord.herokuapp.com</a></li>
             <li style="position: fixed; right: 0px;"><a href="#">{{loginButtons align="right"}}</a></li>
         </ul>
     </div>
     <div id="footerActionBar" data-role="footer" data-theme="none" class="nav-bar">
         <ul class="nav-bar footer-nav-bar">
             <!--<li><a href="#connectPage" data-name="connectPageLink" data-transition="slide">Connect</a></li>-->
+            <li><a href="#newsPage" onclick="showHistoryPage();">Dashboard</a></li>
+            <li><a href="#communityPage" onclick="showCommunityPage();">Community</a></li>
+            <li><a href="#historyPage" onclick="showHistoryPage();">Health History</a></li>
             <li><a href="#profilePage" onclick="showProfilePage();">User Profile</a></li>
-            <li><a href="#communityPage" onclick="showCommunityPage();">Healthcare Community</a></li>
-            <li><a href="#visualizationPage" onclick="showVisualizationPage();">Visualize</a></li>
-            <li><a href="#historyPage" onclick="showHistoryPage();">Medical History</a></li>
         </ul>
     </div>
     <!--<div class="data-page" data-role="page" id="homePage">-->
@@ -42,7 +42,7 @@
     <div class="row">
         {{> health_entries}}
     </div>
-    <div class="bottom-anchored row">
+    <div class="hide-for-medium hide-for-small sidebar">
         {{> tag_filter}}
     </div>
 </template>
@@ -50,12 +50,13 @@
 
 <template name="tag_filter">
   <div id="tag-filter" class="tag-list">
-    <!--<div class="label">Show:</div>-->
-    {{#each tags}}
-      <div class="tag {{selected}}">
-        {{tag_text}} <span class="count">({{count}})</span>
-      </div>
-    {{/each}}
+    <ul class="tag-list">
+        {{#each tags}}
+        <li class="tag {{selected}}">
+            {{tag_text}} <span class="count">({{count}})</span>
+        </il>
+        {{/each}}
+    </ul>
   </div>
 </template>
 

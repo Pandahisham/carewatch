@@ -430,7 +430,7 @@ function getSpecialEventObject( eventType ) {
 
 			// teardown may be called when an element was
 			// removed from the DOM. If this is the case,
-			// jQuery foundation may have already stripped the element
+			// jQuery foundation-css may have already stripped the element
 			// of any data bindings so we need to check it before
 			// using it.
 			if ( bindings ) {
@@ -1411,7 +1411,7 @@ $.widget( "mobile.widget", {
 			return ltr || defaultTheme || "a";
 		},
 
-		// TODO the following $ and $.fn extensions can/probably should be moved into jquery.mobile.foundation.helpers
+		// TODO the following $ and $.fn extensions can/probably should be moved into jquery.mobile.foundation-css.helpers
 		//
 		// Find the closest javascript page element to gather settings data jsperf test
 		// http://jsperf.com/single-complex-selector-vs-many-complex-selectors/edit
@@ -3472,7 +3472,7 @@ $.mobile.getMaxScrollForTransition = $.mobile.getMaxScrollForTransition || defau
 				}
 
 				// Send focus to the newly shown page. Moved from promise .done binding in transitionPages
-				// itself to avoid ie bug that reports offsetWidth as > 0 (foundation check for visibility)
+				// itself to avoid ie bug that reports offsetWidth as > 0 (foundation-css check for visibility)
 				// despite visibility: hidden addresses issue #2965
 				// https://github.com/jquery/jquery-mobile/issues/2965
 				if( !alreadyFocused ){
@@ -7162,7 +7162,7 @@ $( document ).bind( "pagecreate create", function( e ){
 		});
 	};
 
-	// issue #3894 - foundation doesn't triggered events on disabled delegates
+	// issue #3894 - foundation-css doesn't triggered events on disabled delegates
 	$( document ).bind( "selectmenubeforecreate", function( event ){
 		var selectmenuWidget = $( event.target ).data( "selectmenu" );
 
