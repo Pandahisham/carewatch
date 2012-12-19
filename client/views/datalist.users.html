@@ -1,7 +1,5 @@
 
 <template name="userslist">
-    <div class="spacer row"></div>
-    <div class="row">
         <div class="six columns" id="community-members-list">
             <input type="text" class="search" />
             <ul id="item-list" class="list">
@@ -40,11 +38,18 @@
 
 <template name="user_item">
     <li class="rounded-corners user-card">
-        <div class="user-id">{{_id}}</div>
-        <div class="user-email bold">{{ userEmail }}</div>
-        <div class="user-posts">Health Entries: {{ userHealthEntries }}</div>
-        <div class="user-rank">HealthRank: {{ userHealthRank }}</div>
-        <div class="hidden user-select" onclick="alert('click!');">select</div>
+        <div class="row without-padding">
+            <div class="hide-for-small two columns">
+                <img src="images/placeholder-240x240.gif" />
+            </div>
+            <div class="ten columns">
+                <div class="user-email bold">{{ userEmail }}</div>
+                <div class="user-id">{{_id}}</div>
+                <div class="user-posts">Posts: {{ userHealthEntries }}</div>
+                <div class="user-rank">HealthRank: {{ userHealthRank }}</div>
+                <!--<div class="hidden user-select" onclick="alert('click!');">select</div>-->
+            </div>
+        </div>
     </li>
 </template>
 

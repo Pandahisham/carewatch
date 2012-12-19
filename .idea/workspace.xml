@@ -2,75 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6af491ff-1daf-446b-9c77-0fbce59cf6d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/helpers/jgestures.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/helpers/list.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/list.todos.js" afterPath="$PROJECT_DIR$/client/lib/datalist.todos.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/list.users.js" afterPath="$PROJECT_DIR$/client/lib/datalist.users.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/list.todos.html" afterPath="$PROJECT_DIR$/client/views/datalist.health.events.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/list.users.html" afterPath="$PROJECT_DIR$/client/views/datalist.users.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/core.styl" afterPath="$PROJECT_DIR$/.scrap/core.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/foundation-styl/_functions.styl" afterPath="$PROJECT_DIR$/.scrap/foundation-styl/_functions.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/foundation-styl/_mixins.styl" afterPath="$PROJECT_DIR$/.scrap/foundation-styl/_mixins.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/foundation-styl/_modular-scale.styl" afterPath="$PROJECT_DIR$/.scrap/foundation-styl/_modular-scale.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/foundation-styl/_semantic-grid.styl" afterPath="$PROJECT_DIR$/.scrap/foundation-styl/_semantic-grid.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/foundation-styl/_settings.styl" afterPath="$PROJECT_DIR$/.scrap/foundation-styl/_settings.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/foundation-styl/app.styl" afterPath="$PROJECT_DIR$/.scrap/foundation-styl/app.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/foundation-styl/base.styl" afterPath="$PROJECT_DIR$/.scrap/foundation-styl/base.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/foundation-styl/buttons.styl" afterPath="$PROJECT_DIR$/.scrap/foundation-styl/buttons.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/foundation-styl/compass/css3/box-shadow.styl" afterPath="$PROJECT_DIR$/.scrap/foundation-styl/compass/css3/box-shadow.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/foundation-styl/compass/css3/box-sizing.styl" afterPath="$PROJECT_DIR$/.scrap/foundation-styl/compass/css3/box-sizing.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/foundation-styl/compass/css3/index.styl" afterPath="$PROJECT_DIR$/.scrap/foundation-styl/compass/css3/index.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/foundation-styl/compass/css3/shared.styl" afterPath="$PROJECT_DIR$/.scrap/foundation-styl/compass/css3/shared.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/foundation-styl/compass/css3/transition.styl" afterPath="$PROJECT_DIR$/.scrap/foundation-styl/compass/css3/transition.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/foundation-styl/compass/support.styl" afterPath="$PROJECT_DIR$/.scrap/foundation-styl/compass/support.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/foundation-styl/compass/utils.styl" afterPath="$PROJECT_DIR$/.scrap/foundation-styl/compass/utils.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/foundation-styl/forms.styl" afterPath="$PROJECT_DIR$/.scrap/foundation-styl/forms.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/foundation-styl/globals.styl" afterPath="$PROJECT_DIR$/.scrap/foundation-styl/globals.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/foundation-styl/grid.styl" afterPath="$PROJECT_DIR$/.scrap/foundation-styl/grid.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/foundation-styl/navbar.styl" afterPath="$PROJECT_DIR$/.scrap/foundation-styl/navbar.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/foundation-styl/offcanvas.styl" afterPath="$PROJECT_DIR$/.scrap/foundation-styl/offcanvas.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/foundation-styl/orbit.styl" afterPath="$PROJECT_DIR$/.scrap/foundation-styl/orbit.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/foundation-styl/reveal.styl" afterPath="$PROJECT_DIR$/.scrap/foundation-styl/reveal.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/foundation-styl/tabs.styl" afterPath="$PROJECT_DIR$/.scrap/foundation-styl/tabs.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/foundation-styl/typography.styl" afterPath="$PROJECT_DIR$/.scrap/foundation-styl/typography.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/foundation-styl/ui.styl" afterPath="$PROJECT_DIR$/.scrap/foundation-styl/ui.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/jquery.mobile-1.1.1.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile-1.1.1.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/jquery.mobile.1.1.1/core/jquery.mobile.structure.less" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile.1.1.1/core/jquery.mobile.structure.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/jquery.mobile.1.1.1/jquery.mobile.boxshadows.less" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile.1.1.1/jquery.mobile.boxshadows.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/jquery.mobile.1.1.1/jquery.mobile.buttons.icons.less" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile.1.1.1/jquery.mobile.buttons.icons.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/jquery.mobile.1.1.1/jquery.mobile.buttons.less" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile.1.1.1/jquery.mobile.buttons.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/jquery.mobile.1.1.1/jquery.mobile.checkbox.less" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile.1.1.1/jquery.mobile.checkbox.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/jquery.mobile.1.1.1/jquery.mobile.collapsible.less" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile.1.1.1/jquery.mobile.collapsible.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/jquery.mobile.1.1.1/jquery.mobile.controlgroup.less" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile.1.1.1/jquery.mobile.controlgroup.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/jquery.mobile.1.1.1/jquery.mobile.corners.less" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile.1.1.1/jquery.mobile.corners.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/jquery.mobile.1.1.1/jquery.mobile.dialog.less" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile.1.1.1/jquery.mobile.dialog.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/jquery.mobile.1.1.1/jquery.mobile.focus.less" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile.1.1.1/jquery.mobile.focus.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/jquery.mobile.1.1.1/jquery.mobile.icons.less" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile.1.1.1/jquery.mobile.icons.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/jquery.mobile.1.1.1/jquery.mobile.input.less" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile.1.1.1/jquery.mobile.input.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/jquery.mobile.1.1.1/jquery.mobile.interaction.cues.less" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile.1.1.1/jquery.mobile.interaction.cues.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/jquery.mobile.1.1.1/jquery.mobile.less" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile.1.1.1/jquery.mobile.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/jquery.mobile.1.1.1/jquery.mobile.listview.less" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile.1.1.1/jquery.mobile.listview.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/jquery.mobile.1.1.1/jquery.mobile.loading.less" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile.1.1.1/jquery.mobile.loading.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/jquery.mobile.1.1.1/jquery.mobile.navbar.less" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile.1.1.1/jquery.mobile.navbar.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/jquery.mobile.1.1.1/jquery.mobile.overlay.less" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile.1.1.1/jquery.mobile.overlay.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/jquery.mobile.1.1.1/jquery.mobile.page.sections.less" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile.1.1.1/jquery.mobile.page.sections.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/jquery.mobile.1.1.1/jquery.mobile.select.less" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile.1.1.1/jquery.mobile.select.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/jquery.mobile.1.1.1/jquery.mobile.slider.less" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile.1.1.1/jquery.mobile.slider.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/jquery.mobile.1.1.1/jquery.mobile.theme.c.less" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile.1.1.1/jquery.mobile.theme.c.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/jquery.mobile.1.1.1/jquery.mobile.transitions.less" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile.1.1.1/jquery.mobile.transitions.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/jquery.mobile.custom.css" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile.custom.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/jquery.mobile.structure-1.1.1.css" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile.structure-1.1.1.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/jquery.mobile.theme-1.1.1.css" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile.theme-1.1.1.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/page.import.html" afterPath="$PROJECT_DIR$/.scrap/page.import.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/page.import.js" afterPath="$PROJECT_DIR$/.scrap/page.import.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.community.js" afterPath="$PROJECT_DIR$/client/lib/page.community.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.css" afterPath="$PROJECT_DIR$/client/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.html" afterPath="$PROJECT_DIR$/client/main.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/pages.community.less" afterPath="$PROJECT_DIR$/client/stylesheets/pages.community.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/pages.history.less" afterPath="$PROJECT_DIR$/client/stylesheets/pages.history.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/syntax.custom.less" afterPath="$PROJECT_DIR$/client/stylesheets/syntax.custom.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.txt" afterPath="$PROJECT_DIR$/readme.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/datalist.users.html" afterPath="$PROJECT_DIR$/client/views/datalist.users.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/page.community.html" afterPath="$PROJECT_DIR$/client/views/page.community.html" />
     </list>
     <ignored path="second-opinion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -90,10 +26,19 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="pages.community.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.community.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="56" column="1" selection-start="962" selection-end="962" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="page.community.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/views/page.community.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="11" selection-start="196" selection-end="196" vertical-scroll-proportion="-3.75">
+            <state line="9" column="11" selection-start="292" selection-end="292" vertical-scroll-proportion="-5.625">
               <folding />
             </state>
           </provider>
@@ -102,25 +47,7 @@
       <file leaf-file-name="datalist.users.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/views/datalist.users.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="74" selection-start="775" selection-end="775" vertical-scroll-proportion="0.3057325">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="datalist.users.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/lib/datalist.users.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="56" selection-start="224" selection-end="224" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/main.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="36" selection-start="1217" selection-end="1217" vertical-scroll-proportion="-9.166667">
+            <state line="44" column="37" selection-start="1592" selection-end="1796" vertical-scroll-proportion="0.57961786">
               <folding />
             </state>
           </provider>
@@ -139,12 +66,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/client/stylesheets/foundation/buttons.styl" />
         <option value="$PROJECT_DIR$/client/stylesheets/foundation/grid.styl" />
         <option value="$PROJECT_DIR$/client/lib/list.users.js" />
         <option value="$PROJECT_DIR$/client/stylesheets/foundation-styl/compass/css3/transition.styl" />
-        <option value="$PROJECT_DIR$/client/stylesheets/syntax.custom.less" />
-        <option value="$PROJECT_DIR$/client/stylesheets/pages.community.less" />
         <option value="$PROJECT_DIR$/client/main.css" />
         <option value="$PROJECT_DIR$/client/main.html" />
         <option value="$PROJECT_DIR$/client/stylesheets/pages.history.less" />
@@ -154,14 +78,17 @@
         <option value="$PROJECT_DIR$/client/lib/page.community.js" />
         <option value="$PROJECT_DIR$/client/lib/helpers/list.js" />
         <option value="$PROJECT_DIR$/client/lib/datalist.users.js" />
+        <option value="$PROJECT_DIR$/client/stylesheets/syntax.custom.less" />
+        <option value="$PROJECT_DIR$/client/views/page.community.html" />
+        <option value="$PROJECT_DIR$/client/stylesheets/pages.community.less" />
         <option value="$PROJECT_DIR$/client/views/datalist.users.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="565" />
-    <option name="y" value="144" />
-    <option name="width" value="1301" />
+    <option name="x" value="512" />
+    <option name="y" value="176" />
+    <option name="width" value="1430" />
     <option name="height" value="957" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -380,14 +307,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="565" y="144" width="1301" height="957" extended-state="0" />
+    <frame x="512" y="176" width="1430" height="957" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27765238" sideWeight="0.99868596" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25899842" sideWeight="0.9988439" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2352523" sideWeight="0.9988439" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -454,20 +381,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/syntax.custom.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="1" selection-start="546" selection-end="546" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.layout.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/page.history.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="0" selection-start="199" selection-end="199" vertical-scroll-proportion="-5.625">
@@ -510,13 +423,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.community.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="32" selection-start="449" selection-end="449" vertical-scroll-proportion="0.37634408">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="0" selection-start="323" selection-end="323" vertical-scroll-proportion="0.33687943">
@@ -540,13 +446,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/page.community.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="11" selection-start="196" selection-end="196" vertical-scroll-proportion="-3.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/lib/datalist.users.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="56" selection-start="224" selection-end="224" vertical-scroll-proportion="0.0">
@@ -561,9 +460,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/syntax.base.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/syntax.custom.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="8" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.community.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="1" selection-start="962" selection-end="962" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/page.community.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="11" selection-start="292" selection-end="292" vertical-scroll-proportion="-5.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/datalist.users.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="74" selection-start="775" selection-end="775" vertical-scroll-proportion="0.3057325">
+        <state line="44" column="37" selection-start="1592" selection-end="1796" vertical-scroll-proportion="0.57961786">
           <folding />
         </state>
       </provider>
