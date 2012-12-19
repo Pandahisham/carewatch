@@ -52,10 +52,11 @@ h3 {
     z-index: 1000;
 }
 
-
+.sidebar{
+    top: 40px;
+}
 .tag {
     cursor: pointer;
-    float: left;
     margin: 5px;
     padding: 5px;
     font-size: 80%;

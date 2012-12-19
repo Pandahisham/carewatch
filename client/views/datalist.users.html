@@ -1,0 +1,59 @@
+
+<template name="userslist">
+    <div class="spacer row"></div>
+    <div class="row">
+        <div class="six columns" id="community-members-list">
+            <input type="text" class="search" />
+            <ul id="item-list" class="list">
+                {{#each users}}
+                {{> user_item}}
+                {{/each}}
+            </ul>
+            <div class="hide-for-medium hide-for-small sidebar">
+                <div id="tag-filter" class="tag-list">
+                    <ul class="tag-list sort-by">
+                        <li class="sort tag" data-sort="user-email">Sort - Email</li>
+                        <li class="sort tag" data-sort="user-posts">Sort - Health Entries</li>
+                        <li class="sort tag" data-sort="user-rank">Sort - Health Rank</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="six columns padded hide-for-small">
+            <div class="row">
+                <img class="dotted drop-zone with-rounded-corners" id="drop_zone" src="images/placeholder-240x240.gif" />
+            </div>
+            <div class="spacer row"></div>
+            <div class="row panel">
+                <p>Number of Registered Users: {{ user_count}}</p>
+                <p>Number of Active Users: {{ user_count}}</p>
+            </div>
+            <div class="spacer row"></div>
+            <div class="row panel">
+                <p>My Health Network: {{ userNetworkSize }}</p>
+                <p>some.email@somewhere.com</p>
+            </div>
+        </div>
+</template>
+
+
+
+<template name="user_item">
+    <li class="rounded-corners user-card">
+        <div class="user-id">{{_id}}</div>
+        <div class="user-email bold">{{ userEmail }}</div>
+        <div class="user-posts">Health Entries: {{ userHealthEntries }}</div>
+        <div class="user-rank">HealthRank: {{ userHealthRank }}</div>
+        <div class="hidden user-select" onclick="alert('click!');">select</div>
+    </li>
+</template>
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,11 @@
 ////////// Users List //////////
 
-
+Template.userslist.rendered = function (){
+    var options = {
+        valueNames: [ 'user-email', 'user-posts', 'user-rank' ]
+    };
+    var communityList = new List('community-members-list', options);
+};
 Template.userslist.events(okCancelEvents(
     '#new-user',
     {
@@ -107,9 +112,9 @@ Template.userslist.userNetworkSize = function () {
 Template.user_item.userHealthRank = function () {
     return toInteger(Math.random() * 100);
 };
-Template.players.isMemberOf = function (userRole) {
-    return this.userRole === userRole;
-};
+//Template.players.isMemberOf = function (userRole) {
+//    return this.userRole === userRole;
+//};
 function toInteger(number){
     return Math.round(  // round to nearest integer
         Number(number)    // type cast your input

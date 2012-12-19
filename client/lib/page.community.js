@@ -1,8 +1,8 @@
-if (Meteor.isClient) {
-    Template.communityTemplate.users = function () {
-        //return Players.find({}, {sort: {score: -1, name: 1}});
-        return Meteor.users.find();
-    };
+//if (Meteor.isClient) {
+//    Template.communityTemplate.users = function () {
+//        //return Players.find({}, {sort: {score: -1, name: 1}});
+//        //return Meteor.users.find();
+//    };
 
 
 //    Template.browsePageTemplate.selected_name = function () {
@@ -10,5 +10,5 @@ if (Meteor.isClient) {
 //        return player && player.name;
 //    };
 
-}
+//}
 
