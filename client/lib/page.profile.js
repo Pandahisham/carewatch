@@ -21,6 +21,11 @@ Template.profilePageTemplate.events({
         Session.set('editing_profile_text', "true");
         Meteor.flush(); // update DOM before focus
         activateInput(tmpl.find("#todo-input-text"));
+    },
+    'change input': function(ev) {
+        _.each(ev.srcElement.files, function(file) {
+            Meteor.saveFile(file, file.name);
+        });
     }
 });
 
@@ -46,6 +51,8 @@ Template.profilePageTemplate.user_json = function () {
     var selectedUser = Meteor.user();
     return JSON.stringify(selectedUser);
 };
+
+
 
 // --------------------------------------------------------
 

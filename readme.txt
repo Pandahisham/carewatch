@@ -33,5 +33,9 @@ CSS classes should be in back-bone-case.  When possible, syntax keywords should 
 All function names should be camelCase.
 
 
+5.  Give custom names to objects instead of accepting default object names.
+BAD:   menuItem3
+GOOD:  fileOpenMenuItem
 
+6.
 

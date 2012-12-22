@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6af491ff-1daf-446b-9c77-0fbce59cf6d4" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/datalist.todos.js" afterPath="$PROJECT_DIR$/client/lib/datalist.health.events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/helpers/client.save.file.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/hipaa.logging.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/server.save.file.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/close_16.png" afterPath="$PROJECT_DIR$/public/icons/close_16.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/destroy.png" afterPath="$PROJECT_DIR$/public/icons/destroy.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/pages.history.less" afterPath="$PROJECT_DIR$/client/stylesheets/pages.history.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/datalist.health.events.html" afterPath="$PROJECT_DIR$/client/views/datalist.health.events.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.profile.js" afterPath="$PROJECT_DIR$/client/lib/page.profile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/page.profile.html" afterPath="$PROJECT_DIR$/client/views/page.profile.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.txt" afterPath="$PROJECT_DIR$/readme.txt" />
     </list>
     <ignored path="second-opinion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,28 +30,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="datalist.health.events.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/lib/datalist.health.events.js">
+      <file leaf-file-name="server.save.file.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/server.save.file.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="42" selection-start="3628" selection-end="3628" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="datalist.health.events.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/views/datalist.health.events.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="22" selection-start="1298" selection-end="1298" vertical-scroll-proportion="-22.083334">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pages.history.less" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.history.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="20" selection-start="1671" selection-end="1671" vertical-scroll-proportion="0.40613025">
+            <state line="38" column="3" selection-start="1718" selection-end="1718" vertical-scroll-proportion="0.7045736">
               <folding />
             </state>
           </provider>
@@ -65,11 +52,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/client/main.css" />
-        <option value="$PROJECT_DIR$/client/main.html" />
-        <option value="$PROJECT_DIR$/client/views/list.health.events.html" />
-        <option value="$PROJECT_DIR$/client/views/list.users.html" />
-        <option value="$PROJECT_DIR$/readme.txt" />
         <option value="$PROJECT_DIR$/client/lib/page.community.js" />
         <option value="$PROJECT_DIR$/client/lib/helpers/list.js" />
         <option value="$PROJECT_DIR$/client/lib/datalist.users.js" />
@@ -81,13 +63,18 @@
         <option value="$PROJECT_DIR$/server/publish.js" />
         <option value="$PROJECT_DIR$/client/views/datalist.health.events.html" />
         <option value="$PROJECT_DIR$/client/stylesheets/pages.history.less" />
+        <option value="$PROJECT_DIR$/client/views/page.profile.html" />
+        <option value="$PROJECT_DIR$/client/lib/page.profile.js" />
+        <option value="$PROJECT_DIR$/readme.txt" />
+        <option value="$PROJECT_DIR$/client/lib/helpers/client.save.file.js" />
+        <option value="$PROJECT_DIR$/server/server.save.file.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="479" />
-    <option name="y" value="92" />
-    <option name="width" value="1450" />
+    <option name="x" value="385" />
+    <option name="y" value="168" />
+    <option name="width" value="1166" />
     <option name="height" value="957" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -158,7 +145,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="userspace" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -172,11 +163,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -190,11 +177,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
+              <option name="myItemId" value="icons" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -205,10 +192,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -225,25 +208,25 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="web-ide.project.structure" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/icons" />
     <property name="FullScreen" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/client/stylesheets" />
       <recent name="$PROJECT_DIR$/client/lib" />
+      <recent name="$PROJECT_DIR$/client/stylesheets" />
       <recent name="$PROJECT_DIR$/client/lib/foundation" />
       <recent name="$PROJECT_DIR$/client/views" />
       <recent name="$PROJECT_DIR$/server" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/client/lib/helpers" />
-      <recent name="$PROJECT_DIR$/.scrap" />
-      <recent name="$PROJECT_DIR$/client/stylesheets" />
-      <recent name="$PROJECT_DIR$/client" />
-      <recent name="$PROJECT_DIR$/tests" />
+      <recent name="$PROJECT_DIR$/public/icons" />
+      <recent name="$PROJECT_DIR$/lib" />
+      <recent name="$PROJECT_DIR$/server" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/public/lib" />
     </key>
   </component>
   <component name="RunManager">
@@ -284,14 +267,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="479" y="92" width="1450" height="957" extended-state="0" />
-    <editor active="true" />
+    <frame x="385" y="168" width="1166" height="957" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27765238" sideWeight="0.99868596" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27751195" sideWeight="0.99868596" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23195516" sideWeight="0.9988439" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2895888" sideWeight="0.72248805" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -358,64 +341,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/views/page.profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="84" selection-end="84" vertical-scroll-proportion="-2.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="323" selection-end="323" vertical-scroll-proportion="0.33687943">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/page.community.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="0.19208382">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/helpers/list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="9096" selection-start="9096" selection-end="9096" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/datalist.users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="56" selection-start="224" selection-end="224" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="36" selection-start="1217" selection-end="1217" vertical-scroll-proportion="-9.166667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/syntax.base.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/syntax.custom.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="8" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.community.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="56" column="1" selection-start="962" selection-end="962" vertical-scroll-proportion="0.0">
@@ -467,7 +392,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.history.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="20" selection-start="1671" selection-end="1671" vertical-scroll-proportion="0.40613025">
+        <state line="110" column="1" selection-start="1881" selection-end="1881" vertical-scroll-proportion="-20.307692">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/page.profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="83" selection-end="83" vertical-scroll-proportion="-1.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="37" selection-start="1568" selection-end="1568" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="0" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/helpers/client.save.file.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="396" selection-end="460" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/hipaa.logging.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="18" selection-start="424" selection-end="424" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/hipaa.logging.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="14" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server.save.file.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="3" selection-start="1718" selection-end="1718" vertical-scroll-proportion="0.7045736">
           <folding />
         </state>
       </provider>
