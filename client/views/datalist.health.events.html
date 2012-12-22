@@ -32,9 +32,27 @@
                 <div class="hide-for-small todo-image">
                     <img src="images/placeholder-240x240.gif" />
                 </div>
+                <span class="todo-id">{{_id}}</span>
                 <span class="todo-text">{{text}}</span>
             </li>
             {{/if}}
+            <li class="item-tags">
+                {{#each tag_objs}}
+                <div class="tag removable_tag">
+                    <div class="name">{{tag}}</div>
+                    <div class="remove"></div>
+                </div>
+                {{/each}}
+                {{#if adding_tag}}
+                <div class="tag edittag">
+                    <input type="text" id="edittag-input" value="" />
+                </div>
+                {{else}}
+                <div class="tag addtag">
+                    +tag
+                </div>
+                {{/if}}
+            </li>
         </ul>
     </li>
 </template>

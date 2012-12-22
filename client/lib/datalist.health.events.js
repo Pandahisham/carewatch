@@ -112,7 +112,7 @@ Template.health_entries.health_items = function () {
     if (tag_filter)
         sel.tags = tag_filter;
 
-    return Todos.find(sel, {sort: {timestamp: 1}});
+    return Todos.find(sel, {sort: {timestamp: -1}});
 };
 
 Template.health_entry.tag_objs = function () {
