@@ -2,7 +2,177 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6af491ff-1daf-446b-9c77-0fbce59cf6d4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/datalist.users.html" afterPath="$PROJECT_DIR$/client/views/datalist.users.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/font/modernpics.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/font/pictonic.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/font/pictonic.svgz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/font/pictonic.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/font/pictonic.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/abdominalArteries.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/abdominalArteriesAndVeins.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/abdominalOverview.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/arteresAndVeinsOfUterus.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/arteriesAndVeinsOfNeck.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/arteriesAndVeinsOfUpperExtremities.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/arteriesAndViensOfLowerExtremities.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/arteriesOfLowerExtremities1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/arteriesOfLowerExtremities2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/arteriesOfTheColon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/arteriesOfTheHead.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/arteriesOfTheStomach.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/arteriesOfUpperExtremities2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/baseOfSkull.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/bloodcells.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/boneGrowth.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/brain1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/brain2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/brain3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/brain4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/brain5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/bridgeOfNose.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/cardiac-system.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/cerabelloCortex1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/chestArteries.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/circleOfWillis.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/dental.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/digestiveGlands.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/digestiveSystemArteriesAndVeins.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/digestiveTrack.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/ear1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/ear2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/ear3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/ear4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/earCanalBones.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/extremetesCartilidge.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/eye1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/eye2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/eye3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/facialOpticArteriesAndVeins.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/feet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/femaleSexualOrgans.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/femoralStressAngles.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/femoralVeinsAndArteries.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/foramenMagnum.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/fornix.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/gastricEmbryology.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/generalGlandsOfExtremities.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/hands.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/headNeckMuscles.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/heart1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/heart2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/hipJoint.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/hypothalmus.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/kidneys.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/knee.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/larynx1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/larynx2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/lateralFeet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/legMuscles.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/liver.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/lowerExtremityBones.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/lungs1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/lungs2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/lungs3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/lymphNodesOfTheHead.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/maleSexualOrgans.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/mandible.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/mandibleLigiments.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/maxillaryFaceBones.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/medullaOblongata1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/medullaOblongata2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/musclesOfLowerLeg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/musclesOfTheHand.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/nasalFacialNerves.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/neckArteries.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/neckLigiments.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/neckVeinsAndArteries.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/nerveDiagram1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/nerveDiagram2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/nerveOverview.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/nervesOfTheFaceAndMandible.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/nervesOfTheGut.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/nervesOfTheLowerExtremities.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/nervesOfTheLowerExtremities2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/nervesOfTheNeck.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/nervesOfTheNeck2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/nervesOfThePelvis.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/nervesOfTheShoulder.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/nervesOfTheTorso.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/nervesOfTheUpperExtremities.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/nose.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/noseBones.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/opticRecess.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/opticSystem.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/orbits.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/parotidGlandAndDucts.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/pelvicBone.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/pelvicGlands.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/pharynx.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/prostate.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/rectum.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/rib.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/ribLigiments.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/ribMuscles.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/ribcage.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/ribsLungs.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/scapulaeClavical.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/sexMuscles.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/sexualDevelopment.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/sexualDevelopment2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/skin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/skull.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/skullPlates.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/spinalNerves1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/spinalNerves2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/sternum.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/stomachAndSmallIntestines.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/tailbone.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/testes.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/thyroid.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/tongue2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/torsoMuscles.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/torsoOverview.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/tosoGlands.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/tounge.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/tympanicDevelopment.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/upperArmMuscles.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/upperExtremityBones.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/veinsOfHead.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/veinsOfTheNeck.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/vertebrae.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/vertebralVeins.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grays.anatomy/vocalCords.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/libraries/pictonic.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/stylesheets/lists.card.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/stylesheets/pictonic.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/subscriptions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documents/Modern Pictograms SIL OFL Font License 1.1.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/font/pictonic.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/categories.js" afterPath="$PROJECT_DIR$/client/libraries/categories.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/datalist.health.events.js" afterPath="$PROJECT_DIR$/client/libraries/datalist.health.events.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/datalist.users.js" afterPath="$PROJECT_DIR$/client/libraries/datalist.users.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/helpers/client.save.file.js" afterPath="$PROJECT_DIR$/client/libraries/helpers/client.save.file.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/helpers/helpers.js" afterPath="$PROJECT_DIR$/client/libraries/helpers/helpers.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/helpers/jgestures.js" afterPath="$PROJECT_DIR$/client/libraries/helpers/jgestures.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/helpers/jquery-1.7.1.min.js" afterPath="$PROJECT_DIR$/client/libraries/helpers/jquery-1.7.1.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/helpers/list.js" afterPath="$PROJECT_DIR$/client/libraries/helpers/list.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/hipaa.logging.js" afterPath="$PROJECT_DIR$/client/libraries/hipaa.logging.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/navigation.links.js" afterPath="$PROJECT_DIR$/client/libraries/navigation.links.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/page.community.js" afterPath="$PROJECT_DIR$/client/libraries/page.community.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/page.profile.js" afterPath="$PROJECT_DIR$/client/libraries/page.profile.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/router.js" afterPath="$PROJECT_DIR$/client/libraries/router.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/tag-filter.js" afterPath="$PROJECT_DIR$/client/libraries/tag-filter.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/categories.html" afterPath="$PROJECT_DIR$/client/templates/categories.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/datalist.health.events.html" afterPath="$PROJECT_DIR$/client/templates/datalist.health.events.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/datalist.users.html" afterPath="$PROJECT_DIR$/client/templates/datalist.users.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page.community.html" afterPath="$PROJECT_DIR$/client/templates/page.community.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page.guest.html" afterPath="$PROJECT_DIR$/client/templates/page.guest.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page.history.html" afterPath="$PROJECT_DIR$/client/templates/page.history.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page.profile.html" afterPath="$PROJECT_DIR$/client/templates/page.profile.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page.visualization.html" afterPath="$PROJECT_DIR$/client/templates/page.visualization.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/publish.js" afterPath="$PROJECT_DIR$/server/publications.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.js" afterPath="$PROJECT_DIR$/client/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.txt" afterPath="$PROJECT_DIR$/readme.txt" />
     </list>
     <ignored path="second-opinion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,26 +192,62 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="server.save.file.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/server.save.file.js">
+      <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/libraries/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="45" selection-start="1201" selection-end="1201" vertical-scroll-proportion="0.0">
+            <state line="14" column="25" selection-start="371" selection-end="371" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="file.api.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/file.api.js">
+      <file leaf-file-name="navigation.links.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/libraries/navigation.links.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="1" selection-start="548" selection-end="548" vertical-scroll-proportion="0.0">
+            <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="0" selection-start="585" selection-end="619" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page.profile.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/libraries/page.profile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="35" selection-start="1539" selection-end="1539" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pictonic.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/stylesheets/pictonic.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="44" selection-start="880" selection-end="880" vertical-scroll-proportion="-21.923077">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Modern Pictograms SIL OFL Font License 1.1.txt" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/documents/Modern Pictograms SIL OFL Font License 1.1.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="page.community.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/views/page.community.html">
+        <entry file="file://$PROJECT_DIR$/client/templates/page.community.html">
           <provider selected="true" editor-type-id="text-editor">
             <state line="9" column="11" selection-start="292" selection-end="292" vertical-scroll-proportion="-5.625">
               <folding />
@@ -49,38 +255,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="client.save.file.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/lib/helpers/client.save.file.js">
+      <file leaf-file-name="datalist.users.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/templates/datalist.users.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="0" selection-start="1351" selection-end="1351" vertical-scroll-proportion="0.0">
+            <state line="3" column="44" selection-start="135" selection-end="135" vertical-scroll-proportion="-1.875">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="datalist.users.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/lib/datalist.users.js">
+      <file leaf-file-name="pictonic.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/libraries/pictonic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="116" column="39" selection-start="3796" selection-end="3796" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="datalist.users.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/views/datalist.users.html">
+      <file leaf-file-name="subscriptions.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/subscriptions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="31" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.6258412">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page.profile.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="206" column="0" selection-start="7703" selection-end="7703" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="19" column="3" selection-start="628" selection-end="628" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -98,15 +297,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/client/views/page.community.html" />
-        <option value="$PROJECT_DIR$/client/stylesheets/pages.community.less" />
-        <option value="$PROJECT_DIR$/client/lib/datalist.health.events.js" />
-        <option value="$PROJECT_DIR$/client/views/datalist.health.events.html" />
-        <option value="$PROJECT_DIR$/client/stylesheets/pages.history.less" />
         <option value="$PROJECT_DIR$/model.js" />
         <option value="$PROJECT_DIR$/server/bootstrap.js" />
         <option value="$PROJECT_DIR$/client/views/page.profile.html" />
-        <option value="$PROJECT_DIR$/readme.txt" />
         <option value="$PROJECT_DIR$/server/server.save.file.js" />
         <option value="$PROJECT_DIR$/server/publish.js" />
         <option value="$PROJECT_DIR$/client/lib/datalist.users.js" />
@@ -114,13 +307,19 @@
         <option value="$PROJECT_DIR$/client/lib/helpers/client.save.file.js" />
         <option value="$PROJECT_DIR$/client/lib/page.profile.js" />
         <option value="$PROJECT_DIR$/client/views/datalist.users.html" />
+        <option value="$PROJECT_DIR$/readme.txt" />
+        <option value="$PROJECT_DIR$/client/subscriptions.js" />
+        <option value="$PROJECT_DIR$/client/main.js" />
+        <option value="$PROJECT_DIR$/client/actions/navigation.links.js" />
+        <option value="$PROJECT_DIR$/client/stylesheets/pictonic.less" />
+        <option value="$PROJECT_DIR$/client/templates/datalist.users.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="14" />
-    <option name="y" value="54" />
-    <option name="width" value="1022" />
+    <option name="x" value="17" />
+    <option name="y" value="37" />
+    <option name="width" value="1126" />
     <option name="height" value="950" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -195,46 +394,6 @@
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="userspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="avatars" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="icons" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -260,65 +419,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helpers" />
+              <option name="myItemId" value="documents" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -337,11 +438,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/client/lib" />
+      <recent name="$PROJECT_DIR$/documents" />
+      <recent name="$PROJECT_DIR$/public/font" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/client/actions" />
       <recent name="$PROJECT_DIR$/client/stylesheets" />
-      <recent name="$PROJECT_DIR$/client/lib/foundation" />
-      <recent name="$PROJECT_DIR$/client/views" />
-      <recent name="$PROJECT_DIR$/server" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client/lib/helpers" />
@@ -389,13 +490,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="14" y="54" width="1022" height="950" extended-state="0" />
+    <frame x="17" y="37" width="1126" height="950" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27696404" sideWeight="0.99868596" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33233234" sideWeight="0.9951749" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3009973" sideWeight="0.9951749" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -404,7 +506,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27696404" sideWeight="0.99868596" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -463,110 +564,116 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="37" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/page.profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="50" selection-start="3581" selection-end="3581" vertical-scroll-proportion="0.68909824">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="272" selection-start="1420" selection-end="1420" vertical-scroll-proportion="0.88265973">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/userspace/avatars/51f9d66c-c7ac-4447-8551-5ff704f5423c.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/userspace/avatars/51f9d66c-c7ac-4447-8551-5ff704f5423c.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/page.history.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/page.community.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/userspace/avatars/56c0d371-e935-432b-a4e0-1a1f9f80d8e2.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/publish.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="988" selection-end="988" vertical-scroll-proportion="0.50570345">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server.save.file.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="45" selection-start="1201" selection-end="1201" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/helpers/client.save.file.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="1351" selection-end="1351" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="206" column="0" selection-start="7703" selection-end="7703" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/file.api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="1" selection-start="548" selection-end="548" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/page.community.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="11" selection-start="292" selection-end="292" vertical-scroll-proportion="-5.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/datalist.users.js">
+    <entry file="file://$PROJECT_DIR$/client/libraries/datalist.users.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="116" column="39" selection-start="3796" selection-end="3796" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/datalist.users.html">
+    <entry file="file://$PROJECT_DIR$/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="31" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.6258412">
+        <state line="40" column="0" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/lists.card.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/libraries/tag-filter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="55" selection-start="691" selection-end="691" vertical-scroll-proportion="0.36121672">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/libraries/datalist.health.events.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.15686275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/libraries/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="25" selection-start="371" selection-end="371" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="585" selection-end="619" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/libraries/navigation.links.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/subscriptions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="3" selection-start="628" selection-end="628" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/libraries/page.profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="35" selection-start="1539" selection-end="1539" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/libraries/pictonic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/page.community.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="11" selection-start="292" selection-end="292" vertical-scroll-proportion="-5.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/datalist.users.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="44" selection-start="135" selection-end="135" vertical-scroll-proportion="-1.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/pictonic.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="44" selection-start="880" selection-end="880" vertical-scroll-proportion="-21.923077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/documents/Modern Pictograms SIL OFL Font License 1.1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
