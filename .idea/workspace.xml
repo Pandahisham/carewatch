@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6af491ff-1daf-446b-9c77-0fbce59cf6d4" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/file.api.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/datalist.users.js" afterPath="$PROJECT_DIR$/client/lib/datalist.users.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/helpers/client.save.file.js" afterPath="$PROJECT_DIR$/client/lib/helpers/client.save.file.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.profile.js" afterPath="$PROJECT_DIR$/client/lib/page.profile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/datalist.users.html" afterPath="$PROJECT_DIR$/client/views/datalist.users.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/page.profile.html" afterPath="$PROJECT_DIR$/client/views/page.profile.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.txt" afterPath="$PROJECT_DIR$/readme.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/publish.js" afterPath="$PROJECT_DIR$/server/publish.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/server.save.file.js" afterPath="$PROJECT_DIR$/server/server.save.file.js" />
     </list>
     <ignored path="second-opinion.iws" />
@@ -26,13 +29,13 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.48612785">
+    <splitter split-orientation="vertical" split-proportion="0.56453556">
       <split-first>
         <leaf>
           <file leaf-file-name="page.profile.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/views/page.profile.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="41" column="41" selection-start="2777" selection-end="2777" vertical-scroll-proportion="0.5958084">
+                <state line="31" column="31" selection-start="1899" selection-end="1899" vertical-scroll-proportion="0.45112783">
                   <folding />
                 </state>
               </provider>
@@ -41,7 +44,7 @@
           <file leaf-file-name="datalist.users.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/views/datalist.users.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="44" column="40" selection-start="1696" selection-end="1696" vertical-scroll-proportion="-4.4583335">
+                <state line="46" column="28" selection-start="1750" selection-end="1750" vertical-scroll-proportion="-5.7083335">
                   <folding />
                 </state>
               </provider>
@@ -51,28 +54,28 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="page.profile.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="page.profile.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="170" column="0" selection-start="6125" selection-end="6402" vertical-scroll-proportion="0.0">
+                <state line="8" column="2" selection-start="395" selection-end="395" vertical-scroll-proportion="0.36253777">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="datalist.users.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="datalist.users.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/lib/datalist.users.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="123" column="0" selection-start="4012" selection-end="4012" vertical-scroll-proportion="0.7348485">
+                <state line="130" column="2" selection-start="4260" selection-end="4260" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="bootstrap.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/server/bootstrap.js">
+          <file leaf-file-name="publish.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/server/publish.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="10" column="37" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0">
+                <state line="51" column="22" selection-start="1373" selection-end="1373" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -93,27 +96,27 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/client/stylesheets/syntax.custom.less" />
-        <option value="$PROJECT_DIR$/client/views/page.community.html" />
         <option value="$PROJECT_DIR$/client/stylesheets/pages.community.less" />
         <option value="$PROJECT_DIR$/client/lib/datalist.health.events.js" />
-        <option value="$PROJECT_DIR$/server/publish.js" />
         <option value="$PROJECT_DIR$/client/views/datalist.health.events.html" />
         <option value="$PROJECT_DIR$/client/stylesheets/pages.history.less" />
-        <option value="$PROJECT_DIR$/readme.txt" />
-        <option value="$PROJECT_DIR$/client/lib/helpers/client.save.file.js" />
-        <option value="$PROJECT_DIR$/server/server.save.file.js" />
         <option value="$PROJECT_DIR$/model.js" />
         <option value="$PROJECT_DIR$/server/bootstrap.js" />
         <option value="$PROJECT_DIR$/client/views/page.profile.html" />
+        <option value="$PROJECT_DIR$/server/server.save.file.js" />
+        <option value="$PROJECT_DIR$/client/lib/helpers/client.save.file.js" />
+        <option value="$PROJECT_DIR$/readme.txt" />
+        <option value="$PROJECT_DIR$/lib/file.api.js" />
+        <option value="$PROJECT_DIR$/lib/model.js" />
         <option value="$PROJECT_DIR$/client/lib/page.profile.js" />
         <option value="$PROJECT_DIR$/client/views/datalist.users.html" />
+        <option value="$PROJECT_DIR$/server/publish.js" />
         <option value="$PROJECT_DIR$/client/lib/datalist.users.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="16" />
+    <option name="x" value="70" />
     <option name="y" value="157" />
     <option name="width" value="1407" />
     <option name="height" value="950" />
@@ -362,14 +365,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="16" y="157" width="1407" height="950" extended-state="0" />
+    <frame x="70" y="157" width="1407" height="950" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27696404" sideWeight="0.99868596" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27623641" sideWeight="0.99868596" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17413294" sideWeight="0.9951749" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3215318" sideWeight="0.7237636" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -436,72 +439,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.history.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="1" selection-start="1881" selection-end="1881" vertical-scroll-proportion="-20.307692">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/helpers/client.save.file.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="396" selection-end="460" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/hipaa.logging.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="18" selection-start="424" selection-end="424" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/hipaa.logging.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="18" selection-start="242" selection-end="251" vertical-scroll-proportion="0.33139536">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/icons/destroy.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server.save.file.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="34" selection-start="586" selection-end="586" vertical-scroll-proportion="0.08086254">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/publish.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="26" selection-start="1390" selection-end="1390" vertical-scroll-proportion="0.55525607">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="428" selection-end="428" vertical-scroll-proportion="0.5660377">
           <folding />
         </state>
       </provider>
@@ -513,37 +453,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/datalist.users.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="40" selection-start="1696" selection-end="1696" vertical-scroll-proportion="-4.4583335">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="37" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0">
+        <state line="10" column="37" selection-start="434" selection-end="434" vertical-scroll-proportion="0.37878788">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/page.profile.html">
+    <entry file="file://$PROJECT_DIR$/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="41" selection-start="2777" selection-end="2777" vertical-scroll-proportion="0.5958084">
+        <state line="43" column="0" selection-start="844" selection-end="844" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
+    <entry file="file://$PROJECT_DIR$/model.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="170" column="0" selection-start="6125" selection-end="6402" vertical-scroll-proportion="0.0">
+        <state line="14" column="26" selection-start="454" selection-end="454" vertical-scroll-proportion="0.45454547">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/userspace/avatars/51f9d66c-c7ac-4447-8551-5ff704f5423c.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/userspace/avatars/51f9d66c-c7ac-4447-8551-5ff704f5423c.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server.save.file.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="26" selection-start="1085" selection-end="1085" vertical-scroll-proportion="0.8712121">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/helpers/client.save.file.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="1346" selection-end="1346" vertical-scroll-proportion="0.6475196">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/file.api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="79" selection-start="428" selection-end="428" vertical-scroll-proportion="0.41666666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/publish.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="22" selection-start="1373" selection-end="1373" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/lib/datalist.users.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="0" selection-start="4012" selection-end="4012" vertical-scroll-proportion="0.7348485">
+        <state line="130" column="2" selection-start="4260" selection-end="4260" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/datalist.users.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="28" selection-start="1750" selection-end="1750" vertical-scroll-proportion="-5.7083335">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/page.profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="31" selection-start="1899" selection-end="1899" vertical-scroll-proportion="0.45112783">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="2" selection-start="395" selection-end="395" vertical-scroll-proportion="0.36253777">
           <folding />
         </state>
       </provider>

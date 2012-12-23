@@ -29,6 +29,8 @@ Meteor.saveFile = function(blob, name, path, type, callback) {
     fileReader.onload = function(file) {
         log_event('fileReader.onload(' + file + ')', LogLevel.Trace);
         Meteor.call('saveFile', file.srcElement.result, name, path, encoding, callback);
+        Meteor.users.update(Meteor.userId(), {$set: { 'profile.avatar': cleanName(name) }});
+
     }
     fileReader[method](blob);
 }

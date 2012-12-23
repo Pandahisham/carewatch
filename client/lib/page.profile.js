@@ -11,6 +11,10 @@ Template.profilePageTemplate.editing_birthdate = function () {
     log_event('Template.profilePageTemplate.editing_birthdate', LogLevel.Trace);
     return Session.equals('editing_profile_birthdate', "true");
 };
+Template.profilePageTemplate.editing_avatar = function () {
+    log_event('Template.profilePageTemplate.editing_avatar', LogLevel.Trace);
+    return Session.equals('editing_profile_avatar', "true");
+};
 //Template.profilePageTemplate.editing_collaborators = function () {
 //    log_event('Template.profilePageTemplate.editing_collaborators', LogLevel.Trace);
 //    return Session.equals('editing_profile_collaborators', "true");
@@ -30,6 +34,21 @@ Template.profilePageTemplate.editing_birthdate = function () {
 //            }
 //        })
 //);
+Template.profilePageTemplate.events(
+    okCancelEvents('#userAvatarInput',
+        {
+            ok: function (value) {
+                log_event('userAvatarInput - ok', LogLevel.Trace);
+                Meteor.users.update(Meteor.userId(), {$set: { 'profile.avatar': value }});
+                Session.set('editing_profile_avatar', "false");
+                //Meteor.flush(); // update DOM before focus
+            },
+            cancel: function () {
+                log_event('userAvatarInput - cancel', LogLevel.Trace);
+                Session.set('editing_profile_avatar', "false");
+            }
+        })
+);
 Template.profilePageTemplate.events(
     okCancelEvents('#userDateOfBirthInput',
         {
@@ -91,7 +110,11 @@ Template.profilePageTemplate.events({
         Meteor.flush(); // update DOM before focus
         activateInput(tmpl.find("#profile-input-birth-date"));
     },
-//    'dblclick .userCollaboratorsDisplay': function (evt, tmpl) {
+    'dblclick .userAvatarDisplay': function (evt, tmpl) {
+        Session.set('editing_profile_avatar', "true");
+        Meteor.flush(); // update DOM before focus
+        activateInput(tmpl.find("#profile-input-avatar"));
+    },//    'dblclick .userCollaboratorsDisplay': function (evt, tmpl) {
 //        Session.set('editing_profile_collaborators', "true");
 //        Meteor.flush(); // update DOM before focus
 //        activateInput(tmpl.find("#profile-input-collaborator"));
@@ -153,6 +176,18 @@ Template.profilePageTemplate.user_birthdate = function () {
         log_event(err, LogLevel.Error);
     }
 };
+Template.profilePageTemplate.user_avatar = function () {
+    try{
+        if(Meteor.user().profile){
+            return Meteor.user().profile.avatar;
+        }else{
+            return "User birthdate not available right now.";
+        }
+    }
+    catch(err){
+        log_event(err, LogLevel.Error);
+    }
+};
 //Template.profilePageTemplate.user_collaborators = function () {
 //    if(Meteor.user().profile){
 //        return Meteor.user().profile.collaborators;
@@ -166,18 +201,21 @@ Template.profilePageTemplate.user_json = function () {
     return JSON.stringify(selectedUser);
 };
 Template.profilePageTemplate.user_image = function () {
-    return  getUserAvatar();
-};
-function getUserAvatar(){
-    var src;
-    if(Meteor.user() != null){
-        src = "userspace/avatars/" + Meteor.user()._id + ".jpg";
-    }else{
-        src = "images/placeholder-240x240.gif";
+    try{
+        var src;
+        if(Meteor.user().profile){
+            src = "userspace/avatars/" +  Meteor.user().profile.avatar;
+        }else{
+            src = "images/placeholder-240x240.gif";
+        }
+        log_event('profile avatar src: ' + src, LogLevel.Info);
+        return src;
     }
-    log_event('profile avatar src: ' + src, LogLevel.Info);
-    return src;
-}
+    catch(err){
+        log_event(err, LogLevel.Error);
+    }
+};
+
 
 // --------------------------------------------------------
 // SELECT AVATAR - DRAG, DROP, & FILE SAVE FUNCTIONS

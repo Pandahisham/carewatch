@@ -30,6 +30,7 @@ Meteor.publish("usersDirectory", function () {
     return Meteor.users.find({}, {fields: {
         '_id': true,
         'username': true,
+        'profile.avatar': true,
         'emails': true,
         'emails[0].address': true
     }});
@@ -51,6 +52,7 @@ Meteor.publish('userProfile', function (userId) {
         'username': 1,
         'profile': 1,
         'profile.name': 1,
+        'profile.avatar': 1,
         'emails': 1,
         'emails[0].address': 1
     }});
