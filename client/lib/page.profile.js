@@ -1,4 +1,3 @@
-
 Template.profilePageTemplate.editing_email = function () {
     log_event('Template.profilePageTemplate.editing_email', LogLevel.Trace);
     return Session.equals('editing_profile_email', "true");
@@ -66,33 +65,33 @@ Template.profilePageTemplate.events(
 );
 Template.profilePageTemplate.events(
     okCancelEvents('#userNameInput',
-    {
-        ok: function (value) {
-            log_event('userNameInput - ok', LogLevel.Trace);
-            Meteor.users.update(Meteor.userId(), {$set: { 'profile.name': value }});
-            Session.set('editing_profile_name', "false");
-            //Meteor.flush(); // update DOM before focus
-        },
-        cancel: function () {
-            log_event('userNameInput - cancel', LogLevel.Trace);
-            Session.set('editing_profile_name', "false");
-        }
-    })
+        {
+            ok: function (value) {
+                log_event('userNameInput - ok', LogLevel.Trace);
+                Meteor.users.update(Meteor.userId(), {$set: { 'profile.name': value }});
+                Session.set('editing_profile_name', "false");
+                //Meteor.flush(); // update DOM before focus
+            },
+            cancel: function () {
+                log_event('userNameInput - cancel', LogLevel.Trace);
+                Session.set('editing_profile_name', "false");
+            }
+        })
 );
 Template.profilePageTemplate.events(
     okCancelEvents('#userEmailInput',
-    {
-        ok: function (value) {
-            log_event('userEmailInput - cancel', LogLevel.Trace);
-            Meteor.users.update(Meteor.userId(), {$set: { emails: [{address: value }] }});
-            Session.set('editing_profile_email', "false");
-            //Meteor.flush(); // update DOM before focus
-        },
-        cancel: function () {
-            log_event('userEmailInput - cancel', LogLevel.Trace);
-            Session.set('editing_profile_email', "false");
-        }
-    })
+        {
+            ok: function (value) {
+                log_event('userEmailInput - cancel', LogLevel.Trace);
+                Meteor.users.update(Meteor.userId(), {$set: { emails: [{address: value }] }});
+                Session.set('editing_profile_email', "false");
+                //Meteor.flush(); // update DOM before focus
+            },
+            cancel: function () {
+                log_event('userEmailInput - cancel', LogLevel.Trace);
+                Session.set('editing_profile_email', "false");
+            }
+        })
 );
 Template.profilePageTemplate.events({
     'dblclick .userEmailDisplay': function (evt, tmpl) {
@@ -202,11 +201,9 @@ Template.profilePageTemplate.user_json = function () {
 };
 Template.profilePageTemplate.user_image = function () {
     try{
-        var src;
-        if(Meteor.user().profile){
+        var src = "images/placeholder-240x240.gif";
+        if(Meteor.user()){
             src = "userspace/avatars/" +  Meteor.user().profile.avatar;
-        }else{
-            src = "images/placeholder-240x240.gif";
         }
         log_event('profile avatar src: ' + src, LogLevel.Info);
         return src;
