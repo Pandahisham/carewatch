@@ -3,11 +3,14 @@
  * http://stackoverflow.com/questions/7329128/how-to-write-binary-data-to-a-file-using-node-js
  */
 Meteor.methods({
+
     saveFile: function(blob, name, path, encoding) {
         log_event('Meteor.saveFile(' + name + ')', LogLevel.Trace);
 
-        var path = cleanPath(path), fs = __meteor_bootstrap__.require('fs'),
-            name = cleanName(name || 'file'), encoding = encoding || 'binary',
+        var path = cleanPath(path),
+            fs = __meteor_bootstrap__.require('fs'),
+            name = cleanName(name || 'file'),
+            encoding = encoding || 'binary',
             chroot = Meteor.chroot || 'public';
         // Clean up the path. Remove any initial and final '/' -we prefix them-,
         // any sort of attempt to go to the parent directory '..' and any empty directories in
@@ -33,7 +36,12 @@ Meteor.methods({
         }
         function cleanName(str) {
             log_event('Meteor.cleanName(' + str + ')', LogLevel.Trace);
-            return str.replace(/\.\./g,'').replace(/\//g,'');
+
+            // grab the filename extension
+            var extension = str.substr(str.lastIndexOf('.') + 1).toLowerCase();
+
+            // rename the file with the userId, preserving the file extension
+            return Meteor.user()._id + '.' + extension;;
         }
     }
 });

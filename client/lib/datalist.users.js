@@ -52,6 +52,7 @@ Template.userslist.events(okCancelEvents(
 
 
 Template.userslist.user_count = function () {
+    log_event('Template.userslist.user_count', LogLevel.Trace);
     var usersList = Meteor.users.find();
     return usersList.count();
 };
@@ -69,7 +70,7 @@ Template.userslist.users = function () {
 //    var tag_filter = Session.get('tag_filter');
 //    if (tag_filter)
 //        sel.tags = tag_filter;
-    console.log('searching for users');
+    log_event('Template.userslist.users', LogLevel.Trace);
     return Meteor.users.find();
 };
 
@@ -101,16 +102,24 @@ Template.user_item.events(okCancelEvents(
         }
 }));
 Template.user_item.userEmail = function () {
+    log_event('Template.user_item.userEmail', LogLevel.Trace);
     return this.emails[0].address;
 };
 Template.user_item.userHealthEntries = function () {
+    log_event('Template.user_item.userHealthEntries', LogLevel.Trace);
     return toInteger(Math.random() * 25000);
 };
 Template.userslist.userNetworkSize = function () {
+    log_event('Template.user_item.userNetworkSize', LogLevel.Trace);
     return toInteger(Math.random() * 240);
 };
 Template.user_item.userHealthRank = function () {
+    log_event('Template.user_item.userHealthRank', LogLevel.Trace);
     return toInteger(Math.random() * 100);
+};
+Template.user_item.user_image = function () {
+    log_event('Template.user_item.user_image', LogLevel.Trace);
+    return getUserAvatar();
 };
 //Template.players.isMemberOf = function (userRole) {
 //    return this.userRole === userRole;
@@ -120,3 +129,13 @@ function toInteger(number){
         Number(number)    // type cast your input
     );
 };
+function getUserAvatar(){
+    var src;
+    if(Meteor.user() != null){
+        src = "userspace/avatars/" + Meteor.user()._id + ".jpg";
+    }else{
+        src = "images/placeholder-240x240.gif";
+    }
+    log_event('profile avatar src: ' + src, LogLevel.Info);
+    return src;
+}

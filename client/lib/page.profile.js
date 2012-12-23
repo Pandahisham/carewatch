@@ -1,27 +1,101 @@
 
-Template.profilePageTemplate.editing = function () {
-    return Session.equals('editing_profile_text', "true");
+Template.profilePageTemplate.editing_email = function () {
+    log_event('Template.profilePageTemplate.editing_email', LogLevel.Trace);
+    return Session.equals('editing_profile_email', "true");
 };
-Template.profilePageTemplate.events(okCancelEvents(
-    '#profileItems',
+Template.profilePageTemplate.editing_name = function () {
+    log_event('Template.profilePageTemplate.editing_name', LogLevel.Trace);
+    return Session.equals('editing_profile_name', "true");
+};
+Template.profilePageTemplate.editing_birthdate = function () {
+    log_event('Template.profilePageTemplate.editing_birthdate', LogLevel.Trace);
+    return Session.equals('editing_profile_birthdate', "true");
+};
+//Template.profilePageTemplate.editing_collaborators = function () {
+//    log_event('Template.profilePageTemplate.editing_collaborators', LogLevel.Trace);
+//    return Session.equals('editing_profile_collaborators', "true");
+//};
+//Template.profilePageTemplate.events(
+//    okCancelEvents('#userCollaboratorsInput',
+//        {
+//            ok: function (value) {
+//                log_event('userCollaboratorsInput - ok', LogLevel.Trace);
+//                Meteor.users.update(Meteor.userId(), {$set: { 'profile.collaborators': value }});
+//                Session.set('editing_profile_collaborators', "false");
+//                //Meteor.flush(); // update DOM before focus
+//            },
+//            cancel: function () {
+//                log_event('userCollaboratorsInput - cancel', LogLevel.Trace);
+//                Session.set('editing_profile_collaborators', "false");
+//            }
+//        })
+//);
+Template.profilePageTemplate.events(
+    okCancelEvents('#userDateOfBirthInput',
+        {
+            ok: function (value) {
+                log_event('userDateOfBirthInput - ok', LogLevel.Trace);
+                Meteor.users.update(Meteor.userId(), {$set: { 'profile.dateOfBirth': value }});
+                Session.set('editing_profile_birthdate', "false");
+                //Meteor.flush(); // update DOM before focus
+            },
+            cancel: function () {
+                log_event('userDateOfBirthInput - cancel', LogLevel.Trace);
+                Session.set('editing_profile_birthdate', "false");
+            }
+        })
+);
+Template.profilePageTemplate.events(
+    okCancelEvents('#userNameInput',
     {
         ok: function (value) {
-            Meteor.users.update(Meteor.userId(), {$set: { emails: [{address: value }] }});
-            Session.set('editing_profile_text', "false");
+            log_event('userNameInput - ok', LogLevel.Trace);
+            Meteor.users.update(Meteor.userId(), {$set: { 'profile.name': value }});
+            Session.set('editing_profile_name', "false");
             //Meteor.flush(); // update DOM before focus
         },
         cancel: function () {
-            Session.set('editing_profile_text', "false");
+            log_event('userNameInput - cancel', LogLevel.Trace);
+            Session.set('editing_profile_name', "false");
         }
     })
 );
-
+Template.profilePageTemplate.events(
+    okCancelEvents('#userEmailInput',
+    {
+        ok: function (value) {
+            log_event('userEmailInput - cancel', LogLevel.Trace);
+            Meteor.users.update(Meteor.userId(), {$set: { emails: [{address: value }] }});
+            Session.set('editing_profile_email', "false");
+            //Meteor.flush(); // update DOM before focus
+        },
+        cancel: function () {
+            log_event('userEmailInput - cancel', LogLevel.Trace);
+            Session.set('editing_profile_email', "false");
+        }
+    })
+);
 Template.profilePageTemplate.events({
-    'dblclick .display': function (evt, tmpl) {
-        Session.set('editing_profile_text', "true");
+    'dblclick .userEmailDisplay': function (evt, tmpl) {
+        Session.set('editing_profile_email', "true");
         Meteor.flush(); // update DOM before focus
-        activateInput(tmpl.find("#todo-input-text"));
+        activateInput(tmpl.find("#profile-input-email"));
     },
+    'dblclick .userNameDisplay': function (evt, tmpl) {
+        Session.set('editing_profile_name', "true");
+        Meteor.flush(); // update DOM before focus
+        activateInput(tmpl.find("#profile-input-name"));
+    },
+    'dblclick .userDateOfBirthDisplay': function (evt, tmpl) {
+        Session.set('editing_profile_birthdate', "true");
+        Meteor.flush(); // update DOM before focus
+        activateInput(tmpl.find("#profile-input-birth-date"));
+    },
+//    'dblclick .userCollaboratorsDisplay': function (evt, tmpl) {
+//        Session.set('editing_profile_collaborators', "true");
+//        Meteor.flush(); // update DOM before focus
+//        activateInput(tmpl.find("#profile-input-collaborator"));
+//    },
     'change input': function(ev) {
         _.each(ev.srcElement.files, function(file) {
             Meteor.saveFile(file, file.name);
@@ -30,32 +104,83 @@ Template.profilePageTemplate.events({
 });
 
 Template.profilePageTemplate.user_name = function () {
-    if(Meteor.user().profile){
-        return Meteor.user().profile.name;
-    }else{
-        return "Meteor.user().profile not available right now."
+    try{
+        if(Meteor.user().profile){
+            return Meteor.user().profile.name;
+        }else{
+            return "Meteor.user().profile not available right now."
+        }
+    }
+    catch(err){
+        log_event(err, LogLevel.Error);
     }
 };
 Template.profilePageTemplate.user_id = function () {
-    return Meteor.user()._id;
-};
-Template.profilePageTemplate.user_email = function () {
-    if(Meteor.user().emails){
-        return Meteor.user().emails[0].address;
-    }else{
-        return "User email address not available right now.";
+    try{
+        if(Meteor.user()){
+            return Meteor.user()._id;
+        }else{
+            return "UserId not found."
+        }
+    }
+    catch(err){
+        log_error(err,LogLevel.Error);
     }
 };
+Template.profilePageTemplate.user_email = function () {
+    try
+    {
+        if(Meteor.user().emails){
+            return Meteor.user().emails[0].address;
+        }else{
+            return "User email address not available right now.";
+        }
+    }
+    catch(err)
+    {
+        log_event(err, LogLevel.Error);
+    }
+};
+Template.profilePageTemplate.user_birthdate = function () {
+    try{
+        if(Meteor.user().profile){
+            return Meteor.user().profile.dateOfBirth;
+        }else{
+            return "User birthdate not available right now.";
+        }
+    }
+    catch(err){
+        log_event(err, LogLevel.Error);
+    }
+};
+//Template.profilePageTemplate.user_collaborators = function () {
+//    if(Meteor.user().profile){
+//        return Meteor.user().profile.collaborators;
+//    }else{
+//        return "List of collaborators not available right now.";
+//    }
+//};
 
 Template.profilePageTemplate.user_json = function () {
     var selectedUser = Meteor.user();
     return JSON.stringify(selectedUser);
 };
-
-
+Template.profilePageTemplate.user_image = function () {
+    return  getUserAvatar();
+};
+function getUserAvatar(){
+    var src;
+    if(Meteor.user() != null){
+        src = "userspace/avatars/" + Meteor.user()._id + ".jpg";
+    }else{
+        src = "images/placeholder-240x240.gif";
+    }
+    log_event('profile avatar src: ' + src, LogLevel.Info);
+    return src;
+}
 
 // --------------------------------------------------------
-
+// SELECT AVATAR - DRAG, DROP, & FILE SAVE FUNCTIONS
 
 
 

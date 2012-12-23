@@ -17,20 +17,22 @@
                 </div>
             </div>
         </div>
-        <div class="six columns padded hide-for-small">
+        <div class="six columns hide-for-small">
+            <div class="row panel">
+                <p>{{ user_count}} Registered Users</p>
+                <p>{{ user_count}} Active Users</p>
+            </div>
+            <div class="spacer row"></div>
+            <div class="row panel">
+                <p> Health Collaborators: {{ userNetworkSize }}</p>
+                <p>some.email@somewhere.com</p>
+            </div>
+
+            <div class="spacer row"></div>
             <div class="row">
                 <img class="dotted drop-zone with-rounded-corners" id="drop_zone" src="images/placeholder-240x240.gif" />
             </div>
-            <div class="spacer row"></div>
-            <div class="row panel">
-                <p>Number of Registered Users: {{ user_count}}</p>
-                <p>Number of Active Users: {{ user_count}}</p>
-            </div>
-            <div class="spacer row"></div>
-            <div class="row panel">
-                <p>My Health Network: {{ userNetworkSize }}</p>
-                <p>some.email@somewhere.com</p>
-            </div>
+
         </div>
 </template>
 
@@ -40,14 +42,13 @@
     <li class="rounded-corners user-card">
         <div class="row without-padding">
             <div class="hide-for-small two columns">
-                <img src="images/placeholder-240x240.gif" />
+                <img src="{{ user_image }}" />
             </div>
             <div class="ten columns">
                 <div class="user-email bold">{{ userEmail }}</div>
-                <div class="user-id">{{_id}}</div>
+                <div class="user-id">{{ _id }}</div>
                 <div class="user-posts">Posts: {{ userHealthEntries }}</div>
                 <div class="user-rank">HealthRank: {{ userHealthRank }}</div>
-                <!--<div class="hidden user-select" onclick="alert('click!');">select</div>-->
             </div>
         </div>
     </li>

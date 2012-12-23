@@ -8,7 +8,7 @@
 
                     <div class="row">
                         <div class="two columns">
-                            <img class="dotted drop-zone with-rounded-corners" id="drop_zone" src="images/placeholder-240x240.gif" />
+                            <img class="dotted drop-zone with-rounded-corners" id="drop_zone" src="{{user_image}}" />
                             <p class="centered image-selection-text">Image Selection</p>
 
                             <input class="hidden" type="file" id="import_files_input" name="files[]"  />
@@ -19,17 +19,29 @@
 
                                     <li class="display"><span class="profile-item">{{user_id}}</span></li>
 
-                                    {{#if editing}}
-                                    <li class="edit"><input id="todo-input-text" type="text" placeholder="email" value="{{user_email}}" /></li>
+                                    {{#if editing_email}}
+                                    <li id="userEmailInput"  class="edit"><input id="profile-input-email" type="text" placeholder="email" value="{{user_email}}" /></li>
                                     {{else}}
-                                    <li class="display"><span class="profile-item">{{user_email}}</span></li>
+                                    <li id="userEmailDisplay" class="userEmailDisplay display"><span class="profile-item">{{user_email}}</span></li>
                                     {{/if}}
 
-                                    {{#if editing}}
-                                    <li class="edit"><input id="profile-input-name" type="text" placeholder="Full Name" value="{{user_name}}" /></li>
+                                    {{#if editing_name}}
+                                    <li id="userNameInput" class="edit"><input id="profile-input-name" type="text" placeholder="Full Name" value="{{user_name}}" /></li>
                                     {{else}}
-                                    <li class="display"><span id="profile-display-name" class="profile-item">{{user_name}}</span></li>
+                                    <li id="userNameDisplay" class="userNameDisplay display"><span id="profile-display-name" class="profile-item">Name - {{user_name}}</span></li>
                                     {{/if}}
+
+                                    {{#if editing_birthdate}}
+                                    <li id="userDateOfBirthInput" class="edit"><input id="profile-input-birth-date" type="text" placeholder="Full Name" value="{{user_birthdate}}" /></li>
+                                    {{else}}
+                                    <li id="userDateOfBirthDisplay" class="userDateOfBirthDisplay display"><span id="profile-display-birth-date" class="profile-item">Birthdate - {{user_birthdate}}</span></li>
+                                    {{/if}}
+
+                                    <!--{{#if editing_collaborators}}-->
+                                    <!--<li id="userCollaboratorsInput" class="edit"><input id="profile-input-collaborator" type="text" placeholder="Full Name" value="{{user_collaborators}}" /></li>-->
+                                    <!--{{else}}-->
+                                    <!--<li id="userCollaboratorsDisplay" class="userCollaboratorsDisplay display"><span id="profile-display-collaborator" class="profile-item">Collaborators - {{user_collaborators}}</span></li>-->
+                                    <!--{{/if}}-->
 
 
                                 </ul>
