@@ -14,25 +14,25 @@ Template.profilePageTemplate.editing_avatar = function () {
     log_event('Template.profilePageTemplate.editing_avatar', LogLevel.Trace);
     return Session.equals('editing_profile_avatar', "true");
 };
-//Template.profilePageTemplate.editing_collaborators = function () {
-//    log_event('Template.profilePageTemplate.editing_collaborators', LogLevel.Trace);
-//    return Session.equals('editing_profile_collaborators', "true");
-//};
-//Template.profilePageTemplate.events(
-//    okCancelEvents('#userCollaboratorsInput',
-//        {
-//            ok: function (value) {
-//                log_event('userCollaboratorsInput - ok', LogLevel.Trace);
-//                Meteor.users.update(Meteor.userId(), {$set: { 'profile.collaborators': value }});
-//                Session.set('editing_profile_collaborators', "false");
-//                //Meteor.flush(); // update DOM before focus
-//            },
-//            cancel: function () {
-//                log_event('userCollaboratorsInput - cancel', LogLevel.Trace);
-//                Session.set('editing_profile_collaborators', "false");
-//            }
-//        })
-//);
+Template.profilePageTemplate.editing_collaborators = function () {
+    log_event('Template.profilePageTemplate.editing_collaborators', LogLevel.Trace);
+    return Session.equals('editing_profile_collaborators', "true");
+};
+Template.profilePageTemplate.events(
+    okCancelEvents('#userCollaboratorsInput',
+        {
+            ok: function (value) {
+                log_event('userCollaboratorsInput - ok', LogLevel.Trace);
+                Meteor.users.update(Meteor.userId(), {$set: { 'profile.collaborators': value }});
+                Session.set('editing_profile_collaborators', "false");
+                //Meteor.flush(); // update DOM before focus
+            },
+            cancel: function () {
+                log_event('userCollaboratorsInput - cancel', LogLevel.Trace);
+                Session.set('editing_profile_collaborators', "false");
+            }
+        })
+);
 Template.profilePageTemplate.events(
     okCancelEvents('#userAvatarInput',
         {
@@ -99,25 +99,26 @@ Template.profilePageTemplate.events({
         Meteor.flush(); // update DOM before focus
         activateInput(tmpl.find("#profile-input-email"));
     },
-    'dblclick .userNameDisplay': function (evt, tmpl) {
+    'click .userNameDisplay': function (evt, tmpl) {
         Session.set('editing_profile_name', "true");
         Meteor.flush(); // update DOM before focus
         activateInput(tmpl.find("#profile-input-name"));
     },
-    'dblclick .userDateOfBirthDisplay': function (evt, tmpl) {
+    'click .userDateOfBirthDisplay': function (evt, tmpl) {
         Session.set('editing_profile_birthdate', "true");
         Meteor.flush(); // update DOM before focus
         activateInput(tmpl.find("#profile-input-birth-date"));
     },
-    'dblclick .userAvatarDisplay': function (evt, tmpl) {
+    'click .userAvatarDisplay': function (evt, tmpl) {
         Session.set('editing_profile_avatar', "true");
         Meteor.flush(); // update DOM before focus
         activateInput(tmpl.find("#profile-input-avatar"));
-    },//    'dblclick .userCollaboratorsDisplay': function (evt, tmpl) {
-//        Session.set('editing_profile_collaborators', "true");
-//        Meteor.flush(); // update DOM before focus
-//        activateInput(tmpl.find("#profile-input-collaborator"));
-//    },
+    },
+    'click .userCollaboratorsDisplay': function (evt, tmpl) {
+        Session.set('editing_profile_collaborators', "true");
+        Meteor.flush(); // update DOM before focus
+        activateInput(tmpl.find("#profile-input-collaborator"));
+    },
     'change input': function(ev) {
         _.each(ev.srcElement.files, function(file) {
             Meteor.saveFile(file, file.name);
@@ -130,7 +131,7 @@ Template.profilePageTemplate.user_name = function () {
         if(Meteor.user().profile){
             return Meteor.user().profile.name;
         }else{
-            return "Meteor.user().profile not available right now."
+            return "User profile not created yet."
         }
     }
     catch(err){
@@ -168,7 +169,7 @@ Template.profilePageTemplate.user_birthdate = function () {
         if(Meteor.user().profile){
             return Meteor.user().profile.dateOfBirth;
         }else{
-            return "User birthdate not available right now.";
+            return "User profile not created yet."
         }
     }
     catch(err){
@@ -180,20 +181,23 @@ Template.profilePageTemplate.user_avatar = function () {
         if(Meteor.user().profile){
             return Meteor.user().profile.avatar;
         }else{
-            return "User birthdate not available right now.";
+            return "User profile not created yet."
         }
     }
     catch(err){
         log_event(err, LogLevel.Error);
     }
 };
-//Template.profilePageTemplate.user_collaborators = function () {
-//    if(Meteor.user().profile){
-//        return Meteor.user().profile.collaborators;
-//    }else{
-//        return "List of collaborators not available right now.";
-//    }
-//};
+Template.profilePageTemplate.user_collaborators = function () {
+    // Meteor.user().profile breaks when user is logged out
+    if(Meteor.user()){
+        if(Meteor.user().profile){
+            return Meteor.user().profile.collaborators;
+        }
+    }else{
+        return "List of collaborators not available right now.";
+    }
+};
 
 Template.profilePageTemplate.user_json = function () {
     var selectedUser = Meteor.user();
@@ -202,7 +206,11 @@ Template.profilePageTemplate.user_json = function () {
 Template.profilePageTemplate.user_image = function () {
     try{
         var src = "images/placeholder-240x240.gif";
-        if(Meteor.user()){
+
+        // CONFLICT?
+        // this wants to be Meteor.user().profile so the default image displays if there's no profile
+        // but, I think it's also causing crashes elsewhere if the Meteor.
+        if(Meteor.user().profile){
             src = "userspace/avatars/" +  Meteor.user().profile.avatar;
         }
         log_event('profile avatar src: ' + src, LogLevel.Info);
@@ -213,7 +221,16 @@ Template.profilePageTemplate.user_image = function () {
     }
 };
 
+// --------------------------------------------------------
+// LOGGED IN, ETC
 
+Template.profilePageTemplate.loggedIn = function () {
+    if(Meteor.userId()){
+        return true;
+    }else{
+        return false;
+    }
+};
 // --------------------------------------------------------
 // SELECT AVATAR - DRAG, DROP, & FILE SAVE FUNCTIONS
 
@@ -285,6 +302,7 @@ Template.profilePageTemplate.rendered = function () {
         evt.preventDefault();
         evt.dataTransfer.dropEffect = 'copy'; // Explicitly show this is a copy.
     }
+
 
 
 

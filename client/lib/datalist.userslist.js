@@ -56,7 +56,27 @@ Template.userslist.user_count = function () {
     var usersList = Meteor.users.find();
     return usersList.count();
 };
-
+Template.userslist.collaborators = function () {
+    log_event('Template.userslist.user_count', LogLevel.Trace);
+    // Meteor.user().profile breaks when user is logged out
+    if(Meteor.user()){
+        if(Meteor.user().profile){
+            return Meteor.user().profile.collaborators;
+        }
+    }else{
+        return 'Collaborators unavailable.';
+    }
+};
+Template.userslist.collaborators_count = function () {
+    // Meteor.user().profile breaks when user is logged out
+    if(Meteor.user()){
+        if(Meteor.user().profile){
+            return Meteor.user().profile.collaborators.length;
+        }
+    }else{
+        return 'Unavailable.';
+    }
+};
 
 Template.userslist.users = function () {
     // Determine which todos to display in main pane,
