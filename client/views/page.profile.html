@@ -37,6 +37,12 @@
                                     <li id="userDateOfBirthDisplay" class="userDateOfBirthDisplay display"><span id="profile-display-birth-date" class="profile-item">Birthdate - {{user_birthdate}}</span></li>
                                     {{/if}}
 
+                                    {{#if editing_avatar}}
+                                    <li id="userAvatarInput" class="edit"><input id="profile-input-avatar" type="text" placeholder="Full Name" value="{{user_avatar}}" /></li>
+                                    {{else}}
+                                    <li id="userAvatarDisplay" class="userAvatarDisplay display"><span id="profile-display-avatar" class="profile-item">Avatar - {{user_avatar}}</span></li>
+                                    {{/if}}
+
                                     <!--{{#if editing_collaborators}}-->
                                     <!--<li id="userCollaboratorsInput" class="edit"><input id="profile-input-collaborator" type="text" placeholder="Full Name" value="{{user_collaborators}}" /></li>-->
                                     <!--{{else}}-->

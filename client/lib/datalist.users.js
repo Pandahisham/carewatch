@@ -119,7 +119,12 @@ Template.user_item.userHealthRank = function () {
 };
 Template.user_item.user_image = function () {
     log_event('Template.user_item.user_image', LogLevel.Trace);
-    return getUserAvatar();
+    var src = "images/placeholder-240x240.gif";
+    if(this.profile){
+        src = "userspace/avatars/" + this.profile.avatar;
+    }
+    log_event('profile avatar src: ' + src, LogLevel.Info);
+    return src;
 };
 //Template.players.isMemberOf = function (userRole) {
 //    return this.userRole === userRole;
@@ -129,13 +134,3 @@ function toInteger(number){
         Number(number)    // type cast your input
     );
 };
-function getUserAvatar(){
-    var src;
-    if(Meteor.user() != null){
-        src = "userspace/avatars/" + Meteor.user()._id + ".jpg";
-    }else{
-        src = "images/placeholder-240x240.gif";
-    }
-    log_event('profile avatar src: ' + src, LogLevel.Info);
-    return src;
-}
