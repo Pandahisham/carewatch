@@ -26,5 +26,7 @@ Meteor.methods({
                 console.log('The file ' + name + ' (' + encoding + ') was saved to ' + path);
             }
         });
+
+
     }
 });
