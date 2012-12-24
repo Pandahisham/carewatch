@@ -238,6 +238,8 @@ Template.profilePageTemplate.loggedIn = function () {
 
 Template.profilePageTemplate.rendered = function () {
 
+    jQuery('#profilePage').css('min-height', window.innerHeight);
+
     // Check for the various File API support.
     if (window.File && window.FileReader && window.FileList && window.Blob) {
         log_event("All the File APIs are supported in this browser.", LogLevel.Notice);

@@ -4,7 +4,8 @@ body, html{
 .ui-mobile, .ui-page{
     min-width: 800px;
 }
-
+.page{
+}
 
 ul {
     list-style: none;

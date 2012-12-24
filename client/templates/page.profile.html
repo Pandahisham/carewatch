@@ -1,5 +1,5 @@
 <template name="profilePageTemplate">
-    <div data-role="page" id="profilePage">
+    <div class="page" data-role="page" id="profilePage">
 
         {{#if loggedIn}}
             <div class="doesnt-overlap-header row">
@@ -88,9 +88,6 @@
 
 
                             </ul>
-                            <!--<textarea rows="4" type="text" id="guest-todo" placeholder="Be sure to include symptoms, history, and your contact information...." />-->
-
-
 
                     </div>
                     <div class="spacer row"></div>
@@ -102,7 +99,7 @@
 
         {{else }}
         <div class="doesnt-overlap-header">
-            {{> guest_page }}
+            {{> guestPageTemplate }}
         </div>
         {{/if }}
     </div>

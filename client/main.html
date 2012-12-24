@@ -10,42 +10,29 @@
             <li style="position: fixed; right: 0px;"><a href="#">{{loginButtons align="right"}}</a></li>
         </ul>
     </div>
+
     <div id="footerActionBar" data-role="footer" data-theme="none" class="nav-bar">
         <ul class="nav-bar footer-nav-bar">
-            <!--<li><a href="#connectPage" data-name="connectPageLink" data-transition="slide">Connect</a></li>-->
             <li><a href="#historyPage" onclick="showHistoryPage();">Health History</a></li>
             <li><a href="#communityPage" onclick="showCommunityPage();">Community</a></li>
             <li><a href="#profilePage" onclick="showProfilePage();">User Profile</a></li>
-            <li><a href="#newsPage" class="hidden" onclick="showHistoryPage();">Dashboard</a></li>
+            <li><a href="#newsPage" onclick="showNewsPage();">News</a></li>
         </ul>
     </div>
-    <!--<div class="data-page" data-role="page" id="homePage">-->
-
-    <!--</div>-->
-
-    {{> profilePageTemplate }}
-    {{> historyPageTemplate }}
-    {{> communityPageTemplate }}
-    {{> visualizationPageTemplate }}
-
+    {{> app_container }}
 </body>
 
 <template name="app_container">
     {{#if loggedIn}}
-    {{> home_page }}
-    {{else }}
-    {{> guest_page }}
+        {{> profilePageTemplate }}
+        {{> visualizationPageTemplate }}
+        {{> historyPageTemplate }}
+        {{> communityPageTemplate }}
+    {{else}}
+        {{> guestPageTemplate }}
     {{/if }}
 </template>
 
-<template name="home_page">
-    <div class="row">
-        {{> health_entries}}
-    </div>
-    <div class="hide-for-medium hide-for-small sidebar">
-        {{> tag_filter}}
-    </div>
-</template>
 
 
 <template name="tag_filter">
@@ -54,7 +41,7 @@
         {{#each tags}}
         <li class="tag {{selected}}">
             {{tag_text}} <span class="count">({{count}})</span>
-        </il>
+        </li>
         {{/each}}
     </ul>
   </div>
