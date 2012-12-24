@@ -23,7 +23,7 @@ Template.profilePageTemplate.events(
         {
             ok: function (value) {
                 log_event('userCollaboratorsInput - ok', LogLevel.Trace);
-                Meteor.users.update(Meteor.userId(), {$set: { 'profile.collaborators': value }});
+                Meteor.users.update(Meteor.userId(), {$set: { 'profile.collaborators': [{address: value}, {address: 'foo@bar.com'}] }});
                 Session.set('editing_profile_collaborators', "false");
                 //Meteor.flush(); // update DOM before focus
             },

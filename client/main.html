@@ -2,39 +2,45 @@
   <title>Mongo Data Browser</title>
 </head>
 
-
 <body>
+    {{> app_container }}
+</body>
+
+<template name="app_container">
+    {{> headerBarTemplate }}
+    {{!#if headerBarTemplate}}
+        {{> profilePageTemplate }}
+        {{> visualizationPageTemplate }}
+        {{> historyPageTemplate }}
+        {{> communityPageTemplate }}
+        {{> footerBarTemplate }}
+    {{!else}}
+        {{!> guestPageTemplate }}
+    {{!/if }}
+</template>
+
+<template name="headerBarTemplate">
     <div id="headerBar" data-role="header" data-theme="none">
         <ul class="nav-bar header-nav-bar">
             <li><a href="#">healthrecord.herokuapp.com</a></li>
             <li style="position: fixed; right: 0px;"><a href="#">{{loginButtons align="right"}}</a></li>
         </ul>
     </div>
-
+</template>
+<template name="footerBarTemplate">
     <div id="footerActionBar" data-role="footer" data-theme="none" class="nav-bar">
         <ul class="nav-bar footer-nav-bar">
-            <li><a href="#historyPage" onclick="showHistoryPage();">Health History</a></li>
+            <li><a href="#historyPage" onclick="showHistoryPage();">Health Diary</a></li>
             <li><a href="#communityPage" onclick="showCommunityPage();">Community</a></li>
             <li><a href="#profilePage" onclick="showProfilePage();">User Profile</a></li>
             <li><a href="#newsPage" onclick="showNewsPage();">News</a></li>
+            <li><a href="#newsPage" onclick="">Dashboard</a></li>
+            <li><a href="#newsPage" onclick="">Lifeline</a></li>
+            <li><a href="#newsPage" onclick="">SNOMED</a></li>
+            <li><a href="#newsPage" onclick="">ICD10</a></li>
         </ul>
     </div>
-    {{> app_container }}
-</body>
-
-<template name="app_container">
-    {{#if loggedIn}}
-        {{> profilePageTemplate }}
-        {{> visualizationPageTemplate }}
-        {{> historyPageTemplate }}
-        {{> communityPageTemplate }}
-    {{else}}
-        {{> guestPageTemplate }}
-    {{/if }}
 </template>
-
-
-
 <template name="tag_filter">
   <div id="tag-filter" class="tag-list">
     <ul class="tag-list">
