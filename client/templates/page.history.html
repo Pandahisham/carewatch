@@ -1,7 +1,12 @@
 <template name="historyPageTemplate">
-    <div data-role="page" id="historyPage">
+    <div class="page" data-role="page" id="historyPage">
         <div class="doesnt-overlap-header">
-            {{> app_container }}
+            <div class="hide-for-medium hide-for-small sidebar">
+                {{> tag_filter}}
+            </div>
+            <div class="row">
+                {{> health_entries}}
+            </div>
         </div>
     </div>
 </template>

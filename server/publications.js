@@ -53,6 +53,8 @@ Meteor.publish('userProfile', function (userId) {
         'profile': 1,
         'profile.name': 1,
         'profile.avatar': 1,
+        'profile.collaborators': 1,
+        'profile.currentPage': 1,
         'emails': 1,
         'emails[0].address': 1
     }});

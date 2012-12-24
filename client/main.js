@@ -25,12 +25,11 @@ Session.set('current_page', null);
 
 
 Template.app_container.loggedIn = function () {
-    console.log('loggedIn called');
     if(Meteor.userId()){
-        console.log('Meteor.userId(): ' + Meteor.userId());
+        log_event('Meteor.userId(): ' + Meteor.userId(), LogLevel.Info);
         return true;
     }else{
-        console.log('Meteor.userId() is null');
+        log_event('Meteor.userId() is null.', LogLevel.Info);
         return false;
     }
 };
@@ -39,6 +38,7 @@ Template.app_container.loggedIn = function () {
 
 Meteor.startup(function () {
     Backbone.history.start({pushState: true});
+
     hidePages();
-    showProfilePage();
+    showHistoryPage();
 });

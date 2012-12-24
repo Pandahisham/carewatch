@@ -13,7 +13,20 @@
    [class*="column"] + [class*="column"].end { float: left; }
 
 }
+
+// smaller than ipad in portrait rotation
+// (i.e. phones)
 @media only screen and (max-width: 768px) {
+    .user-card{
+      height: 50px;
+    }
+    .drop-zone{
+      width: 100%;
+    }
+    .columns{
+      padding: 0px !important;
+      margin: 0px;
+    }
     .footer-nav-bar{
         position: fixed;
         bottom: 0px;

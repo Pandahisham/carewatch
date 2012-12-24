@@ -1,66 +1,106 @@
 <template name="profilePageTemplate">
-    <div data-role="page" id="profilePage">
+    <div class="page" data-role="page" id="profilePage">
 
+        {{#if loggedIn}}
+            <div class="doesnt-overlap-header row">
+                <h4 class="padded-horizontal">User Profile</h4>
+            </div>
 
-                <div class="doesnt-overlap-header row">
-                    <h4 class="padded-horizontal">User Profile</h4>
+            <div class="row">
+                <div class="two columns">
+                    <img class="dotted drop-zone with-rounded-corners" id="drop_zone" src="{{user_image}}" />
+                    <p class="centered image-selection-text">Image Selection</p>
+
+                    <input class="hidden" type="file" id="import_files_input" name="files[]"  />
                 </div>
+                <div class="ten columns">
+                    <div class="panel row">
+                        <span class="card-northwest green card-meta-data">{{user_id}}</span>
+                        <span class="userEmailDisplay card-northeast card-meta-data">{{user_email}}</span></li>
 
-                    <div class="row">
-                        <div class="two columns">
-                            <img class="dotted drop-zone with-rounded-corners" id="drop_zone" src="{{user_image}}" />
-                            <p class="centered image-selection-text">Image Selection</p>
+                            <ul id="profileItems" class="profile-items card-data dictionary">
 
-                            <input class="hidden" type="file" id="import_files_input" name="files[]"  />
-                        </div>
-                        <div class="ten columns">
-                            <div class="panel row">
-                                <ul id="profileItems" class="profile-items">
 
-                                    <li class="display"><span class="profile-item">{{user_id}}</span></li>
+                                <!--{{#if editing_email}}-->
+                                <!--<li id="userEmailInput"  class="card-northeast edit"><input id="profile-input-email" type="text" placeholder="email" value="{{user_email}}" /></li>-->
+                                <!--{{else}}-->
+                                <!--<li id="userEmailDisplay" class="userEmailDisplay card-northeast display"><span class="profile-item">{{user_email}}</span></li>-->
+                                <!--{{/if}}-->
 
-                                    {{#if editing_email}}
-                                    <li id="userEmailInput"  class="edit"><input id="profile-input-email" type="text" placeholder="email" value="{{user_email}}" /></li>
-                                    {{else}}
-                                    <li id="userEmailDisplay" class="userEmailDisplay display"><span class="profile-item">{{user_email}}</span></li>
-                                    {{/if}}
-
+                                <li>
+                                    <span id="profile-display-name-label" class="dictionary-key">Name</span>
                                     {{#if editing_name}}
-                                    <li id="userNameInput" class="edit"><input id="profile-input-name" type="text" placeholder="Full Name" value="{{user_name}}" /></li>
+                                    <div id="userNameInput" class="edit dictionary-value-editing">
+                                        <input id="profile-input-name" type="text" placeholder="Jane Doe" value="{{user_name}}" />
+                                    </div>
                                     {{else}}
-                                    <li id="userNameDisplay" class="userNameDisplay display"><span id="profile-display-name" class="profile-item">Name - {{user_name}}</span></li>
+                                    <div id="userNameDisplay" class="userNameDisplay display dictionary-value-editing">
+                                        <span id="profile-display-name" class="dictionary-value">{{user_name}}</span>
+                                    </div>
                                     {{/if}}
+                                </li>
 
+                                <li >
+                                    <span id="profile-display-birthdate-label" class="dictionary-key">Birthdate</span>
                                     {{#if editing_birthdate}}
-                                    <li id="userDateOfBirthInput" class="edit"><input id="profile-input-birth-date" type="text" placeholder="Full Name" value="{{user_birthdate}}" /></li>
+                                    <div id="userDateOfBirthInput" class="edit dictionary-value-editing">
+                                        <input id="profile-input-birth-date" type="text" placeholder="1969/01/27" value="{{user_birthdate}}" />
+                                    </div>
                                     {{else}}
-                                    <li id="userDateOfBirthDisplay" class="userDateOfBirthDisplay display"><span id="profile-display-birth-date" class="profile-item">Birthdate - {{user_birthdate}}</span></li>
+                                    <div id="userDateOfBirthDisplay" class="userDateOfBirthDisplay display dictionary-value-editing">
+                                        <span id="profile-display-birth-date" class="dictionary-value">{{user_birthdate}}</span>
+                                    </div>
                                     {{/if}}
+                                </li>
 
+                                <li>
+                                    <span id="profile-display-avatar-label" class="dictionary-key">Avatar</span>
                                     {{#if editing_avatar}}
-                                    <li id="userAvatarInput" class="edit"><input id="profile-input-avatar" type="text" placeholder="Full Name" value="{{user_avatar}}" /></li>
+                                    <div id="userAvatarInput" class="edit dictionary-value-editing">
+                                        <input id="profile-input-avatar" type="text" placeholder="28371d8c-42be-4a67-83aa-27a863fe9060.png" value="{{user_avatar}}" />
+                                    </div>
                                     {{else}}
-                                    <li id="userAvatarDisplay" class="userAvatarDisplay display"><span id="profile-display-avatar" class="profile-item">Avatar - {{user_avatar}}</span></li>
+                                    <div id="userAvatarDisplay" class="userAvatarDisplay display dictionary-value-editing">
+                                        <span id="profile-display-avatar" class="dictionary-value">{{user_avatar}}</span>
+                                    </div>
                                     {{/if}}
+                                </li>
 
-                                    <!--{{#if editing_collaborators}}-->
-                                    <!--<li id="userCollaboratorsInput" class="edit"><input id="profile-input-collaborator" type="text" placeholder="Full Name" value="{{user_collaborators}}" /></li>-->
-                                    <!--{{else}}-->
-                                    <!--<li id="userCollaboratorsDisplay" class="userCollaboratorsDisplay display"><span id="profile-display-collaborator" class="profile-item">Collaborators - {{user_collaborators}}</span></li>-->
-                                    <!--{{/if}}-->
+                                <li>
+                                    <span id="profile-display-collaborators-label" class="dictionary-key hidden-bottom-row">Collaborators</span>
+                                    {{#if editing_collaborators}}
+                                    <div id="userCollaboratorsInput" class="edit dictionary-value-editing hidden-bottom-row">
+                                        <input id="profile-input-collaborators" type="text" placeholder="somebody@somewhere.com" value="{{user_collaborators}}" />
+                                    </div>
+                                    {{else}}
+                                    <div id="userCollaboratorsDisplay" class="userCollaboratorsDisplay display dictionary-value-editing">
+                                        <span id="profile-display-collaborators" class="dictionary-value hidden-bottom-row">{{user_collaborators}}</span>
+                                    </div>
+                                    {{/if}}
+                                </li>
 
 
-                                </ul>
-                                <!--<textarea rows="4" type="text" id="guest-todo" placeholder="Be sure to include symptoms, history, and your contact information...." />-->
+                                <!--{{#if editing_collaborators}}-->
+                                <!--<li id="userCollaboratorsInput" class="edit"><input id="profile-input-collaborator" type="text" placeholder="Full Name" value="{{user_collaborators}}" /></li>-->
+                                <!--{{else}}-->
+                                <!--<li id="userCollaboratorsDisplay" class="userCollaboratorsDisplay display"><span id="profile-display-collaborator" class="profile-item">Collaborators - {{user_collaborators}}</span></li>-->
+                                <!--{{/if}}-->
 
-                            </div>
-                            <div class="spacer row"></div>
-                            <div id="json-content" class="row panel">
-                                {{ user_json }}
-                            </div>
-                        </div>
+
+                            </ul>
+
                     </div>
+                    <div class="spacer row"></div>
+                    <div id="json-content" class="row panel notepad">
+                        {{ user_json }}
+                    </div>
+                </div>
+            </div>
 
-
+        {{else }}
+        <div class="doesnt-overlap-header">
+            {{> guestPageTemplate }}
+        </div>
+        {{/if }}
     </div>
 </template>
