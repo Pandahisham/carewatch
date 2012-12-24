@@ -1,7 +1,6 @@
 <template name="profilePageTemplate">
     <div class="page" data-role="page" id="profilePage">
 
-        {{#if loggedIn}}
             <div class="doesnt-overlap-header row">
                 <h4 class="padded-horizontal">User Profile</h4>
             </div>
@@ -97,10 +96,5 @@
                 </div>
             </div>
 
-        {{else }}
-        <div class="doesnt-overlap-header">
-            {{> guestPageTemplate }}
-        </div>
-        {{/if }}
     </div>
 </template>

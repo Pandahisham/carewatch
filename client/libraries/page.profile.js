@@ -304,13 +304,4 @@ Template.profilePageTemplate.rendered = function () {
         evt.preventDefault();
         evt.dataTransfer.dropEffect = 'copy'; // Explicitly show this is a copy.
     }
-
-
-
-
-<<<<<<< HEAD:client/libraries/page.profile.js
 };
-=======
-
-};
->>>>>>> feature-avatars:client/lib/page.profile.js
