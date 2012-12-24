@@ -95,6 +95,10 @@ Template.communityPageTemplate.users = function () {
 
 
 Template.userItemTemplate.events({
+    'click .user-card': function () {
+        alert('click!');
+    },
+
     'click .check': function () {
         //Meteor.users.update(this._id, {$set: {done: !this.done}});
     },

@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6af491ff-1daf-446b-9c77-0fbce59cf6d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/templates/datalist.useritem.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/templates/page.community.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/lib/page.community.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/datalist.userslist.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/page.community.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/categories.html" afterPath="$PROJECT_DIR$/client/templates/categories.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/datalist.health.events.html" afterPath="$PROJECT_DIR$/client/templates/datalist.health.events.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page.guest.html" afterPath="$PROJECT_DIR$/client/templates/page.guest.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page.history.html" afterPath="$PROJECT_DIR$/client/templates/page.history.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page.profile.html" afterPath="$PROJECT_DIR$/client/templates/page.profile.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page.visualization.html" afterPath="$PROJECT_DIR$/client/templates/page.visualization.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/datalist.userslist.js" afterPath="$PROJECT_DIR$/client/lib/datalist.userslist.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.profile.js" afterPath="$PROJECT_DIR$/client/lib/page.profile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/pages.community.less" afterPath="$PROJECT_DIR$/client/stylesheets/pages.community.less" />
     </list>
     <ignored path="second-opinion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,7 +45,16 @@
       <file leaf-file-name="datalist.userslist.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/lib/datalist.userslist.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="146" column="42" selection-start="4863" selection-end="4863" vertical-scroll-proportion="0.89836663">
+            <state line="98" column="21" selection-start="3242" selection-end="3242" vertical-scroll-proportion="0.68058074">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pages.community.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.community.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="18" selection-start="538" selection-end="538" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -109,14 +107,14 @@
         <option value="$PROJECT_DIR$/server/publish.js" />
         <option value="$PROJECT_DIR$/client/views/page.profile.html" />
         <option value="$PROJECT_DIR$/client/stylesheets/lists.card.less" />
-        <option value="$PROJECT_DIR$/client/stylesheets/pages.community.less" />
         <option value="$PROJECT_DIR$/client/views/page.guest.html" />
         <option value="$PROJECT_DIR$/client/views/page.community.html" />
         <option value="$PROJECT_DIR$/client/views/datalist.userslist.html" />
         <option value="$PROJECT_DIR$/client/templates/datalist.userslist.html" />
         <option value="$PROJECT_DIR$/client/templates/page.community.html" />
-        <option value="$PROJECT_DIR$/client/lib/datalist.userslist.js" />
         <option value="$PROJECT_DIR$/client/lib/page.profile.js" />
+        <option value="$PROJECT_DIR$/client/stylesheets/pages.community.less" />
+        <option value="$PROJECT_DIR$/client/lib/datalist.userslist.js" />
       </list>
     </option>
   </component>
@@ -195,14 +193,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="userspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="avatars" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -347,11 +337,11 @@
       <recent name="$PROJECT_DIR$/client/views" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/public/icons" />
       <recent name="$PROJECT_DIR$/client/lib/helpers" />
       <recent name="$PROJECT_DIR$/lib" />
-      <recent name="$PROJECT_DIR$/public/icons" />
       <recent name="$PROJECT_DIR$/server" />
-      <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
   <component name="RunManager">
@@ -522,13 +512,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.community.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="1" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.guest.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -557,13 +540,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/datalist.useritem.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="32" selection-start="16" selection-end="32" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="206" column="8" selection-start="7540" selection-end="7540" vertical-scroll-proportion="0.0">
@@ -588,9 +564,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.community.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="18" selection-start="538" selection-end="538" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/datalist.useritem.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="32" selection-start="16" selection-end="32" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/lib/datalist.userslist.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="42" selection-start="4863" selection-end="4863" vertical-scroll-proportion="0.89836663">
+        <state line="98" column="21" selection-start="3242" selection-end="3242" vertical-scroll-proportion="0.68058074">
           <folding />
         </state>
       </provider>
