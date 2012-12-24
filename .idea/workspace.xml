@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6af491ff-1daf-446b-9c77-0fbce59cf6d4" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/lib/datalist.users.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/lib/tag-filter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/templates/datalist.users.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/datalist.userslist.js" afterPath="$PROJECT_DIR$/client/libraries/datalist.userslist.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/page.guest.js" afterPath="$PROJECT_DIR$/client/libraries/page.guest.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/tagfilter.js" afterPath="$PROJECT_DIR$/client/libraries/tagfilter.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/datalist.useritem.html" afterPath="$PROJECT_DIR$/client/templates/datalist.useritem.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page.newsfeed.html" afterPath="$PROJECT_DIR$/client/templates/page.newsfeed.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/libraries/navigation.links.js" afterPath="$PROJECT_DIR$/client/libraries/navigation.links.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/libraries/page.profile.js" afterPath="$PROJECT_DIR$/client/libraries/page.profile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/page.profile.html" afterPath="$PROJECT_DIR$/client/templates/page.profile.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.html" afterPath="$PROJECT_DIR$/client/main.html" />
     </list>
     <ignored path="second-opinion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,7 +26,7 @@
       <file leaf-file-name="main.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="36" selection-start="332" selection-end="332" vertical-scroll-proportion="0.26770538">
+            <state line="1" column="36" selection-start="43" selection-end="43" vertical-scroll-proportion="0.02124646">
               <folding>
                 <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#template#1;n#!!top" expanded="true" />
               </folding>
@@ -464,7 +454,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="36" selection-start="332" selection-end="332" vertical-scroll-proportion="0.26770538">
+        <state line="1" column="36" selection-start="43" selection-end="43" vertical-scroll-proportion="0.02124646">
           <folding>
             <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#template#1;n#!!top" expanded="true" />
           </folding>
