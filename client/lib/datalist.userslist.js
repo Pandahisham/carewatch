@@ -1,12 +1,11 @@
 ////////// Users List //////////
 
-Template.userslist.rendered = function (){
-    var options = {
+Template.communityPageTemplate.rendered = function (){
+    var communityList = new List('community-members-list', {
         valueNames: [ 'user-email', 'user-posts', 'user-rank' ]
-    };
-    var communityList = new List('community-members-list', options);
+    });
 };
-Template.userslist.events(okCancelEvents(
+Template.communityPageTemplate.events(okCancelEvents(
     '#new-user',
     {
         ok: function (text, evt) {
@@ -51,12 +50,12 @@ Template.userslist.events(okCancelEvents(
 );
 
 
-Template.userslist.user_count = function () {
+Template.communityPageTemplate.user_count = function () {
     log_event('Template.userslist.user_count', LogLevel.Trace);
     var usersList = Meteor.users.find();
     return usersList.count();
 };
-Template.userslist.collaborators = function () {
+Template.communityPageTemplate.collaborators = function () {
     log_event('Template.userslist.user_count', LogLevel.Trace);
     // Meteor.user().profile breaks when user is logged out
     if(Meteor.user()){
@@ -67,7 +66,7 @@ Template.userslist.collaborators = function () {
         return 'Collaborators unavailable.';
     }
 };
-Template.userslist.collaborators_count = function () {
+Template.communityPageTemplate.collaborators_count = function () {
     // Meteor.user().profile breaks when user is logged out
     if(Meteor.user()){
         if(Meteor.user().profile){
@@ -78,7 +77,7 @@ Template.userslist.collaborators_count = function () {
     }
 };
 
-Template.userslist.users = function () {
+Template.communityPageTemplate.users = function () {
     // Determine which todos to display in main pane,
     // selected based on list_id and tag_filter.
 
@@ -95,7 +94,7 @@ Template.userslist.users = function () {
 };
 
 
-Template.user_item.events({
+Template.userItemTemplate.events({
     'click .check': function () {
         //Meteor.users.update(this._id, {$set: {done: !this.done}});
     },
@@ -104,40 +103,37 @@ Template.user_item.events({
         //Meteor.users.remove(this._id);
     },
     'dblclick .display .todo-text': function (evt, tmpl) {
-        //Session.set('editing_itemname', this._id);
-        //Meteor.flush(); // update DOM before focus
-        //activateInput(tmpl.find("#todo-input"));
     }
 });
 
-Template.user_item.events(okCancelEvents(
-    '#todo-input',
-    {
-        ok: function (value) {
-            //Meteor.users.update(this._id, {$set: {text: value}});
-            //Session.set('editing_itemname', null);
-        },
-        cancel: function () {
-            //Session.set('editing_itemname', null);
-        }
-}));
-Template.user_item.userEmail = function () {
+//Template.userItemTemplate.events(okCancelEvents(
+//    '#todo-input',
+//    {
+//        ok: function (value) {
+//            //Meteor.users.update(this._id, {$set: {text: value}});
+//            //Session.set('editing_itemname', null);
+//        },
+//        cancel: function () {
+//            //Session.set('editing_itemname', null);
+//        }
+//}));
+Template.userItemTemplate.userEmail = function () {
     log_event('Template.user_item.userEmail', LogLevel.Trace);
     return this.emails[0].address;
 };
-Template.user_item.userHealthEntries = function () {
+Template.userItemTemplate.userHealthEntries = function () {
     log_event('Template.user_item.userHealthEntries', LogLevel.Trace);
     return toInteger(Math.random() * 25000);
 };
-Template.userslist.userNetworkSize = function () {
+Template.userItemTemplate.userNetworkSize = function () {
     log_event('Template.user_item.userNetworkSize', LogLevel.Trace);
     return toInteger(Math.random() * 240);
 };
-Template.user_item.userHealthRank = function () {
+Template.userItemTemplate.userHealthRank = function () {
     log_event('Template.user_item.userHealthRank', LogLevel.Trace);
     return toInteger(Math.random() * 100);
 };
-Template.user_item.user_image = function () {
+Template.userItemTemplate.user_image = function () {
     log_event('Template.user_item.user_image', LogLevel.Trace);
     var src = "images/placeholder-240x240.gif";
     if(this.profile){
@@ -146,11 +142,13 @@ Template.user_item.user_image = function () {
     log_event('profile avatar src: ' + src, LogLevel.Info);
     return src;
 };
+
+
 //Template.players.isMemberOf = function (userRole) {
 //    return this.userRole === userRole;
 //};
 function toInteger(number){
-    return Math.round(  // round to nearest integer
-        Number(number)    // type cast your input
+    return Math.round(
+        Number(number)
     );
 };

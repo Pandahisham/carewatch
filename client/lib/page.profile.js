@@ -211,7 +211,7 @@ Template.profilePageTemplate.user_image = function () {
         // this wants to be Meteor.user().profile so the default image displays if there's no profile
         // but, I think it's also causing crashes elsewhere if the Meteor.
         if(Meteor.user().profile){
-            src = "userspace/avatars/" +  Meteor.user().profile.avatar;
+            src = $.trim("userspace/avatars/" +  Meteor.user().profile.avatar);
         }
         log_event('profile avatar src: ' + src, LogLevel.Info);
         return src;
