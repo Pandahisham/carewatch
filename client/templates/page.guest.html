@@ -1,23 +1,24 @@
 <template name="guestPageTemplate">
-    <div class="row">
-        <div class="six columns">
-            <img id="guestPageMainImage" class="guestPageImage" src="images/grays.anatomy/arteriesAndVeinsOfNeck.png" />
+    <div id="guestPage"  class="page">
+        <div class="row">
+            <div class="six columns">
+                <img id="guestPageMainImage" class="guestPageImage" src="images/grays.anatomy/arteriesAndVeinsOfNeck.png" />
+            </div>
+            <div class="six columns">
+                <h2 id="guestPageTitle" class="guestPageTitle">Symptomatic</h2>
+            </div>
         </div>
     </div>
-    <div class="row">
-        <div class="six columns">
-        </div>
+
+    <div id="guestFooter" data-role="footer" data-theme="none" class="nav-bar bottom-anchor">
+        <ul class="nav-bar footer-nav-bar">
+            <li><a href="#aboutPage" onclick="showPage('#aboutPage');">About</a></li>
+            <li><a href="#featuresPage" onclick="showPage('#featuresPage');">Features</a></li>
+            <li><a href="#roadmapPage" onclick="showPage('#roadmapPage');">Roadmap</a></li>
+            <li><a href="#changelogPage" onclick="showPage('#changelogPage');">Changelog</a></li>
+            <li><a href="#contactPage" onclick="showPage('#contactPage');">Contact</a></li>
+        </ul>
     </div>
 </template>
 
 
-
-<template name="guest_page">
-    <div class="row" style="margin-top: 40px;">
-        <div class="twelve columns">
-            <p>
-                {{> guest_todos }}
-            </p>
-        </div>
-    </div>
-</template>

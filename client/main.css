@@ -105,14 +105,14 @@ h3 {
     top: 0px;
     margin-bottom: 0px;
     padding-bottom: 0px;
-    width: 100%;
     visibility: visible;
     height: 40px;
-}
-#footerActionBar{
-    position: fixed;
-    bottom: 0px;
     height: 40px;
     width: 100%;
     z-index: 1000;
+}
+.bottom-anchor{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
 }

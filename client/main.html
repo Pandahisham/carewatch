@@ -1,6 +1,5 @@
 <head>
   <title>Clinical Social Network App</title>
-  <!--<script src="http://api.filepicker.io/v0/filepicker.js"></script>-->
 </head>
 
 <body>
@@ -9,36 +8,46 @@
 
 <template name="app_container">
     {{> headerBarTemplate }}
-    {{!#if headerBarTemplate}}
+    {{#if loggedIn}}
         {{> profilePageTemplate }}
         {{> visualizationPageTemplate }}
         {{> historyPageTemplate }}
         {{> communityPageTemplate }}
+        {{> lifelinePageTemplate }}
+        {{> newsPageTemplate }}
+        {{> snomedPageTemplate }}
+        {{> icd10PageTemplate }}
+        {{> dashboardPageTemplate }}
         {{> footerBarTemplate }}
-    {{!else}}
-        {{!> guestPageTemplate }}
-    {{!/if }}
+    {{else}}
+        {{> guestPageTemplate }}
+        {{> contactPageTemplate }}
+        {{> changelogPageTemplate }}
+        {{> aboutPageTemplate }}
+        {{> roadmapPageTemplate }}
+        {{> featuresPageTemplate }}
+    {{/if }}
 </template>
 
 <template name="headerBarTemplate">
     <div id="headerBar" data-role="header" data-theme="none">
         <ul class="nav-bar header-nav-bar">
-            <li><a href="#">healthrecord.herokuapp.com</a></li>
+            <li><a href="#guestPage" onclick="showPage('#guestPage');">healthrecord.herokuapp.com</a></li>
             <li style="position: fixed; right: 0px;"><a href="#">{{loginButtons align="right"}}</a></li>
         </ul>
     </div>
 </template>
 <template name="footerBarTemplate">
-    <div id="footerActionBar" data-role="footer" data-theme="none" class="nav-bar">
-        <ul class="nav-bar footer-nav-bar">
-            <li><a href="#historyPage" onclick="showHistoryPage();">Health Diary</a></li>
-            <li><a href="#communityPage" onclick="showCommunityPage();">Community</a></li>
-            <li><a href="#profilePage" onclick="showProfilePage();">User Profile</a></li>
-            <li><a href="#newsPage" onclick="showNewsPage();">News</a></li>
-            <li><a href="#newsPage" onclick="">Dashboard</a></li>
-            <li><a href="#newsPage" onclick="">Lifeline</a></li>
-            <li><a href="#newsPage" onclick="">SNOMED</a></li>
-            <li><a href="#newsPage" onclick="">ICD10</a></li>
+    <div id="footerActionBar" data-role="footer" data-theme="none" class="nav-bar bottom-anchor">
+        <ul class="nav-bar footer-nav-bar ">
+            <li><a href="#historyPage" onclick="showPage('#historyPage');">Health Diary</a></li>
+            <li><a href="#communityPage" onclick="showPage('#communityPage');">Community</a></li>
+            <li><a href="#profilePage" onclick="showPage('#profilePage');">User Profile</a></li>
+            <li><a href="#lifelinePage" onclick="showPage('#lifelinePage');">Lifeline</a></li>
+            <li><a href="#snomedPage" onclick="showPage('#snomedPage');">SNOMED</a></li>
+            <li><a href="#icd10Page" onclick="showPage('#icd10Page');">ICD10</a></li>
+            <li><a href="#newsPage" onclick="showPage('#newsPage');">News</a></li>
+            <li><a href="#dashboardPage" onclick="showPage('#dashboardPage');">Dashboard</a></li>
         </ul>
     </div>
 </template>

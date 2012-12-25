@@ -1,6 +1,4 @@
 // Client-side JavaScript, bundled and sent to client.
-//Seting up Filepicker.io with your api key
-
 
 
 // Define Minimongo collections to match server/publish.js.
@@ -41,7 +39,12 @@ Template.app_container.loggedIn = function () {
 
 Meteor.startup(function () {
     Backbone.history.start({pushState: true});
+
+    //Seting up Filepicker.io with your api key
     filepicker.setKey('ALZywWZ1wQIuLEBAun2fAz');
+
+    // set default page views
     hidePages();
-    showHistoryPage();
+    showPage("#historyPage");
+    showPage("#guestPage");
 });
