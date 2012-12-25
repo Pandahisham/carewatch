@@ -119,25 +119,17 @@ Template.profilePageTemplate.events({
         Meteor.flush(); // update DOM before focus
         activateInput(tmpl.find("#profile-input-collaborator"));
     },
-    'click .uploadAvatar': function (evt, tmpl) {
-        alert('click');
-        filepicker.pick(function(fpfile){
-                alert('You just uploaded '+fpfile.filename+'! '+
-                    'You can access the file at '+fpfile.url);
-            }
-        );
-
-//        filepicker.getFile 'image/*', multiple: true, persist: true, (uploads) ->
-//            _.each uploads, (image) ->
-//            Photos.insert
-//        set: Session.get "set"
-//        name: image.data.filename
-//        url: image.url
-//        time: (new Date).getTime()
-
-    },
+//    'click .uploadAvatar': function (evt, tmpl) {
+//        filepicker.pick(function(fpfile){
+//                log_event('selected file: ' + fpfile.url);
+//                alert('You just uploaded '+fpfile.filename+'! '+
+//                    'You can access the file at '+fpfile.url);
+//            }
+//        );
+//    },
     'change input': function(ev) {
         _.each(ev.srcElement.files, function(file) {
+            // the following will save to the server's local file system
             Meteor.saveFile(file, file.name);
         });
     }
@@ -222,18 +214,13 @@ Template.profilePageTemplate.user_json = function () {
 };
 Template.profilePageTemplate.user_image = function () {
     try{
-        filepicker.pick(function(FPFile){
-            console.log(FPFile.url);
-            alert(FPFile.url);
-        });
-
         var src = "images/placeholder-240x240.gif";
 
         // CONFLICT?
         // this wants to be Meteor.user().profile so the default image displays if there's no profile
         // but, I think it's also causing crashes elsewhere if the Meteor.
         if(Meteor.user().profile){
-            src = $.trim("userspace/avatars/" +  Meteor.user().profile.avatar);
+            src = $.trim(Meteor.user().profile.avatar);
         }
         log_event('profile avatar src: ' + src, LogLevel.Info);
         return src;
@@ -262,6 +249,22 @@ Template.profilePageTemplate.rendered = function () {
 
     jQuery('#profilePage').css('min-height', window.innerHeight);
 
+    // set up the filepicker.io drop_zone
+    document.getElementById('drop_zone').addEventListener('mousedown', function(){
+        filepicker.pick(function(fpfile){
+            log_event('selected file: ' + fpfile.url);
+            alert('You just uploaded '+fpfile.filename + '! '+ 'You can access the file at '+ fpfile.url);
+
+            // so, yeah, instead of saving the name of the local file to the mongo database
+            // we're just going to save the url from the filepicker.io service.
+            Meteor.users.update(Meteor.userId(), {$set: { 'profile.avatar': cleanName( fpfile.url ) }});
+        });
+        //jQuery('#import_files_input').click();
+    }, false);
+
+
+
+
     // Check for the various File API support.
     if (window.File && window.FileReader && window.FileList && window.Blob) {
         log_event("All the File APIs are supported in this browser.", LogLevel.Notice);
@@ -276,9 +279,6 @@ Template.profilePageTemplate.rendered = function () {
     var dropZone = document.getElementById('drop_zone');
     dropZone.addEventListener('dragover', handleDragOver, false);
     dropZone.addEventListener('drop', handleFileSelect, false);
-    dropZone.addEventListener('mousedown', function(){
-        jQuery('#import_files_input').click();
-    }, false);
     log_event("Set up drop_zone event listeners.", LogLevel.Trace);
 
 
