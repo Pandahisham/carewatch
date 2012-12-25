@@ -45,6 +45,13 @@ Meteor.startup(function () {
 
     // set default page views
     hidePages();
-    showPage("#historyPage");
-    showPage("#guestPage");
+    showHomePage();
 });
+
+function showHomePage(){
+    if(Meteor.userId){
+        showPage("#historyPage");
+    }else{
+        showPage("#guestPage");
+    }
+}
