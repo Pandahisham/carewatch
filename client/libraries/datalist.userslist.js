@@ -141,7 +141,7 @@ Template.userItemTemplate.user_image = function () {
     log_event('Template.user_item.user_image', LogLevel.Trace);
     var src = "images/placeholder-240x240.gif";
     if(this.profile){
-        src = $.trim("userspace/avatars/" + this.profile.avatar);
+        src = $.trim(this.profile.avatar);
     }
     log_event('profile avatar src: ' + src, LogLevel.Info);
     return src;
