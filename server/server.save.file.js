@@ -7,6 +7,8 @@ Meteor.methods({
     saveFile: function(blob, name, path, encoding) {
         log_event('Meteor.saveFile(' + name + ')', LogLevel.Trace);
 
+
+
         var path = cleanPath(path),
             fs = __meteor_bootstrap__.require('fs'),
             name = cleanName(name || 'file'),

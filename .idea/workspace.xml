@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="6af491ff-1daf-446b-9c77-0fbce59cf6d4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/libraries/page.profile.js" afterPath="$PROJECT_DIR$/client/libraries/page.profile.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.html" afterPath="$PROJECT_DIR$/client/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.js" afterPath="$PROJECT_DIR$/client/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/page.profile.html" afterPath="$PROJECT_DIR$/client/templates/page.profile.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/server.save.file.js" afterPath="$PROJECT_DIR$/server/server.save.file.js" />
     </list>
     <ignored path="second-opinion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,13 +27,62 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="36" selection-start="43" selection-end="43" vertical-scroll-proportion="0.02124646">
+            <state line="15" column="36" selection-start="410" selection-end="410" vertical-scroll-proportion="-9.375">
               <folding>
                 <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#template#1;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hipaa.logging.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/hipaa.logging.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="0" selection-start="545" selection-end="545" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server.save.file.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/server.save.file.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="3" selection-start="1289" selection-end="1289" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="52" column="1" selection-start="1766" selection-end="1766" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page.profile.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/templates/page.profile.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="0" selection-start="1670" selection-end="1670" vertical-scroll-proportion="-18.125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page.profile.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/libraries/page.profile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="232" column="27" selection-start="8366" selection-end="8366" vertical-scroll-proportion="0.77697843">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -47,10 +100,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/client/lib/page.profile.js" />
-        <option value="$PROJECT_DIR$/client/main.js" />
-        <option value="$PROJECT_DIR$/client/lib/page.guest.js" />
-        <option value="$PROJECT_DIR$/client/templates/page.history.html" />
         <option value="$PROJECT_DIR$/client/libraries/datalist.health.events.js" />
         <option value="$PROJECT_DIR$/client/main.css" />
         <option value="$PROJECT_DIR$/client/stylesheets/media.less" />
@@ -60,16 +109,20 @@
         <option value="$PROJECT_DIR$/client/stylesheets/pages.guest.less" />
         <option value="$PROJECT_DIR$/client/templates/page.guest.html" />
         <option value="$PROJECT_DIR$/client/libraries/navigation.links.js" />
+        <option value="$PROJECT_DIR$/server/server.save.file.js" />
+        <option value="$PROJECT_DIR$/client/libraries/apis/filepicker.io.js" />
+        <option value="$PROJECT_DIR$/client/libraries/helpers/filepicker.io.js" />
         <option value="$PROJECT_DIR$/client/templates/page.profile.html" />
-        <option value="$PROJECT_DIR$/client/libraries/page.profile.js" />
         <option value="$PROJECT_DIR$/client/main.html" />
+        <option value="$PROJECT_DIR$/client/main.js" />
+        <option value="$PROJECT_DIR$/client/libraries/page.profile.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="446" />
-    <option name="y" value="213" />
-    <option name="width" value="1116" />
+    <option name="x" value="144" />
+    <option name="y" value="219" />
+    <option name="width" value="1114" />
     <option name="height" value="878" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -128,6 +181,42 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="social-network-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="social-network-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="userspace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="avatars" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="social-network-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="social-network-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -213,6 +302,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="social-network-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="social-network-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helpers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -236,11 +347,11 @@
       <recent name="$PROJECT_DIR$/client/views" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/libraries/helpers" />
       <recent name="$PROJECT_DIR$/client/templates" />
       <recent name="$PROJECT_DIR$/client/libraries" />
       <recent name="$PROJECT_DIR$/client/lib" />
       <recent name="$PROJECT_DIR$/public/images" />
-      <recent name="$PROJECT_DIR$/public/icons" />
     </key>
   </component>
   <component name="RunManager">
@@ -281,15 +392,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="446" y="213" width="1116" height="878" extended-state="0" />
+    <frame x="144" y="219" width="1114" height="878" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24245197" sideWeight="0.8692206" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24106325" sideWeight="0.8692206" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24245197" sideWeight="0.121532366" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24106325" sideWeight="0.121532366" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -355,31 +466,18 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/media.less">
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/syntax.base.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/syntax.custom.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="8" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0">
+        <state line="25" column="27" selection-start="1115" selection-end="1115" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/syntax.colors.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="1" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/syntax.base.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="27" selection-start="1115" selection-end="1115" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/stylesheets/page.profile.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="14" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0" />
+        <state line="16" column="14" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.guest.less">
@@ -410,13 +508,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="621" selection-end="621" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/templates/datalist.useritem.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -440,24 +531,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/templates/page.profile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="231" selection-end="231" vertical-scroll-proportion="-3.75">
+        <state line="29" column="0" selection-start="1670" selection-end="1670" vertical-scroll-proportion="-18.125">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/libraries/page.profile.js">
+    <entry file="file://$PROJECT_DIR$/lib/hipaa.logging.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="296" column="41" selection-start="10671" selection-end="10671" vertical-scroll-proportion="0.0">
+        <state line="30" column="0" selection-start="545" selection-end="545" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server.save.file.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="3" selection-start="1289" selection-end="1289" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="36" selection-start="43" selection-end="43" vertical-scroll-proportion="0.02124646">
+        <state line="15" column="36" selection-start="410" selection-end="410" vertical-scroll-proportion="-9.375">
           <folding>
             <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#template#1;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="1" selection-start="1766" selection-end="1766" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/libraries/page.profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="232" column="27" selection-start="8366" selection-end="8366" vertical-scroll-proportion="0.77697843">
+          <folding />
         </state>
       </provider>
     </entry>

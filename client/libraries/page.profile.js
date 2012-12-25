@@ -119,6 +119,23 @@ Template.profilePageTemplate.events({
         Meteor.flush(); // update DOM before focus
         activateInput(tmpl.find("#profile-input-collaborator"));
     },
+    'click .uploadAvatar': function (evt, tmpl) {
+        alert('click');
+        filepicker.pick(function(fpfile){
+                alert('You just uploaded '+fpfile.filename+'! '+
+                    'You can access the file at '+fpfile.url);
+            }
+        );
+
+//        filepicker.getFile 'image/*', multiple: true, persist: true, (uploads) ->
+//            _.each uploads, (image) ->
+//            Photos.insert
+//        set: Session.get "set"
+//        name: image.data.filename
+//        url: image.url
+//        time: (new Date).getTime()
+
+    },
     'change input': function(ev) {
         _.each(ev.srcElement.files, function(file) {
             Meteor.saveFile(file, file.name);
@@ -205,6 +222,11 @@ Template.profilePageTemplate.user_json = function () {
 };
 Template.profilePageTemplate.user_image = function () {
     try{
+        filepicker.pick(function(FPFile){
+            console.log(FPFile.url);
+            alert(FPFile.url);
+        });
+
         var src = "images/placeholder-240x240.gif";
 
         // CONFLICT?
