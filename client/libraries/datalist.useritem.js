@@ -3,19 +3,15 @@
 
 Template.userItemTemplate.events({
     'click .user-card': function () {
-        Meteor.users.update(Meteor.userId(), {$addToSet: { 'profile.collaborators': { address: this.emails[0].address } }});
 
-        //alert(JSON.stringify(this.emails[0].address));
+        Meteor.users.update(Meteor.userId(), {$addToSet: { 'profile.collaborators': { address: this.emails[0].address } }}, function(){
+            Meteor.flush();
+            hidePages();
+            showPage('#communityPage');
+        });
     },
-
-    'click .check': function () {
-        //Meteor.users.update(this._id, {$set: {done: !this.done}});
-    },
-
     'click .destroy': function () {
         //Meteor.users.remove(this._id);
-    },
-    'dblclick .display .todo-text': function (evt, tmpl) {
     }
 });
 

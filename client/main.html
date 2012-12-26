@@ -32,7 +32,8 @@
 <template name="headerBarTemplate">
     <div id="headerBar" data-role="header" data-theme="none">
         <ul class="nav-bar header-nav-bar">
-            <li><a href="#guestPage" onclick="showHomePage();">healthrecord.herokuapp.com</a></li>
+            <li><a id="homePageLink" href="#guestPage" onclick="showHomePage();">healthrecord.herokuapp.com</a></li>
+            <li><a id="breadCrumbLink" href="#"></a></li>
             <li style="position: fixed; right: 0px;"><a href="#">{{loginButtons align="right"}}</a></li>
         </ul>
     </div>
@@ -40,14 +41,14 @@
 <template name="footerBarTemplate">
     <div id="footerActionBar" data-role="footer" data-theme="none" class="nav-bar bottom-anchor">
         <ul class="nav-bar footer-nav-bar ">
+            <li><a href="#dashboardPage" onclick="showPage('#dashboardPage');">Dashboard</a></li>
+            <li><a href="#newsPage" onclick="showPage('#newsPage');">News</a></li>
             <li><a href="#historyPage" onclick="showPage('#historyPage');">Health Diary</a></li>
-            <li><a href="#communityPage" onclick="showPage('#communityPage');">Community</a></li>
+            <li><a href="#communityPage" onclick="showPage('#communityPage');" id="communityPageLink">Community</a></li>
             <li><a href="#profilePage" onclick="showPage('#profilePage');">User Profile</a></li>
             <li><a href="#lifelinePage" onclick="showPage('#lifelinePage');">Lifeline</a></li>
             <li><a href="#snomedPage" onclick="showPage('#snomedPage');">SNOMED</a></li>
             <li><a href="#icd10Page" onclick="showPage('#icd10Page');">ICD10</a></li>
-            <li><a href="#newsPage" onclick="showPage('#newsPage');">News</a></li>
-            <li><a href="#dashboardPage" onclick="showPage('#dashboardPage');">Dashboard</a></li>
         </ul>
     </div>
 </template>

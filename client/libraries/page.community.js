@@ -7,7 +7,10 @@ Template.communityPageTemplate.rendered = function (){
 Template.communityPageTemplate.events({
     'click .destroy': function (evt, tmpl) {
         //alert(JSON.stringify(this));
-        Meteor.users.update(Meteor.userId(), {$pull: { 'profile.collaborators': this }});
+        Meteor.users.update(Meteor.userId(), {$pull: { 'profile.collaborators': this }}, function(){
+            //Meteor.flush();
+            //showPage('#communityPage');
+        });
     }
 });
 Template.communityPageTemplate.events(okCancelEvents(

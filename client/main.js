@@ -34,6 +34,11 @@ Template.app_container.loggedIn = function () {
         return false;
     }
 };
+Template.app_container.rendered = function () {
+// set default page views
+    hidePages();
+    showCurrentSessionPage();
+};
 
 
 
@@ -54,4 +59,7 @@ function showHomePage(){
     }else{
         showPage("#guestPage");
     }
+}
+function showCurrentSessionPage(){
+    showPage(Session.get('current_page'));
 }

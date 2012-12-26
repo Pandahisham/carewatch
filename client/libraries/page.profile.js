@@ -119,6 +119,10 @@ Template.profilePageTemplate.events({
         Meteor.flush(); // update DOM before focus
         activateInput(tmpl.find("#profile-input-collaborator"));
     },
+    'click .destroy': function (evt, tmpl) {
+        Meteor.users.update(Meteor.userId(), {$pull: { 'profile.collaborators': this }}, function(){
+        });
+    },
 //    'click .uploadAvatar': function (evt, tmpl) {
 //        filepicker.pick(function(fpfile){
 //                log_event('selected file: ' + fpfile.url);
@@ -253,7 +257,7 @@ Template.profilePageTemplate.rendered = function () {
     document.getElementById('drop_zone').addEventListener('mousedown', function(){
         filepicker.pick(function(fpfile){
             log_event('selected file: ' + fpfile.url);
-            alert('You just uploaded '+fpfile.filename + '! '+ 'You can access the file at '+ fpfile.url);
+            //alert('You just uploaded '+fpfile.filename + '! '+ 'You can access the file at '+ fpfile.url);
 
             // so, yeah, instead of saving the name of the local file to the mongo database
             // we're just going to save the url from the filepicker.io service.
