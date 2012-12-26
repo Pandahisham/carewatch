@@ -49,7 +49,7 @@ Meteor.startup(function () {
 });
 
 function showHomePage(){
-    if(Meteor.userId){
+    if(Meteor.userId()){
         showPage("#historyPage");
     }else{
         showPage("#guestPage");

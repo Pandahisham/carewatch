@@ -76,6 +76,13 @@
                                     {{else}}
                                     <div id="userCollaboratorsDisplay" class="userCollaboratorsDisplay display dictionary-value-editing">
                                         <span id="profile-display-collaborators" class="dictionary-value hidden-bottom-row">{{user_collaborators}}</span>
+                                        <div>
+                                            <ul class="list">
+                                                {{#each user_collaborators}}
+                                                {{> collaboratorItem}}
+                                                {{/each}}
+                                            </ul>
+                                        </div>
                                     </div>
                                     {{/if}}
                                 </li>
