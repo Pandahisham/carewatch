@@ -4,6 +4,12 @@ Template.communityPageTemplate.rendered = function (){
         valueNames: [ 'user-email', 'user-posts', 'user-rank' ]
     });
 };
+Template.communityPageTemplate.events({
+    'click .destroy': function (evt, tmpl) {
+        //alert(JSON.stringify(this));
+        Meteor.users.update(Meteor.userId(), {$pull: { 'profile.collaborators': this }});
+    }
+});
 Template.communityPageTemplate.events(okCancelEvents(
     '#new-user',
     {
