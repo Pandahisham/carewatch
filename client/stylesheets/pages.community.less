@@ -84,3 +84,27 @@
 
   cursor: pointer;
 }
+
+.collaborators li:hover{
+  cursor: pointer;
+  color: red;
+  border: 1px solid orange;
+}
+
+.collaborators li .destroy {
+  cursor: pointer;
+  float: right;
+  right: 12px;
+  top: 15px;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #8b0000;
+  background-color: #f08080;
+}
+.collaborators li:hover .destroy {
+  background: url('/icons/destroy.png') no-repeat 0 0;
+}
+
+.collaborators li .destroy:hover {
+  background-position: 0 -20px;
+}

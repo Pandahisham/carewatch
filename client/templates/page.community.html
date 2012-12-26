@@ -27,7 +27,7 @@
                     <div class="spacer row"></div>
                     <div class="row panel">
                         <p> Health Collaborators: {{ collaborators_count }}</p>
-                        <ul class="list">
+                        <ul class="collaborators list">
                             {{#each collaborators}}
                             {{> collaboratorItem}}
                             {{/each}}
@@ -46,5 +46,8 @@
 </template>
 
 <template name="collaboratorItem">
-    <li>email: {{collaborator_email}}</li>
+    <li>
+        <span class="collaborator">{{collaborator_email}}</span>
+        <span class="destroy">foo</span>
+    </li>
 </template>
