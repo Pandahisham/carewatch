@@ -1,11 +1,11 @@
-// Lists -- {name: String}
-Lists = new Meteor.Collection("lists");
-
 // Publish complete set of lists to all clients.
 Meteor.publish('lists', function () {
   return Lists.find();
 });
 
+Meteor.publish('anatomy', function () {
+    return Anatomy.find();
+});
 
 // Publish all items for requested list_id.
 Meteor.publish('todos', function (list_id) {

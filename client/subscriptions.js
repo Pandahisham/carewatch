@@ -8,6 +8,7 @@ Meteor.subscribe('lists', function () {
     }
 });
 
+Meteor.subscribe('anatomy');
 Meteor.subscribe('usersDirectory');
 Meteor.subscribe('userProfile', Meteor.userId());
 

@@ -86,8 +86,6 @@ Template.communityPageTemplate.collaborators_count = function () {
 };
 
 
-//---------------------------------------------------------------
-
 Template.communityPageTemplate.users = function () {
     // Determine which todos to display in main pane,
     // selected based on list_id and tag_filter.

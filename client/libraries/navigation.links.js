@@ -8,4 +8,3 @@ function showPage(page){
     Session.set('current_page', page);
     $("#breadCrumbLink").html(page);
 }
-

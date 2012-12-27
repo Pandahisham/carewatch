@@ -2,7 +2,7 @@
 
 
 // Define Minimongo collections to match server/publish.js.
-Lists = new Meteor.Collection("lists");
+//Anatomy = new Meteor.Collection("anatomy");
 
 // ID of currently selected list
 Session.set('list_id', null);

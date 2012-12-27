@@ -1,6 +1,20 @@
-Todos = new Meteor.Collection("todos");
-//Users = new Meteor.Collection("users");
-//
+Todos =     new Meteor.Collection("todos");
+Anatomy =   new Meteor.Collection("anatomy");
+Lists =     new Meteor.Collection("lists");
+
+
+
+Anatomy.allow({
+    insert: function(){
+        return true;
+    },
+    update: function () {
+        return true;
+    },
+    remove: function(){
+        return true;
+    }
+});
 Meteor.users.allow({
     insert: function(userId, todo){
         //return userId && todo.owner === userId;

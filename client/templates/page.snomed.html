@@ -1,7 +1,44 @@
 <template name="snomedPageTemplate">
     <div id="snomedPage" class="page">
         <div class="doesnt-overlap-header">
-            <h4>SNOMED Anatomical Reference</h4>
+            <!--<h4>SNOMED Anatomical Reference</h4>-->
+            <div class="spacer row"></div>
+            <div class="row">
+                <div id="snomed-anatomy-list">
+                    <input type="text" class="search" placeholder="search" />
+                    <ul class="anatomy-images list">
+                        {{#each snomed_reference}}
+                        {{> anatomyItemTemplate}}
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+
+            <div id="anatomySearchPanel" class="hide-for-medium hide-for-small panel">
+
+            </div>
+            <div id="anatomyAdminPanel" class="hide-for-medium hide-for-small panel">
+                    <input type="text" id="new-anatomy" placeholder="new anatomy" />
+                <div id="contentDrop"></div>
+                <!--<span id="profile-display-birthdate-label" class="dictionary-key">Birthdate</span>-->
+                <!--{{#if editing_birthdate}}-->
+                <!--<div id="userDateOfBirthInput" class="edit dictionary-value-editing">-->
+                    <!--<input id="profile-input-birth-date" type="text" placeholder="1969/01/27" value="{{user_birthdate}}" />-->
+                <!--</div>-->
+                <!--{{else}}-->
+                <!--<div id="userDateOfBirthDisplay" class="userDateOfBirthDisplay display dictionary-value-editing">-->
+                    <!--<span id="profile-display-birth-date" class="dictionary-value">{{user_birthdate}}</span>-->
+                <!--</div>-->
+                <!--{{/if}}-->
+            </div>
+
         </div>
     </div>
+</template>
+
+<template name="anatomyItemTemplate">
+    <li class="two column anatomy-item with-rounded-corners">
+        <div class="hidden anatomy-name">{{anatomy_image}}</div>
+        <img src="images/grays.anatomy.thumbnails/{{anatomy_image}}">
+    </li>
 </template>
