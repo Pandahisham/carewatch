@@ -14,18 +14,6 @@ Meteor.publish('todos', function (list_id) {
       {$or: [{"public": true}, {list_id: list_id}, {invited: this.userId}, {owner: this.userId}]}
     );
 });
-
-//Meteor.publish("allUserData", function () {
-//    return Meteor.users.find({}, {fields: {
-//        '_id': 1,
-//        'username': 1,
-//        'emails': 1,
-//        'sex': 1,
-//        'dateOfBirth': 1,
-//        'age': 1
-//    }});
-//});
-
 Meteor.publish("usersDirectory", function () {
     return Meteor.users.find({}, {fields: {
         '_id': true,
@@ -36,16 +24,6 @@ Meteor.publish("usersDirectory", function () {
     }});
 });
 
-//Meteor.publish('userProfile', function (userId) {
-//    return Meteor.users.find({_id: this.userId}, {fields: {
-//        '_id': 1,
-//        'username': 1,
-//        'profile': 1,
-//        'emails': 1,
-//        'emails.address': 1,
-//        'emails[0].address': 1
-//    }});
-//});
 Meteor.publish('userProfile', function (userId) {
     return Meteor.users.find({_id: this.userId}, {fields: {
         '_id': 1,
@@ -59,3 +37,23 @@ Meteor.publish('userProfile', function (userId) {
         'emails[0].address': 1
     }});
 });
+//Meteor.publish('userProfile', function (userId) {
+//    return Meteor.users.find({_id: this.userId}, {fields: {
+//        '_id': 1,
+//        'username': 1,
+//        'profile': 1,
+//        'emails': 1,
+//        'emails.address': 1,
+//        'emails[0].address': 1
+//    }});
+//});
+//Meteor.publish("allUserData", function () {
+//    return Meteor.users.find({}, {fields: {
+//        '_id': 1,
+//        'username': 1,
+//        'emails': 1,
+//        'sex': 1,
+//        'dateOfBirth': 1,
+//        'age': 1
+//    }});
+//});

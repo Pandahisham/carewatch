@@ -15,11 +15,11 @@ function setSidebarPanelHeight() {
 }
 
 Template.snomedPageTemplate.snomed_reference = function () {
-    log_event('Template.communityPageTemplate.snomed_reference', LogLevel.Trace);
+    log_event('Template.snomedPageTemplate.snomed_reference', LogLevel.Trace);
     return Anatomy.find();
 };
 Template.snomedPageTemplate.snomed_count = function () {
-    log_event('Template.communityPageTemplate.snomed_count', LogLevel.Trace);
+    log_event('Template.snomedPageTemplate.snomed_count: ' + Anatomy.find().count(), LogLevel.Trace);
     return Anatomy.find().count();
 };
 

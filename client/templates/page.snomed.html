@@ -5,7 +5,7 @@
             <div class="spacer row"></div>
             <div class="row">
                 <div id="snomed-anatomy-list">
-                    <input type="text" class="search" placeholder="search" />
+                    <input type="text" class="search" placeholder="filter {{snomed_count}} records" />
                     <ul class="anatomy-images list">
                         {{#each snomed_reference}}
                         {{> anatomyItemTemplate}}
@@ -39,6 +39,6 @@
 <template name="anatomyItemTemplate">
     <li class="two column anatomy-item with-rounded-corners">
         <div class="hidden anatomy-name">{{anatomy_image}}</div>
-        <img src="images/grays.anatomy.thumbnails/{{anatomy_image}}">
+        <img src="{{anatomy_image}}">
     </li>
 </template>

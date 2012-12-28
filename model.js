@@ -1,7 +1,7 @@
 Todos =     new Meteor.Collection("todos");
 Anatomy =   new Meteor.Collection("anatomy");
 Lists =     new Meteor.Collection("lists");
-
+usersDirectory =     new Meteor.Collection("usersDirectory");
 
 
 Anatomy.allow({
@@ -15,6 +15,8 @@ Anatomy.allow({
         return true;
     }
 });
+
+
 Meteor.users.allow({
     insert: function(userId, todo){
         //return userId && todo.owner === userId;

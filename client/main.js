@@ -53,13 +53,3 @@ Meteor.startup(function () {
     showHomePage();
 });
 
-function showHomePage(){
-    if(Meteor.userId()){
-        showPage("#historyPage");
-    }else{
-        showPage("#guestPage");
-    }
-}
-function showCurrentSessionPage(){
-    showPage(Session.get('current_page'));
-}

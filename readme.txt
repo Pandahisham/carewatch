@@ -64,3 +64,12 @@ db.collection.update( { field: { $exists: true } }, {$unset: { field : 1 } }, fa
 //  API Dependencies
 https://developers.filepicker.io/home/
 
+
+
+//------------------------------------------------------------------------------
+//  Mongo Shell Scripts
+How to drop a corrupt server-side database of a running Meteor app
+# meteor; meteor mongo;
+> show dbs; db use meteor; show collections; db.anatomy.drop(); exit
+
+

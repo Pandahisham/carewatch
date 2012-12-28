@@ -8,14 +8,20 @@ Meteor.subscribe('lists', function () {
     }
 });
 
-Meteor.subscribe('anatomy');
-Meteor.subscribe('usersDirectory');
-Meteor.subscribe('userProfile', Meteor.userId());
+//Meteor.subscribe('anatomy');
+//Meteor.subscribe('usersDirectory');
+//Meteor.subscribe('userProfile', Meteor.userId());
+
 
 // Always be subscribed to the todos for the selected list.
 Meteor.autosubscribe(function () {
+    Meteor.subscribe('anatomy');
+    Meteor.subscribe('usersDirectory');
+
     Meteor.subscribe('userProfile', Meteor.userId());
-    var list_id = Session.get('list_id');
-    if (list_id)
-        Meteor.subscribe('todos', list_id);
+    //var list_id = Session.get('list_id');
+    //if (list_id)
+        //Meteor.subscribe('todos', list_id);
+    Meteor.subscribe('todos');
 });
+
