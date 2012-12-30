@@ -1,8 +1,8 @@
 Template.communityPageTemplate.rendered = function (){
-    var communityList = new List('community-members-list', {
-        // specify the element classes we want to sort our list by
-        valueNames: [ 'user-email', 'user-posts', 'user-rank' ]
-    });
+    //    var communityList = new List('community-members-list', {
+    //        // specify the element classes we want to sort our list by
+    //        valueNames: [ 'user-email', 'user-posts', 'user-rank' ]
+    //    });
 };
 Template.communityPageTemplate.events({
     'click .destroy': function (evt, tmpl) {
@@ -16,8 +16,7 @@ Template.communityPageTemplate.communityUsers = function () {
 
 Template.communityPageTemplate.user_count = function () {
     log_event('Template.userslist.user_count', LogLevel.Trace);
-    var usersList = Meteor.users.find();
-    return usersList.count();
+    return Meteor.users.find().count();
 };
 Template.communityPageTemplate.collaborators = function () {
     log_event('Template.userslist.collaborators', LogLevel.Trace);
@@ -34,10 +33,16 @@ Template.communityPageTemplate.collaborators_count = function () {
     // Meteor.user().profile breaks when user is logged out
     if(Meteor.user()){
         if(Meteor.user().profile){
-            return Meteor.user().profile.collaborators.length;
+            if(Meteor.user().profile.collaborators > 0){
+                return Meteor.user().profile.collaborators.length;
+            }else{
+                return '0';
+            }
+        }else{
+            return '0';
         }
     }else{
-        return 'Unavailable.';
+        return 'No profile yet.';
     }
 };
 
@@ -68,7 +73,7 @@ Template.userQuickView.quickView = function(){
 Template.userItemTemplate.events({
     'dblclick .user-card': function () {
 
-        Meteor.users.update(Meteor.userId(), {$addToSet: { 'profile.collaborators': { address: this.emails[0].address } }}, function(){
+        Meteor.users.update(Meteor.userId(), {$addToSet: { 'profile.collaborators': { address: this.emails.address } }}, function(){
             Meteor.flush();
             hidePages();
             showPage('#communityPage');
@@ -80,7 +85,12 @@ Template.userItemTemplate.events({
 });
 Template.userItemTemplate.userEmail = function () {
     log_event('Template.userItemTemplate.userEmail', LogLevel.Trace);
-    return this.emails[0].address;
+    if(this.emails){
+        return this.emails.address;
+    }else{
+        return 'Emails not available.'
+    }
+    //return JSON.stringify(this);
 };
 Template.userItemTemplate.userHealthEntries = function () {
     log_event('Template.userItemTemplate.userHealthEntries', LogLevel.Trace);

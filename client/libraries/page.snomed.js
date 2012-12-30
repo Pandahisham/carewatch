@@ -1,10 +1,10 @@
 Template.snomedPageTemplate.rendered = function (){
 
     setSidebarPanelHeight();
-    var anatomyList = new List('snomed-anatomy-list', {
-        // specify the element classes we want to sort our list by
-        valueNames: [ 'anatomy-name' ]
-    });
+//    var anatomyList = new List('snomed-anatomy-list', {
+//        // specify the element classes we want to sort our list by
+//        valueNames: [ 'anatomy-name' ]
+//    });
     $(window).resize(function(){
         setSidebarPanelHeight();
     });

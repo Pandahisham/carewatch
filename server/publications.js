@@ -18,9 +18,12 @@ Meteor.publish("usersDirectory", function () {
     return Meteor.users.find({}, {fields: {
         '_id': true,
         'username': true,
+        'profile': true,
+        'profile.name': true,
         'profile.avatar': true,
         'emails': true,
-        'emails[0].address': true
+        'emails[0].address': true,
+        'emails.address': true
     }});
 });
 

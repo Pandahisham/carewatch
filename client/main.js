@@ -52,7 +52,7 @@ Meteor.startup(function () {
     $('#xmlData').html('');
     $.ajax({
         type:   "get",
-        url:    '/datafile/ICD10CM_FY2013_Full_XML_DIndex.xml',
+        url:    '/datafile/ICD10_Disease_Sample.xml',
         dataType: "xml",
         complete: function(data){
             var json = $.xmlToJSON(data.responseXML);
