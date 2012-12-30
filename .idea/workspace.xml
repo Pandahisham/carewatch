@@ -2,17 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6af491ff-1daf-446b-9c77-0fbce59cf6d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/userspace/defaults/girl-headphones.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/userspace/defaults/pastel-flowers.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/userspace/defaults/rabbit_animal_green.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/userspace/defaults/rabbit_animal_pink_cute.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/userspace/defaults/rabbit_animal_pink_smile.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/userspace/defaults/rabbit_animal_white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/bootstrap.users.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/font/Angelina.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/font/ChalkDust.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/font/CreamPuff.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/font/Eraser.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/font/EraserDust.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/font/FontAwesome.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/font/Freehand.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/font/GraphRegular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/font/HarabaraHand.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/font/HoneyScriptLight.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/font/ItAintRocketScience.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/font/MuralScript.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/font/ShelterMe.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/font/WildScript.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/font/Windsong.ttf" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/font/pictonic.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/font/pictonic.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/font/pictonic.svgz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/font/pictonic.woff" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/modernpics.otf" afterPath="$PROJECT_DIR$/public/font/ModernPictographs.otf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/libraries/navigation.links.js" afterPath="$PROJECT_DIR$/client/libraries/navigation.links.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/subscriptions.js" afterPath="$PROJECT_DIR$/client/subscriptions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/bootstrap.js" afterPath="$PROJECT_DIR$/server/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/page.icd10.html" afterPath="$PROJECT_DIR$/client/templates/page.icd10.html" />
     </list>
     <ignored path="second-opinion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,10 +81,19 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="49" column="0" selection-start="1203" selection-end="1203" vertical-scroll-proportion="0.62426615">
+                <state line="40" column="2" selection-start="1025" selection-end="1025" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="page.icd10.html" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/templates/page.icd10.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="9" column="11" selection-start="267" selection-end="267" vertical-scroll-proportion="0.2962963">
                   <folding />
                 </state>
               </provider>
@@ -86,7 +106,7 @@
           <file leaf-file-name="navigation.links.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/libraries/navigation.links.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="32" column="45" selection-start="798" selection-end="798" vertical-scroll-proportion="0.60037524">
+                <state line="26" column="45" selection-start="622" selection-end="622" vertical-scroll-proportion="0.42026266">
                   <folding />
                 </state>
               </provider>
@@ -107,7 +127,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/client/main.html" />
         <option value="$PROJECT_DIR$/client/libraries/page.profile.js" />
         <option value="$PROJECT_DIR$/client/main.js" />
         <option value="$PROJECT_DIR$/client/templates/listitem.user.html" />
@@ -123,6 +142,7 @@
         <option value="$PROJECT_DIR$/server/bootstrap.users.js" />
         <option value="$PROJECT_DIR$/client/subscriptions.js" />
         <option value="$PROJECT_DIR$/client/libraries/navigation.links.js" />
+        <option value="$PROJECT_DIR$/client/templates/page.icd10.html" />
       </list>
     </option>
   </component>
@@ -232,6 +252,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="font" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="social-network-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="social-network-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -251,24 +289,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -307,11 +327,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/font" />
       <recent name="$PROJECT_DIR$/public/userspace/defaults" />
       <recent name="$PROJECT_DIR$/public/images/grays.anatomy" />
       <recent name="$PROJECT_DIR$/client/lib" />
       <recent name="$PROJECT_DIR$/client/stylesheets" />
-      <recent name="$PROJECT_DIR$/client/lib/foundation" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client/libraries/helpers" />
@@ -360,12 +380,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="9" y="755" width="1779" height="681" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21583143" sideWeight="0.99285716" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21583143" sideWeight="0.99285716" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21347402" sideWeight="0.13077939" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -433,13 +453,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/syntax.custom.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="6" selection-start="517" selection-end="517" vertical-scroll-proportion="0.28315413">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.snomed.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="13" selection-start="299" selection-end="299" vertical-scroll-proportion="0.57347673">
@@ -533,14 +546,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="1203" selection-end="1203" vertical-scroll-proportion="0.62426615">
+        <state line="40" column="2" selection-start="1025" selection-end="1025" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/page.icd10.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="11" selection-start="267" selection-end="267" vertical-scroll-proportion="0.2962963">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/libraries/navigation.links.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="45" selection-start="798" selection-end="798" vertical-scroll-proportion="0.60037524">
+        <state line="26" column="45" selection-start="622" selection-end="622" vertical-scroll-proportion="0.42026266">
           <folding />
         </state>
       </provider>
