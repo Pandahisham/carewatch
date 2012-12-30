@@ -22,6 +22,7 @@ Session.set('editing_itemname', null);
 // ID of currently selected page
 Session.set('current_page', null);
 
+Session.set('selected_community_member', false);
 
 
 

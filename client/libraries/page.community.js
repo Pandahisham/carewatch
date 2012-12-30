@@ -1,17 +1,24 @@
-Template.communityPageTemplate.rendered = function (){
-    //    var communityList = new List('community-members-list', {
-    //        // specify the element classes we want to sort our list by
-    //        valueNames: [ 'user-email', 'user-posts', 'user-rank' ]
-    //    });
-};
+Template.communityPageTemplate.rendered = function (){};
+
 Template.communityPageTemplate.events({
     'click .destroy': function (evt, tmpl) {
         Meteor.users.update(Meteor.userId(), {$pull: { 'profile.collaborators': this }});
+    },
+    'change input': function (evt, tmpl) {
+        Session.set('community_members_filter', $('#filterInput').val());
+        Meteor.flush();
+    },
+    'keypress input': function (evt, tmpl) {
+       Session.set('community_members_filter', $('#filterInput').val());
+       Meteor.flush();
     }
 });
 Template.communityPageTemplate.communityUsers = function () {
-    //log_event('Template.communityPageTemplate.communityUsers: ' + Meteor.users.find().count(), LogLevel.Trace);
-    return Meteor.users.find();
+        return Meteor.users.find({'emails.address': { $regex: Session.get('community_members_filter'), $options: 'i' } });
+};
+Template.communityPageTemplate.showQuickViewPanel = function () {
+    log_event('Template.communityPageTemplate.showQuickViewPanel', LogLevel.Trace);
+    return Session.get('show_quick_view_panel');
 };
 
 Template.communityPageTemplate.user_count = function () {
@@ -62,14 +69,15 @@ Template.collaboratorItem.collaborator_email = function () {
 //--------------------------------------------------------------------
 // userItemTemplate
 
-Template.userQuickView.quickView = function(){
-    var user = Meteor.users.find({_id: this._id});
-    return user;
-};
+//Template.userQuickView.quickView = function(){
+//    return Meteor.users.find({_id: Session.get('selected_community_member')}).username;
+//};
 
 //--------------------------------------------------------------------
 // userItemTemplate
-
+function showQuickViewPanel(){
+    $('#quickViewPanel').removeClass('hidden');
+}
 Template.userItemTemplate.events({
     'dblclick .user-card': function () {
 
@@ -81,6 +89,8 @@ Template.userItemTemplate.events({
     },
     'click .user-card': function () {
         Session.set('selected_community_member', this._id);
+        Session.set('show_quick_view_panel', true);
+        Meteor.flush();
     }
 });
 Template.userItemTemplate.userEmail = function () {

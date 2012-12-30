@@ -4,7 +4,7 @@
             <div class="spacer row"></div>
             <div class="row">
                 <div class="six columns" id="community-members-list">
-                    <input type="text" class="search" />
+                    <input id="filterInput" type="text" class="search" />
                     <ul id="item-list" class="list">
                         {{#each communityUsers}}
                         {{> userItemTemplate}}
@@ -34,10 +34,12 @@
                         </ul>
                     </div>
 
+                    {{#if showQuickViewPanel}}
                     <div class="spacer row"></div>
                     <div class="row">
-                        {{> userQuickView}}
+                        <div id="quicKViewPanel" class="panel"></div>
                     </div>
+                    {{/if}}
 
                     <div class="spacer row"></div>
                     <div class="hidden row">
@@ -65,11 +67,6 @@
             </div>
         </div>
     </li>
-</template>
-<template name="userQuickView">
-    <div class="panel">
-        {{quickView}}
-    </div>
 </template>
 
 <template name="collaboratorItem">
