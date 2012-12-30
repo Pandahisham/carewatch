@@ -2,27 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6af491ff-1daf-446b-9c77-0fbce59cf6d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/font/Angelina.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/font/ChalkDust.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/font/CreamPuff.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/font/Eraser.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/font/EraserDust.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/font/FontAwesome.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/font/Freehand.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/font/GraphRegular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/font/HarabaraHand.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/font/HoneyScriptLight.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/font/ItAintRocketScience.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/font/MuralScript.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/font/ShelterMe.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/font/WildScript.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/font/Windsong.ttf" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/font/pictonic.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/font/pictonic.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/font/pictonic.svgz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/font/pictonic.woff" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/modernpics.otf" afterPath="$PROJECT_DIR$/public/font/ModernPictographs.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/libraries/helpers/xml2json.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/libraries/page.icd10.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/stylesheets/base.fonts.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/datafile/ICD10CM_FY2013_Full_XML_DIndex.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/datafile/ICD10CM_FY2013_Full_XML_EIndex.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/datafile/ICD10CM_FY2013_Full_XML_Table ofNeoplasms.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/datafile/ICD10CM_FY2013_Full_XML_TableofDrugs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/datafile/ICD10CM_FY2013_Full_XML_Tabular.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/font/CreamPUff.TTF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/font/Eraser.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/font/EraserDust.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/font/GraphRegular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/font/HoneyScriptLight.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/font/MuralScript.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/font/angelina.TTF" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.html" afterPath="$PROJECT_DIR$/client/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.js" afterPath="$PROJECT_DIR$/client/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/page.icd10.html" afterPath="$PROJECT_DIR$/client/templates/page.icd10.html" />
     </list>
     <ignored path="second-opinion.iws" />
@@ -45,55 +42,28 @@
     <splitter split-orientation="horizontal" split-proportion="0.49014091">
       <split-first>
         <leaf>
-          <file leaf-file-name="page.community.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/templates/page.community.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="66" column="9" selection-start="2956" selection-end="2956" vertical-scroll-proportion="-0.64">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="publications.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/server/publications.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="43" column="23" selection-start="1239" selection-end="1239" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="bootstrap.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/server/bootstrap.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="180" column="59" selection-start="15457" selection-end="15457" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/main.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="29" column="11" selection-start="784" selection-end="784" vertical-scroll-proportion="-2.56">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/main.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="40" column="2" selection-start="1025" selection-end="1025" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="page.icd10.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/templates/page.icd10.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="9" column="11" selection-start="267" selection-end="267" vertical-scroll-proportion="0.2962963">
+                <state line="11" column="23" selection-start="452" selection-end="452" vertical-scroll-proportion="0.35555556">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ICD10CM_FY2013_Full_XML_DIndex.xml" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/datafile/ICD10CM_FY2013_Full_XML_DIndex.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="13" column="15" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="xml2json.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/libraries/helpers/xml2json.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="25" column="42" selection-start="1103" selection-end="1103" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -103,10 +73,28 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="navigation.links.js" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/client/libraries/navigation.links.js">
+          <file leaf-file-name="base.fonts.less" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/stylesheets/base.fonts.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="26" column="45" selection-start="622" selection-end="622" vertical-scroll-proportion="0.42026266">
+                <state line="59" column="33" selection-start="893" selection-end="893" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/main.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="59" column="9" selection-start="1509" selection-end="1509" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="page.icd10.js" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/libraries/page.icd10.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="7" column="0" selection-start="142" selection-end="142" vertical-scroll-proportion="0.21013133">
                   <folding />
                 </state>
               </provider>
@@ -127,11 +115,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/client/libraries/page.profile.js" />
-        <option value="$PROJECT_DIR$/client/main.js" />
-        <option value="$PROJECT_DIR$/client/templates/listitem.user.html" />
-        <option value="$PROJECT_DIR$/client/libraries/datalist.useritem.js" />
-        <option value="$PROJECT_DIR$/client/libraries/page.snomed.js" />
         <option value="$PROJECT_DIR$/model.js" />
         <option value="$PROJECT_DIR$/client/libraries/page.community.js" />
         <option value="$PROJECT_DIR$/client/templates/page.community.html" />
@@ -142,13 +125,18 @@
         <option value="$PROJECT_DIR$/server/bootstrap.users.js" />
         <option value="$PROJECT_DIR$/client/subscriptions.js" />
         <option value="$PROJECT_DIR$/client/libraries/navigation.links.js" />
+        <option value="$PROJECT_DIR$/client/stylesheets/base.fonts.less" />
+        <option value="$PROJECT_DIR$/client/main.html" />
+        <option value="$PROJECT_DIR$/client/libraries/helpers/xml2json.js" />
+        <option value="$PROJECT_DIR$/client/main.js" />
         <option value="$PROJECT_DIR$/client/templates/page.icd10.html" />
+        <option value="$PROJECT_DIR$/client/libraries/page.icd10.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="9" />
-    <option name="y" value="755" />
+    <option name="x" value="17" />
+    <option name="y" value="703" />
     <option name="width" value="1779" />
     <option name="height" value="681" />
   </component>
@@ -206,38 +194,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="userspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -256,7 +212,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="font" />
+              <option name="myItemId" value="datafile" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -306,7 +262,47 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="social-network-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="social-network-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="social-network-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="social-network-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helpers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -322,16 +318,16 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/client/templates/public" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/datafile" />
       <recent name="$PROJECT_DIR$/public/font" />
       <recent name="$PROJECT_DIR$/public/userspace/defaults" />
       <recent name="$PROJECT_DIR$/public/images/grays.anatomy" />
       <recent name="$PROJECT_DIR$/client/lib" />
-      <recent name="$PROJECT_DIR$/client/stylesheets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client/libraries/helpers" />
@@ -379,13 +375,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="9" y="755" width="1779" height="681" extended-state="0" />
-    <editor active="false" />
+    <frame x="17" y="703" width="1779" height="681" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21583143" sideWeight="0.99285716" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21583143" sideWeight="0.99285716" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21347402" sideWeight="0.13077939" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -453,114 +449,94 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.snomed.less">
+    <entry file="file://$PROJECT_DIR$/server/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="13" selection-start="299" selection-end="299" vertical-scroll-proportion="0.57347673">
-          <folding />
-        </state>
+        <state line="180" column="59" selection-start="15457" selection-end="15457" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/libraries/page.profile.js">
+    <entry file="file://$PROJECT_DIR$/client/libraries/navigation.links.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="324" column="11" selection-start="11942" selection-end="11942" vertical-scroll-proportion="0.0" />
+        <state line="12" column="33" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/syntax.base.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/templates/page.community.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="9" selection-start="2956" selection-end="2956" vertical-scroll-proportion="-0.64">
-          <folding />
-        </state>
+        <state line="66" column="9" selection-start="2956" selection-end="2956" vertical-scroll-proportion="-6.12" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/libraries/page.community.js">
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/syntax.custom.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="33" selection-start="1012" selection-end="1012" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="42" column="1" selection-start="600" selection-end="600" vertical-scroll-proportion="1.260788" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/page.snomed.html">
+    <entry file="file://$PROJECT_DIR$/server/server.save.file.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="18" selection-start="1960" selection-end="1960" vertical-scroll-proportion="0.7598499">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="0" selection-start="1618" selection-end="1618" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/libraries/page.snomed.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="2" selection-start="675" selection-end="675" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="196" selection-end="196" vertical-scroll-proportion="0.05162524">
-          <folding />
-        </state>
+        <state line="12" column="52" selection-start="366" selection-end="366" vertical-scroll-proportion="0.38554215" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/publications.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="23" selection-start="1239" selection-end="1239" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="43" column="23" selection-start="1239" selection-end="1239" vertical-scroll-proportion="0.2931727" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/bootstrap.users.js">
+    <entry file="file://$PROJECT_DIR$/client/libraries/helpers/client.save.file.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="17" selection-start="1731" selection-end="1731" vertical-scroll-proportion="0.79266053">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/subscriptions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="317" selection-end="317" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="180" column="59" selection-start="15457" selection-end="15457" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="32" column="29" selection-start="1380" selection-end="1380" vertical-scroll-proportion="0.9846154" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="11" selection-start="784" selection-end="784" vertical-scroll-proportion="-2.56">
+        <state line="11" column="31" selection-start="215" selection-end="215" vertical-scroll-proportion="0.12929294" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/base.fonts.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="33" selection-start="893" selection-end="893" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/datafile/ICD10CM_FY2013_Full_XML_DIndex.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="15" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/libraries/helpers/xml2json.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="42" selection-start="1103" selection-end="1103" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="2" selection-start="1025" selection-end="1025" vertical-scroll-proportion="0.0">
+        <state line="59" column="9" selection-start="1509" selection-end="1509" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/templates/page.icd10.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="11" selection-start="267" selection-end="267" vertical-scroll-proportion="0.2962963">
+        <state line="11" column="23" selection-start="452" selection-end="452" vertical-scroll-proportion="0.35555556">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/libraries/navigation.links.js">
+    <entry file="file://$PROJECT_DIR$/client/libraries/page.icd10.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="45" selection-start="622" selection-end="622" vertical-scroll-proportion="0.42026266">
+        <state line="7" column="0" selection-start="142" selection-end="142" vertical-scroll-proportion="0.21013133">
           <folding />
         </state>
       </provider>

@@ -48,6 +48,19 @@ Meteor.startup(function () {
     //Seting up Filepicker.io with your api key
     filepicker.setKey('ALZywWZ1wQIuLEBAun2fAz');
 
+
+    $('#xmlData').html('');
+    $.ajax({
+        type:   "get",
+        url:    '/datafile/ICD10CM_FY2013_Full_XML_DIndex.xml',
+        dataType: "xml",
+        complete: function(data){
+            var json = $.xmlToJSON(data.responseXML);
+            $('#xmlData').html(JSON.stringify(json));
+        }
+    });
+
+
     // set default page views
     hidePages();
     showHomePage();
