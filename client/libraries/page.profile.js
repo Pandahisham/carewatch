@@ -18,12 +18,30 @@ Template.profilePageTemplate.editing_collaborators = function () {
     log_event('Template.profilePageTemplate.editing_collaborators', LogLevel.Trace);
     return Session.equals('editing_profile_collaborators', "true");
 };
+Template.profilePageTemplate.editing_carewatch = function () {
+    log_event('Template.profilePageTemplate.editing_carewatch', LogLevel.Trace);
+    return Session.equals('editing_profile_carewatch_members', "true");
+};
 Template.profilePageTemplate.events(
+    okCancelEvents('#userCarewatchInput',
+        {
+            ok: function (value) {
+                log_event('userCarewatchInput - ok', LogLevel.Trace);
+                Meteor.users.update(Meteor.userId(), {$set: { 'profile.carewatch': [{address: value}] }});
+                Session.set('editing_profile_carewatch_members', "false");
+                //Meteor.flush(); // update DOM before focus
+            },
+            cancel: function () {
+                log_event('userCarewatchInput - cancel', LogLevel.Trace);
+                Session.set('editing_profile_carewatch_members', "false");
+            }
+        })
+);Template.profilePageTemplate.events(
     okCancelEvents('#userCollaboratorsInput',
         {
             ok: function (value) {
                 log_event('userCollaboratorsInput - ok', LogLevel.Trace);
-                Meteor.users.update(Meteor.userId(), {$set: { 'profile.collaborators': [{address: value}, {address: 'foo@bar.com'}] }});
+                Meteor.users.update(Meteor.userId(), {$set: { 'profile.collaborators': [{address: value}] }});
                 Session.set('editing_profile_collaborators', "false");
                 //Meteor.flush(); // update DOM before focus
             },
@@ -123,14 +141,6 @@ Template.profilePageTemplate.events({
         Meteor.users.update(Meteor.userId(), {$pull: { 'profile.collaborators': this }}, function(){
         });
     },
-//    'click .uploadAvatar': function (evt, tmpl) {
-//        filepicker.pick(function(fpfile){
-//                log_event('selected file: ' + fpfile.url);
-//                alert('You just uploaded '+fpfile.filename+'! '+
-//                    'You can access the file at '+fpfile.url);
-//            }
-//        );
-//    },
     'change input': function(ev) {
         _.each(ev.srcElement.files, function(file) {
             // the following will save to the server's local file system
@@ -211,7 +221,15 @@ Template.profilePageTemplate.user_collaborators = function () {
         return "List of collaborators not available right now.";
     }
 };
-
+Template.profilePageTemplate.user_carewatch = function () {
+    if(Meteor.user()){
+        if(Meteor.user().profile){
+            return Meteor.user().profile.carewatch;
+        }
+    }else{
+        return "List of carewatch members not available right now.";
+    }
+};
 Template.profilePageTemplate.user_json = function () {
     var selectedUser = Meteor.user();
     return JSON.stringify(selectedUser);
@@ -232,6 +250,22 @@ Template.profilePageTemplate.user_image = function () {
     catch(err){
         log_event(err, LogLevel.Error);
     }
+};
+
+
+
+// --------------------------------------------------------
+// CAREWATCH
+
+Template.carewatchItem.carewatch_email = function () {
+    log_event('Template.carewatchItem.carewatch_email', LogLevel.Trace);
+    //return this.address;
+    return 'foo@hoo.com';
+};
+
+Template.carewatchItem.carewatch_name = function () {
+    log_event('Template.carewatchItem.carewatch_name', LogLevel.Trace);
+    return this.address;
 };
 
 // --------------------------------------------------------

@@ -2,7 +2,9 @@
     <div id="newsPage" class="page">
         <div class="doesnt-overlap-header">
             <div class="spacer row"></div>
+            {{#if showNewCarewatchMember}}
             {{> carewatchCommunityTemplate}}
+            {{/if }}
             {{> carewatchNewsTemplate}}
         </div>
     </div>
@@ -24,7 +26,7 @@
 </template>
 
 <template name="carewatchCommunityTemplate">
-    <div class="panel row">
+    <div class="panel reference row">
         <h6>{{collaborators_count }} Carewatch Members</h6>
         <ul class="carewatch list">
             {{#each carewatchMembers}}

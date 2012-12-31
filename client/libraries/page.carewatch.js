@@ -1,3 +1,7 @@
+Template.newsPageTemplate.showNewCarewatchMember = function () {
+    return Session.get('display_approve_carewatch_panel');
+};
+
 Template.carewatchNewsTemplate.carewatch_entries = function () {
   return Todos.find();
 };
@@ -49,3 +53,9 @@ Template.carewatchMemberTemplate.carewatch_member_name = function () {
         return 'User has no name.  :('
     }
 };
+Template.carewatchCommunityTemplate.events({
+    'click .close': function (evt, tmpl) {
+        Session.set('display_approve_carewatch_panel', false);
+        Meteor.flush();
+    }
+});

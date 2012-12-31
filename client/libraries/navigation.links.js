@@ -21,13 +21,13 @@ function showCurrentSessionPage(){
 function parseBreadCrumbs(page){
     switch(page){
     case '#newsPage':
-        $('#breadCrumbLink').html('News');
+        $('#breadCrumbLink').html('Carewatch');
         break;
     case '#historyPage':
         $('#breadCrumbLink').html('History');
         break;
     case '#communityPage':
-        $('#breadCrumbLink').html('Carewatch');
+        $('#breadCrumbLink').html('Community');
         break;
     case '#profilePage':
         $('#breadCrumbLink').html('Profile');

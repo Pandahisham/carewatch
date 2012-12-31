@@ -15,13 +15,13 @@
 
                             <ul id="profileItems" class="profile-items card-data dictionary">
                                 <li>
-                                    <span id="profile-display-name-label" class="dictionary-key">Name</span>
+                                    <span id="profile-display-name-label" class="dictionary-key hidden-top-row">Name</span>
                                     {{#if editing_name}}
                                     <div id="userNameInput" class="edit dictionary-value-editing">
                                         <input id="profile-input-name" type="text" placeholder="Jane Doe" value="{{user_name}}" />
                                     </div>
                                     {{else}}
-                                    <div id="userNameDisplay" class="userNameDisplay display dictionary-value-editing">
+                                    <div id="userNameDisplay" class="userNameDisplay display dictionary-value-editing hidden-top-row">
                                         <span id="profile-display-name" class="dictionary-value">{{user_name}}</span>
                                     </div>
                                     {{/if}}
@@ -54,7 +54,7 @@
                                 </li>
 
                                 <li>
-                                    <span id="profile-display-collaborators-label" class="dictionary-key hidden-bottom-row">Collaborators</span>
+                                    <span id="profile-display-collaborators-label" class="dictionary-key">Collaborators</span>
                                     <div id="userCollaboratorsDisplay" class="userCollaboratorsDisplay display dictionary-value-multiline">
                                         <div>
                                             <ul class="collaborators list">
@@ -65,6 +65,22 @@
                                         </div>
                                     </div>
                                 </li>
+
+                                <li>
+                                    <span id="profile-display-carewatch-label" class="dictionary-key hidden-bottom-row">Carewatch</span>
+                                    <div id="userCarewatchDisplay" class="userCarewatchDisplay display dictionary-value-multiline">
+                                        <div>
+                                            <ul class="carewatch list">
+                                                {{#each user_carewatch}}
+                                                {{> carewatchItem}}
+                                                {{/each}}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+
+
+
                             </ul>
                     </div>
                     <div class="spacer row"></div>
@@ -74,4 +90,11 @@
                 </div>
             </div>
     </div>
+</template>
+
+<template name="carewatchItem">
+    <li>
+        <span class="collaborator">{{carewatch_name}}</span>
+        <span class="destroy"></span>
+    </li>
 </template>

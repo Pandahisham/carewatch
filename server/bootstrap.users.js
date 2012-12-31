@@ -7,67 +7,157 @@ Meteor.startup(function () {
         log_event('no users in database!  adding some default users', LogLevel.Info);
 
         // crate our administrator
-        var userId = Meteor.users.insert({
-            emails: {
-                address: 'admin@test.com'
-            },
+        var userId = Accounts.createUser({
+            username: 'admin',
+            password: 'admin',
+            email: 'admin@test.mobi',
             profile: {
                 name: 'Administrator',
                 role: 'Administrator',
-                avatar: '/userspace/defaults/caduceus-staff.jpg'
+                avatar: '/userspace/house/lisa.cuddy.jpg'
             }
         });
-        Accounts.setPassword(userId, 'admin');
         log_event('Administrator account created: ' + userId, LogLevel.Info);
 
         // and a default physician
-        var userId = Meteor.users.insert({
-            emails: {
-                address: 'house@test.com'
-            },
+        var userId = Accounts.createUser({
+            username: 'house',
+            password: 'house',
+            email: 'house@test.mobi',
             profile: {
                 name: 'Gregory House, MD',
                 role: 'Physician',
-                avatar: '/userspace/defaults/staff_of_asclepius.jpg'
+                avatar: '/userspace/house/gregory.house.jpg'
             }
         });
-        Accounts.setPassword(userId, 'house');
-        log_event('Administrator account created: ' + userId, LogLevel.Info);
+        log_event('Default physician account created: ' + userId, LogLevel.Info);
 
 
         // now lets create some test patients
         var data = [
-            {'address': "janedoe@test.com",
+            {   username: 'janedoe',
+                password: 'janedoe',
+                email: 'janedoe@test.mobi',
                 profile: {
                     name: 'Jane Doe',
                     role: 'Patient',
-                    avatar: '/userspace/defaults/rabbit_animal_pink_cute.png'
+                    avatar: '/userspace/spokepersons/rita.hayworth.png'
                 }
             },
-            {'address': "johndoe@test.com",
+            {   username: 'chase',
+                password: 'chase',
+                email: 'chase@test.mobi',
+                profile: {
+                    name: 'Robert Chase, MD',
+                    role: 'Surgeon',
+                    avatar: '/userspace/house/robert.chase.jpg'
+                }
+            },
+            {   username: 'camron',
+                password: 'camron',
+                email: 'camron@test.mobi',
+                profile: {
+                    name: 'Allison Camron',
+                    role: 'Physician',
+                    avatar: '/userspace/house/allison.camron.jpg'
+                }
+            },
+            {   username: 'ada',
+                password: 'ada',
+                email: 'ada@test.mobi',
+                profile: {
+                    name: 'Ada Patient',
+                    role: 'Patient',
+                    avatar: '/userspace/others/ada.lovelace.jpg'
+                }
+            },
+            {   username: 'florence',
+                password: 'florence',
+                email: 'florence@test.mobi',
+                profile: {
+                    name: 'Florence Nightingale',
+                    role: 'Nurse',
+                    avatar: '/userspace/others/florence.nightingale.jpg'
+                }
+            },
+            {   username: 'kurt',
+                password: 'kurt',
+                email: 'kurt@test.mobi',
+                profile: {
+                    name: 'Kurt Vonnegut',
+                    role: 'Patient',
+                    avatar: '/userspace/others/kurt.vonnegut.jpg'
+                }
+            },
+            {   username: 'curie',
+                password: 'curie',
+                email: 'curie@test.mobi',
+                profile: {
+                    name: 'Madam Curie',
+                    role: 'Radiologist',
+                    avatar: '/userspace/others/madam.curie.jpg'
+                }
+            },
+            {   username: 'teresa',
+                password: 'teresa',
+                email: 'teresa@test.mobi',
+                profile: {
+                    name: 'Mother Teresa',
+                    role: 'Nurse',
+                    avatar: '/userspace/others/mother.teresa.jpg'
+                }
+            },
+            {   username: 'samuel',
+                password: 'samuel',
+                email: 'samuel@test.mobi',
+                profile: {
+                    name: 'Samuel Clemens',
+                    role: 'Patient',
+                    avatar: '/userspace/others/samuel.clemens.jpg'
+                }
+            },
+            {   username: 'octavia',
+                password: 'octavia',
+                email: 'octavia@test.mobi',
+                profile: {
+                    name: 'Octavia Butler',
+                    role: 'Patient',
+                    avatar: '/userspace/others/octavia.butler.jpg'
+                }
+            },
+            {   username: 'carver',
+                password: 'carver',
+                email: 'carver@test.mobi',
+                profile: {
+                    name: 'George Washington Carver',
+                    role: 'Chemist',
+                    avatar: '/userspace/others/samuel.clemens.jpg'
+                }
+            },
+            {   username: 'johndoe',
+                password: 'johndoe',
+                email: 'johndoe@test.mobi',
                 profile: {
                     name: 'John Doe',
-                    role: 'Stakeholder',
-                    avatar: '/userspace/defaults/rabbit_animal_pink_cute.png'
+                    role: 'Patient',
+                    avatar: '/userspace/spokepersons/michael.j.fox.jpg'
                 }
             }
         ];
 
         // and insert them into the database
         for (var i = 0; i < data.length; i++) {
-            var userId = Meteor.users.insert({
-                emails: {
-                    address: data[i].address
-                },
+            var userId = Accounts.createUser({
+                username: data[i].username,
+                password: data[i].password,
+                email:    data[i].email,
                 profile: {
                     name: data[i].profile.name,
+                    role: data[i].profile.role,
                     avatar: data[i].profile.avatar
                 }
             });
             log_event('new user created: ' + userId, LogLevel.Info);
-
-            // and assign them default passwords of 'password'
-            Accounts.setPassword(userId, 'password');
         }
 
 

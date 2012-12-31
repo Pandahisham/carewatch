@@ -24,6 +24,8 @@ Session.set('current_page', null);
 
 Session.set('selected_community_member', false);
 
+Session.set('display_approve_carewatch_panel', true);
+
 
 
 Template.app_container.loggedIn = function () {
