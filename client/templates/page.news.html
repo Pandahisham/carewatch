@@ -1,7 +1,44 @@
 <template name="newsPageTemplate">
-    <div id="newsPage"  class="page">
+    <div id="newsPage" class="page">
         <div class="doesnt-overlap-header">
-            <h4>News Feed</h4>
+            <div class="spacer row"></div>
+            {{> carewatchCommunityTemplate}}
+            {{> carewatchNewsTemplate}}
         </div>
     </div>
+</template>
+
+
+
+<template name="carewatchNewsTemplate">
+
+    <div class="row">
+        <div id="items-view">
+            <ul id="item-list">
+                {{#each carewatch_entries}}
+                {{> health_entry}}
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</template>
+
+<template name="carewatchCommunityTemplate">
+    <div class="panel row">
+        <h6>{{collaborators_count }} Carewatch Members</h6>
+        <ul class="carewatch list">
+            {{#each carewatchMembers}}
+            {{> carewatchMemberTemplate}}
+            {{/each}}
+        </ul>
+        <div class="pictographs close">X</div>
+    </div>
+    <div class="spacer row"></div>
+</template>
+
+<template name="carewatchMemberTemplate">
+    <li>
+        <span class="carewatch">{{carewatch_member_name}}</span>
+        <span class="destroy"></span>
+    </li>
 </template>

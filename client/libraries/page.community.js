@@ -67,7 +67,11 @@ Template.collaboratorItem.collaborator_email = function () {
 
 Template.quickViewPanelTemplate.userId = function () {
     var user = Meteor.users.findOne({ _id: Session.get('selected_community_member') });
-    return user._id;
+    if(user){
+        return user._id;
+    }else{
+        return false;
+    }
 }
 Template.quickViewPanelTemplate.userName = function () {
     var user = Meteor.users.findOne({ _id: Session.get('selected_community_member') });
@@ -92,8 +96,16 @@ Template.quickViewPanelTemplate.userEmailAddress = function () {
 
 Template.userItemTemplate.events({
     'dblclick .user-card': function () {
-
-        Meteor.users.update(Meteor.userId(), {$addToSet: { 'profile.collaborators': { address: this.emails.address } }}, function(){
+        Meteor.users.update(this._id, {$addToSet: { 'profile.carewatch' : {
+            _id: Meteor.userId(),
+            name: Meteor.user().profile.name,
+            address: Meteor.user().emails.address
+        }}}, function(){});
+        Meteor.users.update(Meteor.userId(), {$addToSet: { 'profile.collaborators': {
+            address: this.emails.address,
+            username: this.profile.name,
+            _id: this._id
+        }}}, function(){
             Meteor.flush();
             hidePages();
             showPage('#communityPage');

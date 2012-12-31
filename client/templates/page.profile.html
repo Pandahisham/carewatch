@@ -1,18 +1,12 @@
 <template name="profilePageTemplate">
     <div class="page" id="profilePage">
 
-            <div class="doesnt-overlap-header row">
-                <h4 class="padded-horizontal">User Profile</h4>
-            </div>
+            <div class="doesnt-overlap-header row"></div>
+            <div class="spacer row"></div>
 
             <div class="row">
                 <div class="two columns">
                     <img class="drop-zone with-rounded-corners gray-border" id="drop_zone" src="{{user_image}}" />
-                    <!--<p class="centered image-selection-text">Image Selection</p>-->
-                    <!--<input type="filepicker-dragdrop" />-->
-                    <!--<button class="small button uploadAvatar">Upload images</button>-->
-                    <!--<input class="hidden" type="file" id="import_files_input" name="files[]"  />-->
-
                 </div>
                 <div class="ten columns">
                     <div class="panel row">
@@ -20,14 +14,6 @@
                         <span class="userEmailDisplay card-northeast card-meta-data">{{user_email}}</span></li>
 
                             <ul id="profileItems" class="profile-items card-data dictionary">
-
-
-                                <!--{{#if editing_email}}-->
-                                <!--<li id="userEmailInput"  class="card-northeast edit"><input id="profile-input-email" type="text" placeholder="email" value="{{user_email}}" /></li>-->
-                                <!--{{else}}-->
-                                <!--<li id="userEmailDisplay" class="userEmailDisplay card-northeast display"><span class="profile-item">{{user_email}}</span></li>-->
-                                <!--{{/if}}-->
-
                                 <li>
                                     <span id="profile-display-name-label" class="dictionary-key">Name</span>
                                     {{#if editing_name}}
@@ -79,17 +65,7 @@
                                         </div>
                                     </div>
                                 </li>
-
-
-                                <!--{{#if editing_collaborators}}-->
-                                <!--<li id="userCollaboratorsInput" class="edit"><input id="profile-input-collaborator" type="text" placeholder="Full Name" value="{{user_collaborators}}" /></li>-->
-                                <!--{{else}}-->
-                                <!--<li id="userCollaboratorsDisplay" class="userCollaboratorsDisplay display"><span id="profile-display-collaborator" class="profile-item">Collaborators - {{user_collaborators}}</span></li>-->
-                                <!--{{/if}}-->
-
-
                             </ul>
-
                     </div>
                     <div class="spacer row"></div>
                     <div id="json-content" class="row panel notepad">
@@ -97,6 +73,5 @@
                     </div>
                 </div>
             </div>
-
     </div>
 </template>

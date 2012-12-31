@@ -91,14 +91,6 @@ Meteor.methods({
 //        if (! this.userId)
 //            throw new Meteor.Error(403, "You must be logged in");
 
-//        if (this.userId == null){
-//            console.log('this.userId is null:   ' + this.userId);
-//            options.userId = "a487bf12-88cc-439d-9e8f-77456c9f545d";
-//        }else{
-//            console.log('this.userId is:   ' + this.userId);
-//            options.userId = this.userId;
-//        }
-
         console.log('####################################################### ');
         console.log('######### Inserting Todo Item');
         console.log('todo_item.owner:   ' + this.userId);

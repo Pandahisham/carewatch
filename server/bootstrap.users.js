@@ -13,6 +13,7 @@ Meteor.startup(function () {
             },
             profile: {
                 name: 'Administrator',
+                role: 'Administrator',
                 avatar: '/userspace/defaults/caduceus-staff.jpg'
             }
         });
@@ -26,6 +27,7 @@ Meteor.startup(function () {
             },
             profile: {
                 name: 'Gregory House, MD',
+                role: 'Physician',
                 avatar: '/userspace/defaults/staff_of_asclepius.jpg'
             }
         });
@@ -38,13 +40,15 @@ Meteor.startup(function () {
             {'address': "janedoe@test.com",
                 profile: {
                     name: 'Jane Doe',
+                    role: 'Patient',
                     avatar: '/userspace/defaults/rabbit_animal_pink_cute.png'
                 }
             },
             {'address': "johndoe@test.com",
                 profile: {
                     name: 'John Doe',
-                    avatar: '/userspace/defaults/rabbit_animal_pink_smile.png'
+                    role: 'Stakeholder',
+                    avatar: '/userspace/defaults/rabbit_animal_pink_cute.png'
                 }
             }
         ];
