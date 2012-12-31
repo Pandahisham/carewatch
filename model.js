@@ -102,7 +102,7 @@ Meteor.methods({
         console.log('');
 
         return Todos.insert({
-            owner: options.userId,
+            owner: this.userId,
             text: options.text,
             timestamp: options.timestamp,
             done: options.done,

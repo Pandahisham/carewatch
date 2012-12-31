@@ -18,7 +18,7 @@
         <div id="items-view">
             <ul id="item-list">
                 {{#each carewatch_entries}}
-                {{> health_entry}}
+                {{> carewatch_entry}}
                 {{/each}}
             </ul>
         </div>
@@ -42,5 +42,28 @@
     <li>
         <span class="carewatch">{{carewatch_member_name}}</span>
         <span class="destroy"></span>
+    </li>
+</template>
+
+
+<template name="carewatch_entry">
+    <li class="todo {{done_class}}">
+        <ul class="inline-list">
+            {{#if editing}}
+            <li class="edit">
+                <input id="todo-input" type="text" value="{{text}}" />
+            </li>
+            {{else}}
+            <li class="destroy"></li>
+            <li class="display">
+                <div class="hide-for-small todo-image">
+                    <img class="gray-border" src="{{owner_avatar}}" />
+                </div>
+                <span class="todo-id">{{_id}}</span>
+                <span class="todo-text">{{text}}</span>
+            </li>
+            {{/if}}
+            <div class="addtag">{{owner_name}}</div>
+        </ul>
     </li>
 </template>

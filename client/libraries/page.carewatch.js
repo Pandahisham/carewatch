@@ -59,3 +59,70 @@ Template.carewatchCommunityTemplate.events({
         Meteor.flush();
     }
 });
+
+
+Template.carewatch_entry.tag_objs = function () {
+    var todo_id = this._id;
+    return _.map(this.tags || [], function (tag) {
+        return {todo_id: todo_id, tag: tag};
+    });
+};
+
+Template.carewatch_entry.done_class = function () {
+    return this.done ? 'done' : '';
+};
+
+Template.carewatch_entry.done_checkbox = function () {
+    return this.done ? 'checked="checked"' : '';
+};
+
+Template.carewatch_entry.editing = function () {
+    return Session.equals('editing_itemname', this._id);
+};
+
+Template.carewatch_entry.adding_tag = function () {
+    return Session.equals('editing_addtag', this._id);
+};
+Template.carewatch_entry.owner_name = function () {
+    if(this.owner){
+        return Meteor.users.findOne(this.owner).profile.name;
+    }else{
+        return "Unknown";
+    }
+};
+Template.carewatch_entry.owner_avatar = function () {
+    if(this.owner){
+        return Meteor.users.findOne(this.owner).profile.avatar;
+    }else{
+        return "images/placeholder-240x240.gif";
+    }
+}
+Template.carewatch_entry.events({
+    'click .todo': function () {
+        alert(JSON.stringify(this));
+    }
+});
+
+Template.carewatch_entry.events(okCancelEvents(
+    '#todo-input',
+    {
+        ok: function (value) {
+            Todos.update(this._id, {$set: {text: value}});
+            Session.set('editing_itemname', null);
+        },
+        cancel: function () {
+            Session.set('editing_itemname', null);
+        }
+    }));
+
+Template.carewatch_entry.events(okCancelEvents(
+    '#edittag-input',
+    {
+        ok: function (value) {
+            Todos.update(this._id, {$addToSet: {tags: value}});
+            Session.set('editing_addtag', null);
+        },
+        cancel: function () {
+            Session.set('editing_addtag', null);
+        }
+    }));

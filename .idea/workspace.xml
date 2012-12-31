@@ -2,28 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d7afeac-e599-453a-b604-6ef19812d575" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/social-network-app.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/guiders_arrows.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLinters/jshint.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLinters/jslint.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/libraries/navigation.guiders.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/stylesheets/navigation.guiders.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/data-browser.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/libraries/helpers/list.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/templates/page.news.html" afterPath="$PROJECT_DIR$/client/templates/page.carewatch.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/lib/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/templates/listitem.health.events.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/libraries/datalist.health.events.js" afterPath="$PROJECT_DIR$/client/libraries/page.history.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/libraries/navigation.links.js" afterPath="$PROJECT_DIR$/client/libraries/navigation.links.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/libraries/page.carewatch.js" afterPath="$PROJECT_DIR$/client/libraries/page.carewatch.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/libraries/page.profile.js" afterPath="$PROJECT_DIR$/client/libraries/page.profile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.js" afterPath="$PROJECT_DIR$/client/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/lists.dictionary.less" afterPath="$PROJECT_DIR$/client/stylesheets/lists.dictionary.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/pages.history.less" afterPath="$PROJECT_DIR$/client/stylesheets/pages.history.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/syntax.custom.less" afterPath="$PROJECT_DIR$/client/stylesheets/syntax.custom.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/listitem.health.events.html" afterPath="$PROJECT_DIR$/client/templates/listitem.health.events.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/page.profile.html" afterPath="$PROJECT_DIR$/client/templates/page.profile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/bootstrap.users.js" afterPath="$PROJECT_DIR$/server/bootstrap.users.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/page.carewatch.html" afterPath="$PROJECT_DIR$/client/templates/page.carewatch.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/page.history.html" afterPath="$PROJECT_DIR$/client/templates/page.history.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model.js" afterPath="$PROJECT_DIR$/model.js" />
     </list>
     <ignored path="social-network-app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,35 +27,61 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="page.carewatch.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/libraries/page.carewatch.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="2" selection-start="1845" selection-end="1845" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page.profile.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/templates/page.profile.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="18" selection-start="5320" selection-end="5320" vertical-scroll-proportion="-7.88">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page.carewatch.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/templates/page.carewatch.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="42" selection-start="158" selection-end="158" vertical-scroll-proportion="0.09338521">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="page.history.js" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/libraries/page.history.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="33" column="41" selection-start="1247" selection-end="1247" vertical-scroll-proportion="0.22695035">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="page.profile.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/templates/page.profile.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="86" column="18" selection-start="5320" selection-end="5320" vertical-scroll-proportion="-9.4">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="page.carewatch.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/templates/page.carewatch.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="62" column="55" selection-start="1820" selection-end="1820" vertical-scroll-proportion="-14.52">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="model.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/model.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="93" column="2" selection-start="2562" selection-end="2562" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="page.carewatch.js" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/libraries/page.carewatch.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="92" column="2" selection-start="3086" selection-end="3086" vertical-scroll-proportion="0.77304965">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -86,23 +97,27 @@
         <option value="$PROJECT_DIR$/client/libraries/navigation.links.js" />
         <option value="$PROJECT_DIR$/client/templates/page.news.html" />
         <option value="$PROJECT_DIR$/client/stylesheets/syntax.custom.less" />
-        <option value="$PROJECT_DIR$/client/libraries/page.carewatch.js" />
         <option value="$PROJECT_DIR$/client/main.js" />
         <option value="$PROJECT_DIR$/client/stylesheets/lists.dictionary.less" />
         <option value="$PROJECT_DIR$/client/libraries/page.profile.js" />
         <option value="$PROJECT_DIR$/client/templates/page.profile.html" />
         <option value="$PROJECT_DIR$/client/stylesheets/navigation.guiders.css" />
-        <option value="$PROJECT_DIR$/client/templates/listitem.health.events.html" />
         <option value="$PROJECT_DIR$/client/stylesheets/pages.history.less" />
         <option value="$PROJECT_DIR$/server/bootstrap.users.js" />
+        <option value="$PROJECT_DIR$/client/templates/listitem.health.events.html" />
+        <option value="$PROJECT_DIR$/client/templates/page.history.html" />
+        <option value="$PROJECT_DIR$/model.js" />
+        <option value="$PROJECT_DIR$/client/templates/page.carewatch.html" />
+        <option value="$PROJECT_DIR$/client/libraries/page.carewatch.js" />
+        <option value="$PROJECT_DIR$/client/libraries/page.history.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="15" />
-    <option name="y" value="735" />
+    <option name="y" value="710" />
     <option name="width" value="2194" />
-    <option name="height" value="687" />
+    <option name="height" value="712" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -160,38 +175,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="userspace" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -337,13 +320,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="15" y="735" width="2194" height="687" extended-state="0" />
+    <frame x="15" y="710" width="2194" height="712" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14140949" sideWeight="0.99822694" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14140949" sideWeight="0.98615915" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -411,20 +394,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/syntax.custom.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="40" selection-start="886" selection-end="886" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/page.community.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="0" selection-start="3462" selection-end="3630" vertical-scroll-proportion="0.60816324">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="0" selection-start="733" selection-end="733" vertical-scroll-proportion="0.8181818">
@@ -477,20 +446,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/page.history.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/listitem.health.events.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="19" selection-start="1077" selection-end="1077" vertical-scroll-proportion="-3.24">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.history.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="92" column="21" selection-start="1599" selection-end="1599" vertical-scroll-proportion="-8.923077">
@@ -507,23 +462,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/libraries/page.carewatch.js">
+    <entry file="file://$PROJECT_DIR$/client/templates/page.history.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="2" selection-start="1845" selection-end="1845" vertical-scroll-proportion="0.0">
+        <state line="13" column="0" selection-start="364" selection-end="364" vertical-scroll-proportion="0.3858998">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="2" selection-start="2562" selection-end="2562" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/templates/page.profile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="18" selection-start="5320" selection-end="5320" vertical-scroll-proportion="-7.88">
+        <state line="86" column="18" selection-start="5320" selection-end="5320" vertical-scroll-proportion="-9.4">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/libraries/page.carewatch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="2" selection-start="3086" selection-end="3086" vertical-scroll-proportion="0.77304965">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/page.community.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="88" selection-start="3250" selection-end="3250" vertical-scroll-proportion="0.621673">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/templates/page.carewatch.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="42" selection-start="158" selection-end="158" vertical-scroll-proportion="0.09338521">
+        <state line="62" column="55" selection-start="1820" selection-end="1820" vertical-scroll-proportion="-14.52">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/libraries/page.history.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="41" selection-start="1247" selection-end="1247" vertical-scroll-proportion="0.22695035">
           <folding />
         </state>
       </provider>

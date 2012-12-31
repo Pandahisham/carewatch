@@ -31,7 +31,7 @@ Template.health_entries.events(okCancelEvents(
                     done: false,
                     timestamp: (new Date()).getTime(),
                     tags: tag ? [tag] : [],
-                    owner: Meteor.userId,
+                    owner: Meteor.user()._id,
                     tags: tag ? [tag] : [],
                     public: 'public'
                 }, function (error, todo) {
