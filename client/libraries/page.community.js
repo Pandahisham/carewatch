@@ -65,6 +65,20 @@ Template.collaboratorItem.collaborator_email = function () {
 };
 
 
+Template.quickViewPanelTemplate.userId = function () {
+    var user = Meteor.users.findOne({ _id: Session.get('selected_community_member') });
+    return user._id;
+}
+Template.quickViewPanelTemplate.userName = function () {
+    var user = Meteor.users.findOne({ _id: Session.get('selected_community_member') });
+    return user.profile.name;
+}
+Template.quickViewPanelTemplate.userEmailAddress = function () {
+    var user = Meteor.users.findOne({ _id: Session.get('selected_community_member') });
+    if(user.emails){
+        return user.emails.address;
+    }
+}
 
 //--------------------------------------------------------------------
 // userItemTemplate
@@ -75,9 +89,7 @@ Template.collaboratorItem.collaborator_email = function () {
 
 //--------------------------------------------------------------------
 // userItemTemplate
-function showQuickViewPanel(){
-    $('#quickViewPanel').removeClass('hidden');
-}
+
 Template.userItemTemplate.events({
     'dblclick .user-card': function () {
 

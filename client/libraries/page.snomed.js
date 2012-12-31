@@ -33,7 +33,7 @@ Template.snomedPageTemplate.events({
 });
 
 Template.anatomyItemTemplate.anatomy_image = function () {
-    log_event('Template.anatomyItemTemplate.anatomy_image', LogLevel.Trace);
+    //log_event('Template.anatomyItemTemplate.anatomy_image', LogLevel.Trace);
     return this.image;
     //return 'bar';
 };

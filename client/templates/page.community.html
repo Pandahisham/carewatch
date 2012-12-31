@@ -35,10 +35,7 @@
                     </div>
 
                     {{#if showQuickViewPanel}}
-                    <div class="spacer row"></div>
-                    <div class="row">
-                        <div id="quicKViewPanel" class="panel"></div>
-                    </div>
+                        {{> quickViewPanelTemplate}}
                     {{/if}}
 
                     <div class="spacer row"></div>
@@ -51,7 +48,19 @@
         </div>
     </div>
 </template>
-
+<template name="quickViewPanelTemplate">
+    <div class="spacer row"></div>
+    <div class="row">
+        <div id="quicKViewPanel" class="reference panel">
+            <div class="card-northwest green card-meta-data">{{ userId }}</div>
+            <div class="spacer row"></div>
+            <div class="bold">{{ userName }}</div>
+            <div>{{ userEmailAddress }}</div>
+            <div class="spacer row"></div>
+            <div class="small button">delete</div>
+        </div>
+    </div>
+</template>
 <template name="userItemTemplate">
     <li class="rounded-corners user-card">
         <div class="row without-padding">
