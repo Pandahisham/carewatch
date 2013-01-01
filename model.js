@@ -54,6 +54,7 @@ Todos.allow({
             //    return false; // not the owner
 
             var allowed = [
+                "anatomy",
                 "text",
                 "tags",
                 "timestamp",
@@ -75,31 +76,30 @@ Todos.allow({
 Meteor.methods({
     createQuestion: function (options) {
         options = options || {};
-        if (! (typeof options.text === "string" && options.text.length
-//            && typeof options.description === "string" && options.description.length
-//            && typeof options.x === "number" && options.x >= 0 && options.x <= 1
-//            && typeof options.y === "number" && options.y >= 0 && options.y <= 1
-            ))
+        if (! (typeof options.text === "string" && options.text.length)){
             throw new Meteor.Error(400, "Required parameter missing");
-
-        if (options.text.length > 100)
+        }
+        if (options.text.length > 100){
             throw new Meteor.Error(413, "Title too long");
-
-        if (! options.list_id )
+        }
+        if (! options.list_id ){
             throw new Meteor.Error(413, "No list id!");
-
+        }
 //        if (! this.userId)
 //            throw new Meteor.Error(403, "You must be logged in");
 
-        console.log('####################################################### ');
-        console.log('######### Inserting Todo Item');
-        console.log('todo_item.owner:   ' + this.userId);
-        console.log('todo_item.list_id: ' + options.list_id);
-        console.log('todo_item.timestamp: ' + options.timestamp);
-        console.log('todo_item.public: ' + options.public);
-        console.log('todo_item.done: ' + options.done);
-        console.log('todo_item.text: ' + options.text);
-        console.log('');
+        log_event('####################################################### ', LogLevel.Info);
+        log_event('######### Inserting Todo Item', LogLevel.Info);
+        log_event('todo_item.owner:   ' + this.userId);
+        log_event(JSON.stringify(options), LogLevel.Info);
+
+//        console.log('todo_item.owner:   ' + this.userId);
+//        console.log('todo_item.list_id: ' + options.list_id);
+//        console.log('todo_item.timestamp: ' + options.timestamp);
+//        console.log('todo_item.public: ' + options.public);
+//        console.log('todo_item.done: ' + options.done);
+//        console.log('todo_item.text: ' + options.text);
+//        console.log('');
 
         return Todos.insert({
             owner: this.userId,
@@ -109,7 +109,6 @@ Meteor.methods({
             list_id: options.list_id,
             public: !! options.public
 //            , invited: []
-//            , rsvps: []
         });
     }
 });

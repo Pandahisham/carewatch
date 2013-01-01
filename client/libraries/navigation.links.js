@@ -33,7 +33,11 @@ function parseBreadCrumbs(page){
         $('#breadCrumbLink').html('Profile');
         break;
     case '#snomedPage':
-        $('#breadCrumbLink').html('Snomed Anatomy (Alpha)');
+        if(Session.get('selecting_anatomy')){
+            $('#breadCrumbLink').html('Select the Anatomy of Interest');
+        }else{
+            $('#breadCrumbLink').html('Snomed Anatomy (Alpha)');
+        }
         break;
     case '#icd10Page':
         $('#breadCrumbLink').html('International Classificaiton of Diseases');
@@ -43,3 +47,4 @@ function parseBreadCrumbs(page){
         //alert(page);
     }
 }
+

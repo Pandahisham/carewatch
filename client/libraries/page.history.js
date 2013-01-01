@@ -1,5 +1,7 @@
 ////////// Todos //////////
 
+Template.historyPageTemplate.helpers(genericUserDisplayObject);
+
 Template.health_entries.any_list_selected = function () {
     return !Session.equals('list_id', null);
 };
@@ -59,14 +61,15 @@ Template.health_entries.health_items = function () {
     // Determine which todos to display in main pane,
     // selected based on list_id and tag_filter.
 
-    var list_id = Session.get('list_id');
-    if (!list_id)
-        return {};
+    //var list_id = Session.get('list_id');
+    //if (!list_id)
+    //    return {};
 
-    var sel = {list_id: list_id};
-    var tag_filter = Session.get('tag_filter');
-    if (tag_filter)
-        sel.tags = tag_filter;
+    var sel = {owner: Meteor.user()._id};
+    //var sel = {list_id: list_id};
+    //var tag_filter = Session.get('tag_filter');
+    //if (tag_filter)
+    //    sel.tags = tag_filter;
 
     return Todos.find(sel, {sort: {timestamp: -1}});
 };
@@ -93,8 +96,31 @@ Template.health_entry.editing = function () {
 Template.health_entry.adding_tag = function () {
     return Session.equals('editing_addtag', this._id);
 };
+Template.health_entry.anatomy_image = function () {
+    //return Session.equals('editing_addtag', this._id);
+    if(this.anatomy){
+        log_event('*************', LogLevel.Info);
+        log_event('anatomyId: ' + this.anatomy, LogLevel.Info);
+        log_event(JSON.stringify(Anatomy.findOne(this.anatomy)), LogLevel.Info);
+        var record = Anatomy.findOne(this.anatomy);
+        return record.image;
+        //return "images/placeholder-240x240.gif";
+    }else{
+        return "images/placeholder-240x240.gif";
+    }
+};
+Template.health_entry.display_anatomy = function () {
+    if(this.anatomy){
+        return "";
+    }else{
+        return "hidden";
+    }
+};
 
 Template.health_entry.events({
+//    'click .todo': function () {
+//        alert(JSON.stringify(this));
+//    },
     'click .check': function () {
         Todos.update(this._id, {$set: {done: !this.done}});
     },
@@ -104,7 +130,9 @@ Template.health_entry.events({
     },
     'click .todo-image': function (evt, tmpl) {
         //Session.set('editing_addtag', this._id);
-        alert('click!');
+        showPage('#snomedPage');
+        alert(JSON.stringify(this));
+        Session.set('selecting_anatomy', this._id);
         Meteor.flush(); // update DOM before focus
     },
     'click .addtag': function (evt, tmpl) {

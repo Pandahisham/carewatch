@@ -98,10 +98,25 @@ Template.carewatch_entry.owner_avatar = function () {
         return "images/placeholder-240x240.gif";
     }
 }
-Template.carewatch_entry.events({
-    'click .todo': function () {
-        alert(JSON.stringify(this));
+Template.carewatch_entry.anatomy_image = function () {
+    if(this.anatomy){
+        var record = Anatomy.findOne(this.anatomy);
+        return record.image;
+    }else{
+        return "images/placeholder-240x240.gif";
     }
+}
+Template.carewatch_entry.anatomy_visible = function () {
+    if(!this.anatomy){
+        return 'hidden';
+    }
+}
+
+
+Template.carewatch_entry.events({
+//    'click .status': function () {
+//        alert(JSON.stringify(this));
+//    }
 });
 
 Template.carewatch_entry.events(okCancelEvents(

@@ -1,3 +1,5 @@
+Template.communityPageTemplate.helpers(genericUserDisplayObject);
+
 Template.communityPageTemplate.rendered = function (){};
 
 Template.communityPageTemplate.events({

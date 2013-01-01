@@ -41,7 +41,7 @@ Meteor.startup(function () {
                 profile: {
                     name: 'Jane Doe',
                     role: 'Patient',
-                    avatar: '/userspace/spokepersons/rita.hayworth.png'
+                    avatar: '/userspace/spokepersons/rita.hayworth.jpg'
                 }
             },
             {   username: 'chase',
@@ -66,7 +66,7 @@ Meteor.startup(function () {
                 password: 'ada',
                 email: 'ada@test.mobi',
                 profile: {
-                    name: 'Ada Patient',
+                    name: 'Ada Lovelace',
                     role: 'Patient',
                     avatar: '/userspace/others/ada.lovelace.jpg'
                 }
@@ -122,7 +122,7 @@ Meteor.startup(function () {
                 profile: {
                     name: 'Octavia Butler',
                     role: 'Patient',
-                    avatar: '/userspace/others/octavia.butler.jpg'
+                    avatar: '/userspace/others/george.washington.carver.jpg'
                 }
             },
             {   username: 'carver',
@@ -132,6 +132,15 @@ Meteor.startup(function () {
                     name: 'George Washington Carver',
                     role: 'Chemist',
                     avatar: '/userspace/others/samuel.clemens.jpg'
+                }
+            },
+            {   username: 'shelley',
+                password: 'shelley',
+                email: 'shelley@test.mobi',
+                profile: {
+                    name: 'Mary Shelley',
+                    role: 'Author',
+                    avatar: '/userspace/others/mary.shelley.jpg'
                 }
             },
             {   username: 'johndoe',

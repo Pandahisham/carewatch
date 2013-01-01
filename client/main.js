@@ -23,10 +23,12 @@ Session.set('editing_itemname', null);
 Session.set('current_page', null);
 
 Session.set('selected_community_member', false);
+Session.set('display_approve_carewatch_panel', false);
 
-Session.set('display_approve_carewatch_panel', true);
-
-
+Session.set('selecting_anatomy', null);
+Session.set('display_profile_json_panel', false);
+Session.set('display_snomed_preview_panel', false);
+Session.set('display_snomed_admin_panel', false);
 
 Template.app_container.loggedIn = function () {
     if(Meteor.userId()){

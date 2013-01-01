@@ -25,8 +25,13 @@ Template.snomedPageTemplate.snomed_count = function () {
 
 Template.snomedPageTemplate.events({
     'click .anatomy-item': function (evt, tmpl) {
-        $('#contentDrop').html(this.name);
-        $('#contentDrop').append(this.image);
+        if(Session.get('selecting_anatomy')){
+            Todos.update(Session.get('selecting_anatomy'), {$set: { 'anatomy' :  this._id }});
+            showPage('#historyPage');
+        }else{
+            $('#contentDrop').html(this.name);
+            $('#contentDrop').append(this.image);
+        }
         //alert(JSON.stringify(this));
         //Meteor.users.update(Meteor.userId(), {$pull: { 'profile.collaborators': this }});
     }

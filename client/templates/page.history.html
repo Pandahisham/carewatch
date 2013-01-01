@@ -2,6 +2,9 @@
     <div class="page" id="historyPage">
         <div class="doesnt-overlap-header">
             <div class="hide-for-medium hide-for-small sidebar">
+                <div class="avatar">
+                    <img class="avatar with-rounded-corners gray-border" src="{{userAvatar}}" />
+                </div>
                 {{> tag_filter}}
             </div>
             <div class="row">
@@ -41,8 +44,8 @@
             {{else}}
             <li class="destroy"></li>
             <li class="display">
-                <div class="hide-for-small todo-image">
-                    <img class="gray-border" src="images/placeholder-240x240.gif" />
+                <div class="hide-for-small todo-image {{display_anatomy}}">
+                    <img class="gray-border" src="{{anatomy_image}}" />
                 </div>
                 <span class="todo-id">{{_id}}</span>
                 <span class="todo-text">{{text}}</span>
