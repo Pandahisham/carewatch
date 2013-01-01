@@ -69,7 +69,7 @@
             </div>
             <div class="ten columns without-padding">
                 <div class="card-northwest green card-meta-data without-padding">{{ _id }}</div>
-                <div class="card-northwest-secondary user-email bold">{{ userEmail }}</div>
+                <div class="card-northwest-secondary user-email bold">{{ userName }}</div>
                 <div class="user-posts">Posts: {{userHealthEntries}}</div>
                 <div class="user-rank">HealthRank: {{userHealthRank}}</div>
             </div>
@@ -79,7 +79,7 @@
 
 <template name="collaboratorItem">
     <li>
-        <span class="collaborator">{{collaborator_email}}</span>
+        <span class="collaborator">{{collaborator_name}}</span>
         <span class="destroy"></span>
     </li>
 </template>

@@ -2,13 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d7afeac-e599-453a-b604-6ef19812d575" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/templates/listitem.health.events.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/libraries/datalist.health.events.js" afterPath="$PROJECT_DIR$/client/libraries/page.history.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/libraries/scrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/stylesheets/pages.carewatch.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/libraries/page.carewatch.js" afterPath="$PROJECT_DIR$/client/libraries/page.carewatch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/libraries/page.community.js" afterPath="$PROJECT_DIR$/client/libraries/page.community.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/libraries/page.history.js" afterPath="$PROJECT_DIR$/client/libraries/page.history.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/libraries/page.profile.js" afterPath="$PROJECT_DIR$/client/libraries/page.profile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.css" afterPath="$PROJECT_DIR$/client/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/pages.history.less" afterPath="$PROJECT_DIR$/client/stylesheets/pages.history.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/page.carewatch.html" afterPath="$PROJECT_DIR$/client/templates/page.carewatch.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/page.community.html" afterPath="$PROJECT_DIR$/client/templates/page.community.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/page.history.html" afterPath="$PROJECT_DIR$/client/templates/page.history.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model.js" afterPath="$PROJECT_DIR$/model.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/page.profile.html" afterPath="$PROJECT_DIR$/client/templates/page.profile.html" />
     </list>
     <ignored path="social-network-app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,10 +36,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="page.history.js" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/client/libraries/page.history.js">
+          <file leaf-file-name="page.community.html" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/templates/page.community.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="33" column="41" selection-start="1247" selection-end="1247" vertical-scroll-proportion="0.22695035">
+                <state line="84" column="11" selection-start="3628" selection-end="3628" vertical-scroll-proportion="0.78707224">
                   <folding />
                 </state>
               </provider>
@@ -42,16 +48,7 @@
           <file leaf-file-name="page.profile.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/templates/page.profile.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="86" column="18" selection-start="5320" selection-end="5320" vertical-scroll-proportion="-9.4">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="page.carewatch.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/templates/page.carewatch.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="62" column="55" selection-start="1820" selection-end="1820" vertical-scroll-proportion="-14.52">
+                <state line="65" column="42" selection-start="4346" selection-end="4346" vertical-scroll-proportion="-1.2">
                   <folding />
                 </state>
               </provider>
@@ -61,19 +58,28 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="model.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/model.js">
+          <file leaf-file-name="page.community.js" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/libraries/page.community.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="93" column="2" selection-start="2562" selection-end="2562" vertical-scroll-proportion="0.0">
+                <state line="67" column="4" selection-start="2368" selection-end="2368" vertical-scroll-proportion="0.48761904">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="page.carewatch.js" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="page.carewatch.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/libraries/page.carewatch.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="92" column="2" selection-start="3086" selection-end="3086" vertical-scroll-proportion="0.77304965">
+                <state line="39" column="0" selection-start="1598" selection-end="1598" vertical-scroll-proportion="-11.192307">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="page.profile.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/libraries/page.profile.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="249" column="15" selection-start="9398" selection-end="9398" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -94,22 +100,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/client/libraries/navigation.links.js" />
-        <option value="$PROJECT_DIR$/client/templates/page.news.html" />
-        <option value="$PROJECT_DIR$/client/stylesheets/syntax.custom.less" />
-        <option value="$PROJECT_DIR$/client/main.js" />
-        <option value="$PROJECT_DIR$/client/stylesheets/lists.dictionary.less" />
-        <option value="$PROJECT_DIR$/client/libraries/page.profile.js" />
-        <option value="$PROJECT_DIR$/client/templates/page.profile.html" />
         <option value="$PROJECT_DIR$/client/stylesheets/navigation.guiders.css" />
-        <option value="$PROJECT_DIR$/client/stylesheets/pages.history.less" />
         <option value="$PROJECT_DIR$/server/bootstrap.users.js" />
         <option value="$PROJECT_DIR$/client/templates/listitem.health.events.html" />
-        <option value="$PROJECT_DIR$/client/templates/page.history.html" />
         <option value="$PROJECT_DIR$/model.js" />
-        <option value="$PROJECT_DIR$/client/templates/page.carewatch.html" />
-        <option value="$PROJECT_DIR$/client/libraries/page.carewatch.js" />
+        <option value="$PROJECT_DIR$/client/stylesheets/pages.history.less" />
         <option value="$PROJECT_DIR$/client/libraries/page.history.js" />
+        <option value="$PROJECT_DIR$/client/stylesheets/pages.carewatch.less" />
+        <option value="$PROJECT_DIR$/client/templates/page.carewatch.html" />
+        <option value="$PROJECT_DIR$/client/templates/page.history.html" />
+        <option value="$PROJECT_DIR$/client/main.css" />
+        <option value="$PROJECT_DIR$/client/libraries/page.carewatch.js" />
+        <option value="$PROJECT_DIR$/client/libraries/page.profile.js" />
+        <option value="$PROJECT_DIR$/client/templates/page.profile.html" />
+        <option value="$PROJECT_DIR$/client/libraries/scrap.js" />
+        <option value="$PROJECT_DIR$/client/templates/page.community.html" />
+        <option value="$PROJECT_DIR$/client/libraries/page.community.js" />
       </list>
     </option>
   </component>
@@ -394,61 +400,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="733" selection-end="733" vertical-scroll-proportion="0.8181818">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/libraries/page.community.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="0" selection-start="2041" selection-end="2216" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/page.profile.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/libraries/page.profile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="257" column="12" selection-start="9481" selection-end="9523" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/navigation.guiders.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="7" selection-start="668" selection-end="668" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#929#4196#2" expanded="true" />
-            <element signature="e#6190#21254#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/libraries/navigation.guiders.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="29" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/stylesheets/lists.dictionary.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="15" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.history.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="21" selection-start="1599" selection-end="1599" vertical-scroll-proportion="-8.923077">
           <folding />
         </state>
       </provider>
@@ -462,51 +416,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/page.history.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="364" selection-end="364" vertical-scroll-proportion="0.3858998">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="2" selection-start="2562" selection-end="2562" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/page.profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="18" selection-start="5320" selection-end="5320" vertical-scroll-proportion="-9.4">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/libraries/page.carewatch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="2" selection-start="3086" selection-end="3086" vertical-scroll-proportion="0.77304965">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/page.community.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="88" selection-start="3250" selection-end="3250" vertical-scroll-proportion="0.621673">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/page.carewatch.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="55" selection-start="1820" selection-end="1820" vertical-scroll-proportion="-14.52">
+        <state line="93" column="2" selection-start="2562" selection-end="2562" vertical-scroll-proportion="0.37588653">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/libraries/page.history.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="41" selection-start="1247" selection-end="1247" vertical-scroll-proportion="0.22695035">
+        <state line="79" column="0" selection-start="2621" selection-end="2621" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.history.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="0" selection-start="837" selection-end="837" vertical-scroll-proportion="-22.538462">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.carewatch.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="37" selection-start="1978" selection-end="1978" vertical-scroll-proportion="-56.615383">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/page.history.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="52" selection-start="1347" selection-end="1347" vertical-scroll-proportion="-6.4">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/page.carewatch.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="10" selection-start="1212" selection-end="1212" vertical-scroll-proportion="-8.76">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="1" selection-start="1340" selection-end="1340" vertical-scroll-proportion="0.6312057">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/page.profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="42" selection-start="4346" selection-end="4346" vertical-scroll-proportion="-1.2">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/libraries/scrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="4" selection-start="1748" selection-end="1748" vertical-scroll-proportion="0.9432624">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/page.community.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="11" selection-start="3628" selection-end="3628" vertical-scroll-proportion="0.78707224">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/publications.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="26" selection-start="979" selection-end="979" vertical-scroll-proportion="0.5673759">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/libraries/page.profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="249" column="15" selection-start="9398" selection-end="9398" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/libraries/page.carewatch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="0" selection-start="1598" selection-end="1598" vertical-scroll-proportion="-11.192307">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/libraries/page.community.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="4" selection-start="2368" selection-end="2368" vertical-scroll-proportion="0.48761904">
           <folding />
         </state>
       </provider>

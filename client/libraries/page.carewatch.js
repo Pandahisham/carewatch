@@ -3,7 +3,7 @@ Template.newsPageTemplate.showNewCarewatchMember = function () {
 };
 
 Template.carewatchNewsTemplate.carewatch_entries = function () {
-  return Todos.find();
+  return Todos.find({}, {sort: {timestamp: -1}});
 };
 
 Template.carewatchCommunityTemplate.carewatchCount = function () {
@@ -36,6 +36,7 @@ Template.carewatchCommunityTemplate.carewatchMembers = function () {
         return 'Carewatch unavailable.';
     }
 };
+
 
 Template.carewatchMemberTemplate.carewatch_member_email = function () {
     log_event('Template.collaboratorItemTemplate.collaborator_email', LogLevel.Trace);

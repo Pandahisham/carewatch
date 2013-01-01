@@ -265,7 +265,8 @@ Template.carewatchItem.carewatch_email = function () {
 
 Template.carewatchItem.carewatch_name = function () {
     log_event('Template.carewatchItem.carewatch_name', LogLevel.Trace);
-    return this.address;
+    return 'bob';
+    //return this.profile.name;
 };
 
 // --------------------------------------------------------

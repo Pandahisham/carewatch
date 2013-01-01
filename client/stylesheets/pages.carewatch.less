@@ -1,0 +1,96 @@
+#carewatch-list .status {
+  display: block;
+  min-height: 50px;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+#carewatch-list .status .display, #item-list .status .edit {
+  margin-left: 30px;
+  height: 100%;
+  float: left;
+  width: 60%;
+  line-height: 1;
+  margin-top: 5px;
+}
+#carewatch-list .done .todo-text {
+  text-decoration: line-through;
+  color: #999;
+}
+#carewatch-list .status:hover{
+  cursor: pointer;
+}
+#carewatch-list .status:hover .destroy {
+  background: url('/icons/destroy.png') no-repeat 0 0;
+}
+#carewatch-list .status .destroy:hover {
+  background-position: 0 -20px;
+}
+#carewatch-list .status .item-tags {
+  overflow: auto;
+  float: right;
+  margin-right: 40px;
+  margin-top: -7px;
+}
+#carewatch-list .status .item-tags .tag {
+  margin-top: 15px;
+}
+#carewatch-list .status .item-tags .removable_tag {
+  padding-right: 22px;
+}
+#carewatch-list .status .item-tags .tag .remove {
+  position: absolute;
+  top: 0;
+  right: 4px;
+  bottom: 0;
+  width: 16px;
+  background: url("/icons/close_16.png") no-repeat 0 center;
+}
+#carewatch-list .status .item-tags .tag .remove:hover {
+  background-position: -16px center;
+}
+#carewatch-list .status .item-tags div.addtag {
+  background: none;
+  color: #333;
+  font-size: 2em;
+  margin-top: 6px;
+}
+#carewatch-list .status .item-tags div.addtag:hover {
+  color: steelblue;
+}
+#carewatch-list .status .check {
+  float: left;
+  width: 25px;
+  margin-top: 0px;
+}
+#carewatch-list .status .todo-text {
+  margin-left: 10px;
+  font-size: 100%;
+  margin-top: 5px;
+  width: 100%;
+}
+#carewatch-list .status .todo-id {
+  font-size: 80%;
+  top: 0px;
+  color: #ffa07a;
+  width: 100%;
+}
+#carewatch-list .status .avatar {
+  float: left;
+  border: 1px solid lightgray;
+  max-width: 64px;
+  max-height: 64px;
+  margin-left: -15px;
+  font-size: 100%;
+  padding: 0px;
+  margin-right: 10px;
+}
+#carewatch-list .status:hover .todo-image {
+  visibility: visible;
+}
+#carewatch-list .status .edit input {
+  margin-left: 35px;
+  maring-top: 5px;
+}

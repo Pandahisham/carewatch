@@ -63,7 +63,10 @@ Template.collaboratorItem.collaborator_email = function () {
     log_event('Template.collaboratorItemTemplate.collaborator_email', LogLevel.Trace);
     return this.address;
 };
-
+Template.collaboratorItem.collaborator_name = function () {
+    log_event('Template.collaboratorItemTemplate.collaborator_email', LogLevel.Trace);
+    return this.username;
+};
 
 Template.quickViewPanelTemplate.userId = function () {
     var user = Meteor.users.findOne({ _id: Session.get('selected_community_member') });
@@ -98,13 +101,11 @@ Template.userItemTemplate.events({
     'dblclick .user-card': function () {
         Meteor.users.update(this._id, {$addToSet: { 'profile.carewatch' : {
             _id: Meteor.userId(),
-            name: Meteor.user().profile.name,
-            address: Meteor.user().emails.address
+            name: Meteor.user().profile.name
         }}}, function(){});
         Meteor.users.update(Meteor.userId(), {$addToSet: { 'profile.collaborators': {
-            address: this.emails.address,
-            username: this.profile.name,
-            _id: this._id
+            _id: this._id,
+            name: this.profile.name
         }}}, function(){
             Meteor.flush();
             hidePages();
@@ -125,6 +126,14 @@ Template.userItemTemplate.userEmail = function () {
         return 'Emails not available.'
     }
     //return JSON.stringify(this);
+};
+Template.userItemTemplate.userName = function () {
+    log_event('Template.userItemTemplate.userName', LogLevel.Trace);
+    if(this.emails){
+        return this.profile.name;
+    }else{
+        return 'User name not available.'
+    }
 };
 Template.userItemTemplate.userHealthEntries = function () {
     log_event('Template.userItemTemplate.userHealthEntries', LogLevel.Trace);
@@ -148,60 +157,8 @@ Template.userItemTemplate.userImage = function () {
     return src;
 };
 
-
-//Template.players.isMemberOf = function (userRole) {
-//    return this.userRole === userRole;
-//};
 function toInteger(number){
     return Math.round(
         Number(number)
     );
 };
-
-
-
-
-
-//Template.communityPageTemplate.events(okCancelEvents(
-//    '#new-user',
-//    {
-//        ok: function (text, evt) {
-//            console.log('ok called on new todo item');
-//            var tag = Session.get('tag_filter');
-//            console.log('tags: ' + tag);
-//
-////            users.insert({
-////                text: text,
-////                list_id: Session.get('list_id'),
-////                done: false,
-////                timestamp: (new Date()).getTime(),
-////                tags: tag ? [tag] : []
-////            });
-//            console.log('text.length: ' + text.length);
-//            if (text.length) {
-//                console.log('text: ' + text);
-//                console.log('list_id: ' + Session.get('list_id'));
-//                console.log('owner: ' + Meteor.userId());
-//
-////                Meteor.call('createQuestion', {
-////                    text: text,
-////                    list_id: Session.get('list_id'),
-////                    done: false,
-////                    timestamp: (new Date()).getTime(),
-////                    tags: tag ? [tag] : [],
-////                    owner: Meteor.userId,
-////                    tags: tag ? [tag] : [],
-////                    public: 'public'
-////                }, function (error, todo) {
-////                    console.log('error: ' + error);
-////                    console.log('todo: ' + todo);
-////                });
-//            } else {
-//                Session.set("createError",
-//                    "It needs a title and a description, or why bother?");
-//            }
-//
-//            evt.target.value = '';
-//        }
-//    })
-//);

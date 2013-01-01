@@ -49,19 +49,21 @@
             </li>
             {{/if}}
             <li class="item-tags">
-                {{#each tag_objs}}
-                <div class="tag removable_tag">
-                    <div class="name">{{tag}}</div>
-                    <div class="remove"></div>
-                </div>
-                {{/each}}
-                {{#if adding_tag}}
-                <div class="tag edittag">
-                    <input type="text" id="edittag-input" value="" />
-                </div>
-                {{else}}
-                <div class="tag addtag pictographs">J</div>
-                {{/if}}
+                <ul class="inline-list taglist">
+                    {{#each tag_objs}}
+                    <li class="tag removable_tag">
+                        <div class="name">{{tag}}</div>
+                        <div class="remove"></div>
+                    </li>
+                    {{/each}}
+                    {{#if adding_tag}}
+                    <li class="tag edittag">
+                        <input type="text" id="edittag-input" value="" />
+                    </li>
+                    {{else}}
+                    <li class="pictograph-icon addtag pictographs">J</li>
+                    {{/if}}
+                </ul>
             </li>
         </ul>
     </li>

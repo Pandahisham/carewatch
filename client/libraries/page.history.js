@@ -102,13 +102,16 @@ Template.health_entry.events({
     'click .destroy': function () {
         Todos.remove(this._id);
     },
-
+    'click .todo-image': function (evt, tmpl) {
+        //Session.set('editing_addtag', this._id);
+        alert('click!');
+        Meteor.flush(); // update DOM before focus
+    },
     'click .addtag': function (evt, tmpl) {
         Session.set('editing_addtag', this._id);
         Meteor.flush(); // update DOM before focus
         activateInput(tmpl.find("#edittag-input"));
     },
-
     'dblclick .display .todo-text': function (evt, tmpl) {
         Session.set('editing_itemname', this._id);
         Meteor.flush(); // update DOM before focus

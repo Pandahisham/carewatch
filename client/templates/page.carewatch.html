@@ -12,18 +12,6 @@
 
 
 
-<template name="carewatchNewsTemplate">
-
-    <div class="row">
-        <div id="items-view">
-            <ul id="item-list">
-                {{#each carewatch_entries}}
-                {{> carewatch_entry}}
-                {{/each}}
-            </ul>
-        </div>
-    </div>
-</template>
 
 <template name="carewatchCommunityTemplate">
     <div class="panel reference row">
@@ -37,7 +25,6 @@
     </div>
     <div class="spacer row"></div>
 </template>
-
 <template name="carewatchMemberTemplate">
     <li>
         <span class="carewatch">{{carewatch_member_name}}</span>
@@ -46,24 +33,31 @@
 </template>
 
 
+
+
+<template name="carewatchNewsTemplate">
+
+    <div class="row">
+        <div id="items-view">
+            <ul id="carewatch-list">
+                {{#each carewatch_entries}}
+                {{> carewatch_entry}}
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</template>
 <template name="carewatch_entry">
-    <li class="todo {{done_class}}">
+    <li class="status">
         <ul class="inline-list">
-            {{#if editing}}
-            <li class="edit">
-                <input id="todo-input" type="text" value="{{text}}" />
-            </li>
-            {{else}}
-            <li class="destroy"></li>
             <li class="display">
-                <div class="hide-for-small todo-image">
-                    <img class="gray-border" src="{{owner_avatar}}" />
+                <div >
+                    <img class="hide-for-small avatar" src="{{owner_avatar}}" />
                 </div>
                 <span class="todo-id">{{_id}}</span>
+                <span class="todo-text bold">{{owner_name}}</span>
                 <span class="todo-text">{{text}}</span>
             </li>
-            {{/if}}
-            <div class="addtag">{{owner_name}}</div>
         </ul>
     </li>
 </template>
