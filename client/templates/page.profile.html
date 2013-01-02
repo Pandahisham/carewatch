@@ -17,12 +17,12 @@
                                 <li>
                                     <span id="profile-display-name-label" class="dictionary-key hidden-top-row">Name</span>
                                     {{#if editing_name}}
-                                    <div id="userNameInput" class="edit dictionary-value-editing">
+                                    <div id="userNameInput" class="edit dictionary-value-editing hidden-top-row">
                                         <input id="profile-input-name" type="text" placeholder="Jane Doe" value="{{user_name}}" />
                                     </div>
                                     {{else}}
                                     <div id="userNameDisplay" class="userNameDisplay display dictionary-value-editing hidden-top-row">
-                                        <span id="profile-display-name" class="dictionary-value">{{user_name}}</span>
+                                        <span id="profile-display-name" class="dictionary-value hidden-top-row">{{user_name}}</span>
                                     </div>
                                     {{/if}}
                                 </li>

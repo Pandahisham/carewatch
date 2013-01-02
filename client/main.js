@@ -54,16 +54,16 @@ Meteor.startup(function () {
     filepicker.setKey('ALZywWZ1wQIuLEBAun2fAz');
 
 
-    $('#xmlData').html('');
-    $.ajax({
-        type:   "get",
-        url:    '/datafile/ICD10_Disease_Sample.xml',
-        dataType: "xml",
-        complete: function(data){
-            var json = $.xmlToJSON(data.responseXML);
-            $('#xmlData').html(JSON.stringify(json));
-        }
-    });
+//    $('#xmlData').html('');
+//    $.ajax({
+//        type:   "get",
+//        url:    '/datafile/ICD10_Disease_Sample.xml',
+//        dataType: "xml",
+//        complete: function(data){
+//            var json = $.xmlToJSON(data.responseXML);
+//            $('#xmlData').html(JSON.stringify(json));
+//        }
+//    });
 
 
     // set default page views

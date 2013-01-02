@@ -131,7 +131,7 @@ Template.health_entry.events({
     'click .todo-image': function (evt, tmpl) {
         //Session.set('editing_addtag', this._id);
         showPage('#snomedPage');
-        alert(JSON.stringify(this));
+        //alert(JSON.stringify(this));
         Session.set('selecting_anatomy', this._id);
         Meteor.flush(); // update DOM before focus
     },
