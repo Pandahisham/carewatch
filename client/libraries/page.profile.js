@@ -263,11 +263,7 @@ Template.carewatchItem.carewatch_email = function () {
     return 'foo@hoo.com';
 };
 
-Template.carewatchItem.carewatch_name = function () {
-    log_event('Template.carewatchItem.carewatch_name', LogLevel.Trace);
-    return 'bob';
-    //return this.profile.name;
-};
+
 
 // --------------------------------------------------------
 // LOGGED IN, ETC

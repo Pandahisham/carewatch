@@ -10,6 +10,7 @@ Meteor.subscribe('lists', function () {
 
 //Meteor.subscribe('anatomy');
 Meteor.subscribe('usersDirectory');
+Meteor.subscribe('hipaa');
 //Meteor.subscribe('userProfile', Meteor.userId());
 
 
@@ -17,6 +18,7 @@ Meteor.subscribe('usersDirectory');
 Meteor.autosubscribe(function () {
     Meteor.subscribe('anatomy');
     Meteor.subscribe('usersDirectory');
+    Meteor.subscribe('hipaa');
 
     Meteor.subscribe('userProfile', Meteor.userId());
     //var list_id = Session.get('list_id');

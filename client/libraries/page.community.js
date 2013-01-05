@@ -1,6 +1,5 @@
 Template.communityPageTemplate.helpers(genericUserDisplayObject);
-
-Template.communityPageTemplate.rendered = function (){};
+Template.quickViewPanelTemplate.helpers(genericUserDisplayObject);
 
 Template.communityPageTemplate.events({
     'click .destroy': function (evt, tmpl) {
@@ -13,6 +12,23 @@ Template.communityPageTemplate.events({
     'keypress input': function (evt, tmpl) {
        Session.set('community_members_filter', $('#filterInput').val());
        Meteor.flush();
+    },
+    'click .delete-user': function(){
+        alert('delete user not implemented yet!');
+    },
+    'click .clear-collaborators': function(){
+        Meteor.call('clearCollaborators', function () {
+            var user = Meteor.users.findOnce({ '_id': Meteor.userId });
+            alert('Collaborators: '+ user.profile.collaborators.count());
+        });
+        //Meteor.users.update({ '_id': Session.get('selected_community_member' )} , {$unset: { carewatch: '' }});
+    },
+    'click .clear-carewatch': function(){
+        Meteor.call('clearCarewatch', function (result){
+            var user = Meteor.users.findOnce({ '_id': Meteor.userId });
+            alert('Carewatch Members: '+ user.profile.carewatch.count());
+        });
+        //Meteor.users.update({ '_id': Session.get('selected_community_member' )} , {$unset: { collaborators: '' }});
     }
 });
 Template.communityPageTemplate.communityUsers = function () {
@@ -42,16 +58,16 @@ Template.communityPageTemplate.collaborators_count = function () {
     // Meteor.user().profile breaks when user is logged out
     if(Meteor.user()){
         if(Meteor.user().profile){
-            if(Meteor.user().profile.collaborators > 0){
+            if(Meteor.user().profile.collaborators){
                 return Meteor.user().profile.collaborators.length;
             }else{
                 return '0';
             }
         }else{
-            return '0';
+            return 'No user profile created. 0';
         }
     }else{
-        return 'No profile yet.';
+        return 'User not logged in.  0';
     }
 };
 
@@ -70,7 +86,7 @@ Template.collaboratorItem.collaborator_name = function () {
     return this.username;
 };
 
-Template.quickViewPanelTemplate.userId = function () {
+Template.quickViewPanelTemplate.user_id = function () {
     var user = Meteor.users.findOne({ _id: Session.get('selected_community_member') });
     if(user){
         return user._id;
@@ -78,14 +94,20 @@ Template.quickViewPanelTemplate.userId = function () {
         return false;
     }
 }
-Template.quickViewPanelTemplate.userName = function () {
+Template.quickViewPanelTemplate.user_name = function () {
     var user = Meteor.users.findOne({ _id: Session.get('selected_community_member') });
     return user.profile.name;
 }
-Template.quickViewPanelTemplate.userEmailAddress = function () {
+Template.quickViewPanelTemplate.user_email = function () {
     var user = Meteor.users.findOne({ _id: Session.get('selected_community_member') });
     if(user.emails){
         return user.emails.address;
+    }
+}
+Template.quickViewPanelTemplate.user_avatar = function () {
+    var user = Meteor.users.findOne({ _id: Session.get('selected_community_member') });
+    if(user.profile){
+        return user.profile.avatar;
     }
 }
 
@@ -101,18 +123,26 @@ Template.quickViewPanelTemplate.userEmailAddress = function () {
 
 Template.userItemTemplate.events({
     'dblclick .user-card': function () {
-        Meteor.users.update(this._id, {$addToSet: { 'profile.carewatch' : {
-            _id: Meteor.userId(),
-            name: Meteor.user().profile.name
-        }}}, function(){});
-        Meteor.users.update(Meteor.userId(), {$addToSet: { 'profile.collaborators': {
+        // first we update the logged in user's profile
+        // that they have shared their data with another person
+        Meteor.users.update(Meteor.userId(), {$addToSet: { 'profile.carewatch' : {
             _id: this._id,
             name: this.profile.name
+        }}});
+        log_hipaa_event("Added " + this.profile.name + " to carewatch list.", LogLevel.Hipaa, Meteor.user()._id);
+
+        // then we update the other person's profile
+        // and notify them that they now have access to this persons profile
+        Meteor.users.update(this._id, {$addToSet: { 'profile.collaborators': {
+            _id: Meteor.userId(),
+            name: Meteor.user().profile.name
         }}}, function(){
             Meteor.flush();
             hidePages();
             showPage('#communityPage');
         });
+        log_hipaa_event("Permission granted to view health history belonging to " + Meteor.user().profile.name + ".", LogLevel.Hipaa, this._id);
+
     },
     'click .user-card': function () {
         Session.set('selected_community_member', this._id);

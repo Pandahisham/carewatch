@@ -20,4 +20,11 @@ var genericUserDisplayObject = {
             log_event(err, LogLevel.Error);
         }
     },
+    isAdmin: function() {
+        if(Meteor.user().profile.role == "Administrator"){
+            return true;
+        }else{
+            return false;
+        }
+    }
 };

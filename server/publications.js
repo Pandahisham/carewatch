@@ -1,19 +1,30 @@
 // Publish complete set of lists to all clients.
-Meteor.publish('lists', function () {
-  return Lists.find();
-});
-
 Meteor.publish('anatomy', function () {
     return Anatomy.find();
 });
+Meteor.publish('hipaa', function () {
+    return Hipaa.find();
+});
+
+// not used anymore
+// but be careful about removing until routing.js is taken care of
+Meteor.publish('lists', function () {
+    return Lists.find();
+});
+
 
 // Publish all items for requested list_id.
+// We've ripped out most all of the list functionality from the UI
+// and needed to remove the list_id references
 Meteor.publish('todos', function (list_id) {
   //return Todos.find({list_id: list_id});
     return Todos.find(
       {$or: [{"public": true}, {list_id: list_id}, {invited: this.userId}, {owner: this.userId}]}
     );
 });
+
+
+// Publish users directory and user profile
 Meteor.publish("usersDirectory", function () {
     return Meteor.users.find({}, {fields: {
         '_id': true,
@@ -26,7 +37,6 @@ Meteor.publish("usersDirectory", function () {
         'emails.address': true
     }});
 });
-
 Meteor.publish('userProfile', function (userId) {
     return Meteor.users.find({_id: this.userId}, {fields: {
         '_id': 1,
@@ -41,23 +51,3 @@ Meteor.publish('userProfile', function (userId) {
         'emails[0].address': 1
     }});
 });
-//Meteor.publish('userProfile', function (userId) {
-//    return Meteor.users.find({_id: this.userId}, {fields: {
-//        '_id': 1,
-//        'username': 1,
-//        'profile': 1,
-//        'emails': 1,
-//        'emails.address': 1,
-//        'emails[0].address': 1
-//    }});
-//});
-//Meteor.publish("allUserData", function () {
-//    return Meteor.users.find({}, {fields: {
-//        '_id': 1,
-//        'username': 1,
-//        'emails': 1,
-//        'sex': 1,
-//        'dateOfBirth': 1,
-//        'age': 1
-//    }});
-//});

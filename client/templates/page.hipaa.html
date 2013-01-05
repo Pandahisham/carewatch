@@ -1,0 +1,24 @@
+<template name="hipaaPageTemplate">
+    <div id="hipaaPage" class="page">
+        <div class="doesnt-overlap-header row"></div>
+        <div class="spacer row"></div>
+        {{> hipaaLog }}
+    </div>
+</template>
+<template name="hipaaLog">
+    <div class="row">
+        hipaa audit log, {{ hipaaAuditSize }} entries
+    </div>
+    <div class="row">
+        <ul>
+        {{#each hipaaAudit}}
+        {{> hipaaEntry}}
+        {{/each}}
+        </ul>
+    </div>
+</template>
+
+<template name="hipaaEntry">
+    <li><span class="gray">{{entry_timestamp}}</span>, {{text}}
+    </li>
+</template>

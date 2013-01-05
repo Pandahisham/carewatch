@@ -2,6 +2,7 @@ Todos =     new Meteor.Collection("todos");
 Anatomy =   new Meteor.Collection("anatomy");
 Lists =     new Meteor.Collection("lists");
 usersDirectory =     new Meteor.Collection("usersDirectory");
+Hipaa =     new Meteor.Collection("hipaa");
 
 
 Anatomy.allow({
@@ -15,7 +16,17 @@ Anatomy.allow({
         return true;
     }
 });
-
+Hipaa.allow({
+    insert: function(){
+        return true;
+    },
+    update: function () {
+        return true;
+    },
+    remove: function(){
+        return true;
+    }
+});
 
 Meteor.users.allow({
     insert: function(userId, todo){
@@ -93,14 +104,6 @@ Meteor.methods({
         log_event('todo_item.owner:   ' + this.userId);
         log_event(JSON.stringify(options), LogLevel.Info);
 
-//        console.log('todo_item.owner:   ' + this.userId);
-//        console.log('todo_item.list_id: ' + options.list_id);
-//        console.log('todo_item.timestamp: ' + options.timestamp);
-//        console.log('todo_item.public: ' + options.public);
-//        console.log('todo_item.done: ' + options.done);
-//        console.log('todo_item.text: ' + options.text);
-//        console.log('');
-
         return Todos.insert({
             owner: this.userId,
             text: options.text,
@@ -109,6 +112,14 @@ Meteor.methods({
             list_id: options.list_id,
             public: !! options.public
 //            , invited: []
+        });
+    },
+    clearCollaborators: function () {
+        Meteor.users.update({ '_id': this.userId },{$unset: { 'profile.collaborators': '' }});
+    },
+    clearCarewatch: function () {
+        Meteor.users.update({ '_id': this.userId },{$unset: { 'profile.carewatch': '' }}, function (){
+            return true;
         });
     }
 });

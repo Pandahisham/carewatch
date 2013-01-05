@@ -20,6 +20,9 @@ function showCurrentSessionPage(){
 }
 function parseBreadCrumbs(page){
     switch(page){
+    case '#hipaaPage':
+            $('#breadCrumbLink').html('HIPAA Audit');
+            break;
     case '#newsPage':
         $('#breadCrumbLink').html('Carewatch');
         break;
