@@ -5,6 +5,9 @@ Meteor.publish('anatomy', function () {
 Meteor.publish('hipaa', function () {
     return Hipaa.find();
 });
+Meteor.publish('icd10', function () {
+    return Icd10.find();
+});
 
 // not used anymore
 // but be careful about removing until routing.js is taken care of

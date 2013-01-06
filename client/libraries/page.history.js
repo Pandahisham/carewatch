@@ -97,14 +97,8 @@ Template.health_entry.adding_tag = function () {
     return Session.equals('editing_addtag', this._id);
 };
 Template.health_entry.anatomy_image = function () {
-    //return Session.equals('editing_addtag', this._id);
-    if(this.anatomy){
-        log_event('*************', LogLevel.Info);
-        log_event('anatomyId: ' + this.anatomy, LogLevel.Info);
-        log_event(JSON.stringify(Anatomy.findOne(this.anatomy)), LogLevel.Info);
-        var record = Anatomy.findOne(this.anatomy);
-        return record.image;
-        //return "images/placeholder-240x240.gif";
+    if(this.anatomy && Anatomy.findOne(this.anatomy)){
+        return Anatomy.findOne(this.anatomy).image;
     }else{
         return "images/placeholder-240x240.gif";
     }

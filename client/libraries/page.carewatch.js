@@ -99,9 +99,8 @@ Template.carewatch_entry.owner_avatar = function () {
     }
 }
 Template.carewatch_entry.anatomy_image = function () {
-    if(this.anatomy){
-        var record = Anatomy.findOne(this.anatomy);
-        return record.image;
+    if(this.anatomy && Anatomy.findOne(this.anatomy)){
+        return Anatomy.findOne(this.anatomy).image;
     }else{
         return "images/placeholder-240x240.gif";
     }

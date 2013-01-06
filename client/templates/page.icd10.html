@@ -9,7 +9,7 @@
                 </div>
                 <div class="six columns">
                     <div class="json-data panel">
-                        json data
+                        {{> icdList }}
                     </div>
                 </div>
 
@@ -27,6 +27,18 @@
     </div>
 </template>
 
-<template name="icdItemTemplate">
 
+<template name="icdList">
+    <div class="row">
+        <ul>
+            {{#each icdCatalog }}
+            {{> icdItemTemplate }}
+            {{/each }}
+        </ul>
+    </div>
+</template>
+<template name="icdItemTemplate">
+    <li>
+        {{ json }}
+    </li>
 </template>

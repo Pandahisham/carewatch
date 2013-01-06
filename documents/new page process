@@ -1,0 +1,48 @@
+//---------------------------------------------------------------------------------------------------
+// client/templates/indent.tree.html
+// create the html page template for the new page
+
+<template name="indentTreePageTemplate">
+    <div id="indentTreePage">
+        <div class="doesnt-overlap-header">
+            <div class="spacer row">
+                Lorem ipsum dolor sit amet...
+            </div>
+        </div>
+    </div>
+</template>
+
+
+//---------------------------------------------------------------------------------------------------
+// client/main.html
+// include a reference to the new page template in the app_container
+// this is a single-page website, so we declare all pages at load
+
+<template name="app_container">
+    {{> headerBarTemplate }}
+    {{ ... }}
+    {{> indentTreePageTemplate }}
+    {{ ... }}
+    {{> footerBarTemplate }}
+</template>
+
+
+//---------------------------------------------------------------------------------------------------
+// client/main.html
+// we then want to update the homepage navigation with a link
+// so we can access the new page
+
+            <li><a href="#indentTreePage" onclick="showPage('#indentTreePage');">ICD10 Indent Tree</a></li>
+
+
+//---------------------------------------------------------------------------------------------------
+// client/stylesheets/indent.tree.less
+// copy the css in
+
+//---------------------------------------------------------------------------------------------------
+// client/stylesheets/indent.tree.html
+// copy the html in
+
+//---------------------------------------------------------------------------------------------------
+// client/stylesheets/indent.tree.js
+// copy the javascript in

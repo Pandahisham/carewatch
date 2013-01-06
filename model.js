@@ -3,7 +3,7 @@ Anatomy =   new Meteor.Collection("anatomy");
 Lists =     new Meteor.Collection("lists");
 usersDirectory =     new Meteor.Collection("usersDirectory");
 Hipaa =     new Meteor.Collection("hipaa");
-
+Icd10 =     new Meteor.Collection("icd10");
 
 Anatomy.allow({
     insert: function(){
@@ -27,7 +27,17 @@ Hipaa.allow({
         return true;
     }
 });
-
+Icd10.allow({
+    insert: function(){
+        return true;
+    },
+    update: function () {
+        return true;
+    },
+    remove: function(){
+        return true;
+    }
+});
 Meteor.users.allow({
     insert: function(userId, todo){
         //return userId && todo.owner === userId;

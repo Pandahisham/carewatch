@@ -2,15 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d7afeac-e599-453a-b604-6ef19812d575" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/libraries/helpers/date.format.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/libraries/indent.tree.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/libraries/page.pregnancy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/libraries/page.snomed.about.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/libraries/page.story.canvas.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/stylesheets/indent.tree.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/stylesheets/page.hipaa.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/stylesheets/page.pregnancy.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/stylesheets/page.snomed.about.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/stylesheets/page.story.canvas.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/templates/indent.tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/templates/page.pregnancy.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/templates/page.snomed.about.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/templates/page.story.canvas.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documents/new page process" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/flare.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/bootstrap.icd10.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/stylesheets/pages.carewatch.less" afterPath="$PROJECT_DIR$/client/stylesheets/page.carewatch.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/stylesheets/pages.guest.less" afterPath="$PROJECT_DIR$/client/stylesheets/page.guest.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/stylesheets/pages.hipaa.less" afterPath="$PROJECT_DIR$/client/libraries/helpers/d3.layout.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/stylesheets/pages.history.less" afterPath="$PROJECT_DIR$/client/stylesheets/page.history.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/stylesheets/pages.layout.less" afterPath="$PROJECT_DIR$/client/stylesheets/page.layout.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/stylesheets/pages.snomed.less" afterPath="$PROJECT_DIR$/client/stylesheets/page.snomed.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/packages" afterPath="$PROJECT_DIR$/.meteor/packages" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/libraries/page.community.js" afterPath="$PROJECT_DIR$/client/libraries/page.community.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/libraries/page.hipaa.js" afterPath="$PROJECT_DIR$/client/libraries/page.hipaa.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/libraries/page.carewatch.js" afterPath="$PROJECT_DIR$/client/libraries/page.carewatch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/libraries/page.history.js" afterPath="$PROJECT_DIR$/client/libraries/page.history.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/libraries/page.icd10.js" afterPath="$PROJECT_DIR$/client/libraries/page.icd10.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.html" afterPath="$PROJECT_DIR$/client/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/syntax.colors.less" afterPath="$PROJECT_DIR$/client/stylesheets/syntax.colors.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/page.hipaa.html" afterPath="$PROJECT_DIR$/client/templates/page.hipaa.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.js" afterPath="$PROJECT_DIR$/client/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/subscriptions.js" afterPath="$PROJECT_DIR$/client/subscriptions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/page.icd10.html" afterPath="$PROJECT_DIR$/client/templates/page.icd10.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model.js" afterPath="$PROJECT_DIR$/model.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/datafile/ICD10_Disease_Sample.xml" afterPath="$PROJECT_DIR$/public/datafile/ICD10_Disease_Sample.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/publications.js" afterPath="$PROJECT_DIR$/server/publications.js" />
     </list>
     <ignored path="social-network-app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,116 +53,142 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.38226882">
+    <splitter split-orientation="vertical" split-proportion="0.68068534">
       <split-first>
-        <leaf>
-          <file leaf-file-name="hipaa.logging.js" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/lib/hipaa.logging.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="41" column="26" selection-start="995" selection-end="995" vertical-scroll-proportion="0.5297619">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="model.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/model.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="118" column="57" selection-start="3328" selection-end="3328" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="date.format.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/libraries/helpers/date.format.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="9" column="47" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="page.hipaa.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/templates/page.hipaa.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="12" column="17" selection-start="347" selection-end="347" vertical-scroll-proportion="-7.68">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
+        <splitter split-orientation="vertical" split-proportion="0.9">
+          <split-first>
+            <leaf>
+              <file leaf-file-name="indent.tree.js" pinned="false" current="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/client/libraries/indent.tree.js">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="12" column="10" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="page.story.canvas.less" pinned="false" current="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/client/stylesheets/page.story.canvas.less">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="page.story.canvas.js" pinned="false" current="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/client/libraries/page.story.canvas.js">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="page.snomed.about.html" pinned="false" current="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/client/templates/page.snomed.about.html">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="page.snomed.html" pinned="false" current="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/client/templates/page.snomed.html">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="17" column="0" selection-start="750" selection-end="750" vertical-scroll-proportion="-10.88">
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="page.snomed.about.less" pinned="false" current="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/client/stylesheets/page.snomed.about.less">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="page.snomed.about.less" pinned="false" current="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/client/libraries/page.snomed.about.less">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="page.history.js" pinned="false" current="true" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/client/libraries/page.history.js">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="99" column="53" selection-start="3256" selection-end="3256" vertical-scroll-proportion="0.45565748">
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="page.carewatch.js" pinned="false" current="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/client/libraries/page.carewatch.js">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="105" column="5" selection-start="3545" selection-end="3545" vertical-scroll-proportion="0.0">
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-first>
+          <split-second>
+            <leaf>
+              <file leaf-file-name="indent.tree.less" pinned="false" current="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/client/stylesheets/indent.tree.less">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="12" column="0" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/client/main.html">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="58" column="28" selection-start="2540" selection-end="2540" vertical-scroll-proportion="-14.08">
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/client/main.js">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="70" column="35" selection-start="1837" selection-end="1837" vertical-scroll-proportion="2.2222223">
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-second>
+        </splitter>
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="page.community.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/libraries/page.community.js">
+          <file leaf-file-name="indent.tree.html" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/templates/indent.tree.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="27" column="30" selection-start="1297" selection-end="1297" vertical-scroll-proportion="0.0">
+                <state line="12" column="11" selection-start="1432" selection-end="1432" vertical-scroll-proportion="0.6">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="helpers.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/libraries/helpers.js">
+          <file leaf-file-name="new page process" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/documents/new page process">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="21" column="6" selection-start="715" selection-end="715" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="page.hipaa.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/libraries/page.hipaa.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="8" column="1" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="syntax.colors.less" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/client/stylesheets/syntax.colors.less">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="41" column="18" selection-start="402" selection-end="402" vertical-scroll-proportion="0.82591873">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="page.history.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/libraries/page.history.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="73" column="52" selection-start="2555" selection-end="2555" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="page.profile.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/libraries/page.profile.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="122" column="1" selection-start="5487" selection-end="5487" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/main.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="29" column="12" selection-start="803" selection-end="803" vertical-scroll-proportion="-14.72">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/main.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="33" column="24" selection-start="998" selection-end="998" vertical-scroll-proportion="0.0">
+                <state line="39" column="18" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -159,30 +209,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/client/libraries/navigation.links.js" />
-        <option value="$PROJECT_DIR$/client/subscriptions.js" />
         <option value="$PROJECT_DIR$/server/publications.js" />
-        <option value="$PROJECT_DIR$/lib/hipaa.logging.js" />
-        <option value="$PROJECT_DIR$/client/templates/page.profile.html" />
-        <option value="$PROJECT_DIR$/client/libraries/page.profile.js" />
-        <option value="$PROJECT_DIR$/client/stylesheets/pages.community.less" />
-        <option value="$PROJECT_DIR$/client/templates/page.community.html" />
-        <option value="$PROJECT_DIR$/client/libraries/helpers.js" />
+        <option value="$PROJECT_DIR$/client/subscriptions.js" />
+        <option value="$PROJECT_DIR$/client/templates/page.icd10.html" />
+        <option value="$PROJECT_DIR$/server/bootstrap.icd10.js" />
+        <option value="$PROJECT_DIR$/client/libraries/page.icd10.js" />
+        <option value="$PROJECT_DIR$/public/datafile/ICD10_Disease_Sample.xml" />
         <option value="$PROJECT_DIR$/client/main.html" />
-        <option value="$PROJECT_DIR$/model.js" />
-        <option value="$PROJECT_DIR$/client/libraries/page.community.js" />
-        <option value="$PROJECT_DIR$/client/libraries/helpers/date.format.js" />
-        <option value="$PROJECT_DIR$/client/libraries/page.hipaa.js" />
-        <option value="$PROJECT_DIR$/client/stylesheets/syntax.colors.less" />
-        <option value="$PROJECT_DIR$/client/templates/page.hipaa.html" />
+        <option value="$PROJECT_DIR$/client/libraries/helpers/d3.layout.js" />
+        <option value="$PROJECT_DIR$/public/flare.json" />
+        <option value="$PROJECT_DIR$/documents/new page process" />
+        <option value="$PROJECT_DIR$/client/libraries/indent.tree.js" />
+        <option value="$PROJECT_DIR$/client/templates/indent.tree.html" />
+        <option value="$PROJECT_DIR$/client/stylesheets/indent.tree.less" />
+        <option value="$PROJECT_DIR$/client/main.js" />
+        <option value="$PROJECT_DIR$/client/libraries/page.carewatch.js" />
+        <option value="$PROJECT_DIR$/client/libraries/page.history.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="15" />
-    <option name="y" value="749" />
-    <option name="width" value="1789" />
-    <option name="height" value="687" />
+    <option name="x" value="-5" />
+    <option name="y" value="73" />
+    <option name="width" value="1500" />
+    <option name="height" value="1332" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -210,7 +260,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -267,7 +316,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value="documents" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -349,39 +398,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helpers" />
+              <option name="myItemId" value=".meteor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="preferences.lookFeel" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/userspace/spokepersons" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/libraries/helpers" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/client/libraries" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server" />
+      <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/public/userspace/spokepersons" />
       <recent name="$PROJECT_DIR$/public/userspace/others" />
-      <recent name="$PROJECT_DIR$/lib" />
     </key>
   </component>
   <component name="RunManager">
@@ -422,13 +466,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="15" y="749" width="1789" height="687" extended-state="0" />
+    <frame x="-5" y="73" width="1500" height="1332" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21744055" sideWeight="0.97920275" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.197021" sideWeight="0.9992212" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -496,114 +540,114 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.community.less">
+    <entry file="file://$PROJECT_DIR$/client/templates/page.snomed.about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="3" selection-start="1852" selection-end="1852" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/page.community.html">
+    <entry file="file://$PROJECT_DIR$/client/libraries/helpers/d3.layout.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="0" selection-start="3559" selection-end="3559" vertical-scroll-proportion="1.2801557">
+        <state line="6" column="0" selection-start="313" selection-end="313" vertical-scroll-proportion="0.23940149">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/subscriptions.js">
+    <entry file="file://$PROJECT_DIR$/public/flare.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="32" selection-start="561" selection-end="561" vertical-scroll-proportion="0.49536178">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/publications.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="275" selection-end="275" vertical-scroll-proportion="0.296846" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/libraries/helpers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="6" selection-start="715" selection-end="715" vertical-scroll-proportion="0.0">
+        <state line="379" column="1" selection-start="17089" selection-end="17089" vertical-scroll-proportion="0.9160105">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/libraries/page.history.js">
+    <entry file="file://$PROJECT_DIR$/client/templates/page.snomed.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="52" selection-start="2555" selection-end="2555" vertical-scroll-proportion="0.0">
+        <state line="17" column="0" selection-start="750" selection-end="750" vertical-scroll-proportion="-10.88">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/libraries/page.profile.js">
+    <entry file="file://$PROJECT_DIR$/documents/new page process">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="1" selection-start="5487" selection-end="5487" vertical-scroll-proportion="0.0">
+        <state line="39" column="18" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/main.js">
+    <entry file="file://$PROJECT_DIR$/.meteor/packages">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="24" selection-start="998" selection-end="998" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/indent.tree.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="11" selection-start="1432" selection-end="1432" vertical-scroll-proportion="0.6">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/indent.tree.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="12" selection-start="803" selection-end="803" vertical-scroll-proportion="-14.72">
+        <state line="58" column="28" selection-start="2540" selection-end="2540" vertical-scroll-proportion="-14.08">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="35" selection-start="1837" selection-end="1837" vertical-scroll-proportion="2.2222223">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/libraries/indent.tree.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="10" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/libraries/page.snomed.about.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/libraries/page.community.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="30" selection-start="1297" selection-end="1297" vertical-scroll-proportion="0.0">
+        <state line="24" column="6" selection-start="1131" selection-end="1131" vertical-scroll-proportion="-6.3846154">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model.js">
+    <entry file="file://$PROJECT_DIR$/client/templates/page.story.canvas.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="57" selection-start="3328" selection-end="3328" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/libraries/page.hipaa.js">
+    <entry file="file://$PROJECT_DIR$/client/libraries/page.carewatch.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="1" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0">
+        <state line="105" column="5" selection-start="3545" selection-end="3545" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/syntax.colors.less">
+    <entry file="file://$PROJECT_DIR$/client/libraries/page.history.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="18" selection-start="402" selection-end="402" vertical-scroll-proportion="0.82591873">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/libraries/helpers/date.format.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="47" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/page.hipaa.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="17" selection-start="347" selection-end="347" vertical-scroll-proportion="-7.68">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/hipaa.logging.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="26" selection-start="995" selection-end="995" vertical-scroll-proportion="0.5297619">
+        <state line="99" column="53" selection-start="3256" selection-end="3256" vertical-scroll-proportion="0.45565748">
           <folding />
         </state>
       </provider>
