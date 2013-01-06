@@ -44,7 +44,9 @@ Template.app_container.rendered = function () {
     hidePages();
     showCurrentSessionPage();
 };
-
+window.onresize = function(){
+    Meteor.flush();
+};
 
 
 Meteor.startup(function () {
@@ -53,36 +55,7 @@ Meteor.startup(function () {
     //Seting up Filepicker.io with your api key
     filepicker.setKey('ALZywWZ1wQIuLEBAun2fAz');
 
-
-    var w = 200,
-        h = 200,
-        i = 0,
-        barHeight = 20,
-        barWidth = w * .8,
-        duration = 400,
-        root;
-
-//    var tree = d3.layout.tree()
-//        .size([h, 100]);
-//
-//    var diagonal = d3.svg.diagonal()
-//        .projection(function(d) { return [d.y, d.x]; });
-
-    d3.select("#chart").append('bar');
-
-    var vis = d3.select("#chart").append("svg:svg")
-        .attr("width", w)
-        .attr("height", h)
-        .attr("borderColor","orange");
-
-//    var vis = d3.select("#chart").append("svg:svg")
-//        .attr("width", w)
-//        .attr("height", h)
-//        .attr("border", '3px solid blue')
-//        .append("svg:g")
-//        .attr("transform", "translate(20,30)");
-
-    parseIcd10File();
+    //parseIcd10File();
     // set default page views
     hidePages();
     showHomePage();
