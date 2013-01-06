@@ -114,11 +114,14 @@ Meteor.methods({
 //            , invited: []
         });
     },
-    clearCollaborators: function () {
-        Meteor.users.update({ '_id': this.userId },{$unset: { 'profile.collaborators': '' }});
+    clearCollaborators: function (userId) {
+        Meteor.users.update({ '_id': userId },{$unset: { 'profile.collaborators': '' }});
+        log_hipaa_event("Removed all carewatch entries.", LogLevel.Hipaa, userId);
+        return true;
     },
-    clearCarewatch: function () {
-        Meteor.users.update({ '_id': this.userId },{$unset: { 'profile.carewatch': '' }}, function (){
+    clearCarewatch: function (userId) {
+        Meteor.users.update({ '_id': userId },{$unset: { 'profile.carewatch': '' }}, function (){
+            log_hipaa_event("Removed all collaborators.", LogLevel.Hipaa, userId);
             return true;
         });
     }

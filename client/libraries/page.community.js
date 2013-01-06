@@ -17,14 +17,14 @@ Template.communityPageTemplate.events({
         alert('delete user not implemented yet!');
     },
     'click .clear-collaborators': function(){
-        Meteor.call('clearCollaborators', function () {
+        Meteor.call('clearCollaborators', Session.get('selected_community_member'), function () {
             var user = Meteor.users.findOnce({ '_id': Meteor.userId });
-            alert('Collaborators: '+ user.profile.collaborators.count());
+            alert('Collaborators: ' + user.profile.collaborators.count());
         });
         //Meteor.users.update({ '_id': Session.get('selected_community_member' )} , {$unset: { carewatch: '' }});
     },
     'click .clear-carewatch': function(){
-        Meteor.call('clearCarewatch', function (result){
+        Meteor.call('clearCarewatch', Session.get('selected_community_member'), function (){
             var user = Meteor.users.findOnce({ '_id': Meteor.userId });
             alert('Carewatch Members: '+ user.profile.carewatch.count());
         });

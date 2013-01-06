@@ -7,9 +7,6 @@
 </template>
 <template name="hipaaLog">
     <div class="row">
-        hipaa audit log, {{ hipaaAuditSize }} entries
-    </div>
-    <div class="row">
         <ul>
         {{#each hipaaAudit}}
         {{> hipaaEntry}}
@@ -19,6 +16,6 @@
 </template>
 
 <template name="hipaaEntry">
-    <li><span class="gray">{{entry_timestamp}}</span>, {{text}}
+    <li><span class="darkgray">{{entry_timestamp}}, </span><span class="gray hidden">{{ owner }}, </span>{{text}}
     </li>
 </template>
