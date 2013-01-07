@@ -20,7 +20,8 @@
         {{!> dashboardPageTemplate }}
         {{> footerBarTemplate }}
         {{> hipaaPageTemplate }}
-        {{> indentTreePageTemplate }}
+        {{> graphSamplePageTemplate }}
+        {{> graphsPageTemplate}}
     {{else}}
         {{> guestPageTemplate }}
         {{> contactPageTemplate }}
@@ -44,15 +45,18 @@
     <div id="footerActionBar" data-role="footer" data-theme="none" class="nav-bar bottom-anchor">
         <ul class="nav-bar footer-nav-bar ">
             <!--<li><a href="#dashboardPage" onclick="showPage('#dashboardPage');">Dashboard</a></li>-->
-            <li><a href="#newsPage" onclick="showPage('#newsPage');">Carewatch</a></li>
-            <li><a href="#historyPage" onclick="showPage('#historyPage');">Health Diary</a></li>
-            <li><a href="#communityPage" onclick="showPage('#communityPage');" id="communityPageLink">Community</a></li>
-            <li><a href="#profilePage" onclick="showPage('#profilePage');">User Profile</a></li>
+            <li><a href="#newsPage" onclick="showPage('#newsPage');"><span class="pictographs">4  </span>Carewatch</a></li>
+            <li><a href="#historyPage" onclick="showPage('#historyPage');"><span class="pictographs">4  </span>Health Diary</a></li>
+            <li><a href="#communityPage" onclick="showPage('#communityPage');" id="communityPageLink"><span class="pictographs">g  </span>Community</a></li>
+            <li><a href="#profilePage" onclick="showPage('#profilePage');"><span class="pictographs">f  </span>User Profile</a></li>
             <!--<li><a href="#lifelinePage" onclick="showPage('#lifelinePage');">Lifeline</a></li>-->
-            <li><a href="#snomedPage" onclick="showPage('#snomedPage');">Anatomy</a></li>
-            <li><a href="#hipaaPage" onclick="showPage('#hipaaPage');">Privacy</a></li>
-            <li><a href="#icd10Page" onclick="showPage('#icd10Page');">ICD10</a></li>
-            <li><a href="#indentTreePage" onclick="showPage('#indentTreePage');">ICD10 Indent Tree</a></li>
+            <li><a href="#snomedPage" onclick="showPage('#snomedPage');"><span class="pictographs">E  </span>Anatomy</a></li>
+            <li><a href="#hipaaPage" onclick="showPage('#hipaaPage');"><span class="pictographs">^  </span>Privacy</a></li>
+            <li><a href="#icd10Page" onclick="showPage('#icd10Page');"><span class="pictographs">4  </span>ICD10</a></li>
+            <li><a href="#graphSamplePage" onclick="showPage('#graphSamplePage');"><span class="pictographs">4  </span>Graph Sample</a></li>
+
+            <li><a href="#graphsPage" onclick="showPage('#graphsPage');"><span class="pictographs">7 </span>Graphs</a></li>
+
         </ul>
     </div>
 </template>

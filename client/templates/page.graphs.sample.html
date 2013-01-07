@@ -1,0 +1,43 @@
+<template name="graphSamplePageTemplate">
+    <div id="graphSamplePage" class="page">
+        <div class="doesnt-overlap-header">
+            <div class="spacer row">
+                {{#constant}}
+                <div id="chart" class="chart"></div>
+                <div id="networkEdgeChart" class="networkEdgeChart chart"></div>
+                <div id="streamGraphChart"></div>
+                <div id="forceDirectGraph"></div>
+                <div id="sunburstChart"></div>
+                {{/constant}}
+            </div>
+            <div class="left-anchored transparent panel hide-for-medium hide-for-small">
+                <ul class="graph-choices list">
+                    <li onclick='Session.set("selected_graph","streamgraph");'>Streamgraph</li>
+                    <li onclick='Session.set("selected_graph","sunburst");'>Sunburst</li>
+                    <li onclick='Session.set("selected_graph","indentedTree");'>Indented Tree</li>
+                    <li onclick='Session.set("selected_graph","forceDirectGraph");'>Force Direct Graph</li>
+                    <li onclick='Session.set("selected_graph","pillbox");'>Pillbox</li>
+
+                    <li>----------------------</li>
+                    <li>Horizontal Bar Chart</li>
+                    <li>Bullet Charts</li>
+                    <li>Chord Diagram</li>
+                    <li>Choropleth</li>
+                    <li>Circle Packing</li>
+                    <li>Collapsible Tree</li>
+                    <li>Co-Occurance</li>
+                    <li>Crossfilter</li>
+                    <li>Dendrogram</li>
+                    <li>Hierarchical Edge</li>
+                    <li>Line Chart</li>
+                    <li>Multi Series Line Chart</li>
+                    <li>Scatterplot</li>
+                    <li>Scatterplot Matrix</li>
+                    <li>Stacked Bar Chart</li>
+                    <li>Stacked Bars</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</template>

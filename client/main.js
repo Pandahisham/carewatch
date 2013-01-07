@@ -29,6 +29,7 @@ Session.set('selecting_anatomy', null);
 Session.set('display_profile_json_panel', false);
 Session.set('display_snomed_preview_panel', false);
 Session.set('display_snomed_admin_panel', false);
+Session.set("selected_graph","streamgraph");
 
 Template.app_container.loggedIn = function () {
     if(Meteor.userId()){
@@ -44,9 +45,8 @@ Template.app_container.rendered = function () {
     hidePages();
     showCurrentSessionPage();
 };
-window.onresize = function(){
-    Meteor.flush();
-};
+
+
 
 
 Meteor.startup(function () {
@@ -55,7 +55,11 @@ Meteor.startup(function () {
     //Seting up Filepicker.io with your api key
     filepicker.setKey('ALZywWZ1wQIuLEBAun2fAz');
 
-    //parseIcd10File();
+    $(window).resize(function(evt) {
+        Session.set("resize", new Date());
+    });
+
+    parseIcd10File();
     // set default page views
     hidePages();
     showHomePage();

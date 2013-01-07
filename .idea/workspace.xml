@@ -2,18 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d7afeac-e599-453a-b604-6ef19812d575" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/libraries/helpers/d3.v3.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/methods.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/server.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/libraries/graphs/graph.bubble.chart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/libraries/graphs/graph.bullet.charts.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/libraries/graphs/graph.chord.diagram.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/libraries/graphs/graph.choropleth.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/libraries/graphs/graph.circle.packing.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/libraries/graphs/graph.collapsible.tree.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/libraries/graphs/graph.coocurrence.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/libraries/graphs/graph.crossfilter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/libraries/graphs/graph.dendrogram.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/libraries/graphs/graph.force.direct.collapsible.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/libraries/graphs/graph.hierarchical.edge.bundling.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/libraries/graphs/graph.indented.tree.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/libraries/graphs/graph.line.chart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/libraries/graphs/graph.line.chart.multi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/libraries/graphs/graph.pillbox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/libraries/graphs/graph.scatterplot.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/libraries/graphs/graph.scatterplot.matrix.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/libraries/graphs/graph.stacked.bar.chart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/libraries/graphs/graph.stacked.bars.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/libraries/graphs/graph.streamgraph.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/libraries/graphs/graph.sunburst.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/libraries/page.graphs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/libraries/page.snomed.about.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/templates/page.graphs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/documents/new graph process" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/datafile/dji.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/datafile/flare-imports.json" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/libraries/helpers/d3.layout.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/libraries/indent.tree.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/libraries/page.snomed.about.less" afterPath="$PROJECT_DIR$/client/libraries/graphs/graph.bar.chart.with.negatives.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/stylesheets/indent.tree.less" afterPath="$PROJECT_DIR$/client/stylesheets/page.graphs.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/templates/indent.tree.html" afterPath="$PROJECT_DIR$/client/templates/page.graphs.sample.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/flare.json" afterPath="$PROJECT_DIR$/public/datafile/flare.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/packages" afterPath="$PROJECT_DIR$/.meteor/packages" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/libraries/indent.tree.js" afterPath="$PROJECT_DIR$/client/libraries/indent.tree.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.html" afterPath="$PROJECT_DIR$/client/main.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.js" afterPath="$PROJECT_DIR$/client/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/indent.tree.less" afterPath="$PROJECT_DIR$/client/stylesheets/indent.tree.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/indent.tree.html" afterPath="$PROJECT_DIR$/client/templates/indent.tree.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/page.icd10.html" afterPath="$PROJECT_DIR$/client/templates/page.icd10.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/hipaa.logging.js" afterPath="$PROJECT_DIR$/lib/hipaa.logging.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model.js" afterPath="$PROJECT_DIR$/model.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/syntax.colors.less" afterPath="$PROJECT_DIR$/client/stylesheets/syntax.colors.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/syntax.custom.less" afterPath="$PROJECT_DIR$/client/stylesheets/syntax.custom.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/subscriptions.js" afterPath="$PROJECT_DIR$/client/subscriptions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/server.js" afterPath="$PROJECT_DIR$/server/server.js" />
     </list>
     <ignored path="social-network-app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,108 +60,167 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.9">
+    <splitter split-orientation="vertical" split-proportion="0.7088157">
       <split-first>
-        <splitter split-orientation="vertical" split-proportion="0.30655587">
+        <splitter split-orientation="vertical" split-proportion="0.53435904">
           <split-first>
-            <leaf>
-              <file leaf-file-name="indent.tree.js" pinned="false" current="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/client/libraries/indent.tree.js">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state line="13" column="48" selection-start="433" selection-end="433" vertical-scroll-proportion="0.75636363">
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
+            <splitter split-orientation="horizontal" split-proportion="0.5">
+              <split-first>
+                <leaf>
+                  <file leaf-file-name="graph.bar.chart.with.negatives.js" pinned="false" current="false" current-in-tab="false">
+                    <entry file="file://$PROJECT_DIR$/client/libraries/graphs/graph.bar.chart.with.negatives.js">
+                      <provider selected="true" editor-type-id="text-editor">
+                        <state line="2" column="2" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0">
+                          <folding />
+                        </state>
+                      </provider>
+                    </entry>
+                  </file>
+                  <file leaf-file-name="graph.crossfilter.js" pinned="false" current="false" current-in-tab="false">
+                    <entry file="file://$PROJECT_DIR$/client/libraries/graphs/graph.crossfilter.js">
+                      <provider selected="true" editor-type-id="text-editor">
+                        <state line="2" column="2" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0">
+                          <folding />
+                        </state>
+                      </provider>
+                    </entry>
+                  </file>
+                  <file leaf-file-name="graph.scatterplot.matrix.js" pinned="false" current="false" current-in-tab="false">
+                    <entry file="file://$PROJECT_DIR$/client/libraries/graphs/graph.scatterplot.matrix.js">
+                      <provider selected="true" editor-type-id="text-editor">
+                        <state line="2" column="2" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
+                          <folding />
+                        </state>
+                      </provider>
+                    </entry>
+                  </file>
+                  <file leaf-file-name="graph.coocurrence.js" pinned="false" current="false" current-in-tab="false">
+                    <entry file="file://$PROJECT_DIR$/client/libraries/graphs/graph.coocurrence.js">
+                      <provider selected="true" editor-type-id="text-editor">
+                        <state line="1" column="0" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0">
+                          <folding />
+                        </state>
+                      </provider>
+                    </entry>
+                  </file>
+                  <file leaf-file-name="graph.bubble.chart.js" pinned="false" current="false" current-in-tab="false">
+                    <entry file="file://$PROJECT_DIR$/client/libraries/graphs/graph.bubble.chart.js">
+                      <provider selected="true" editor-type-id="text-editor">
+                        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                          <folding />
+                        </state>
+                      </provider>
+                    </entry>
+                  </file>
+                  <file leaf-file-name="navigation.links.js" pinned="false" current="false" current-in-tab="false">
+                    <entry file="file://$PROJECT_DIR$/client/libraries/navigation.links.js">
+                      <provider selected="true" editor-type-id="text-editor">
+                        <state line="35" column="21" selection-start="875" selection-end="875" vertical-scroll-proportion="0.0">
+                          <folding />
+                        </state>
+                      </provider>
+                    </entry>
+                  </file>
+                  <file leaf-file-name="graph.sunburst.js" pinned="false" current="false" current-in-tab="true">
+                    <entry file="file://$PROJECT_DIR$/client/libraries/graphs/graph.sunburst.js">
+                      <provider selected="true" editor-type-id="text-editor">
+                        <state line="6" column="39" selection-start="231" selection-end="231" vertical-scroll-proportion="0.27042255">
+                          <folding />
+                        </state>
+                      </provider>
+                    </entry>
+                  </file>
+                </leaf>
+              </split-first>
+              <split-second>
+                <leaf>
+                  <file leaf-file-name="graph.indented.tree.js" pinned="false" current="false" current-in-tab="true">
+                    <entry file="file://$PROJECT_DIR$/client/libraries/graphs/graph.indented.tree.js">
+                      <provider selected="true" editor-type-id="text-editor">
+                        <state line="19" column="35" selection-start="509" selection-end="509" vertical-scroll-proportion="-1.8249336">
+                          <folding />
+                        </state>
+                      </provider>
+                    </entry>
+                  </file>
+                </leaf>
+              </split-second>
+            </splitter>
           </split-first>
           <split-second>
-            <leaf>
-              <file leaf-file-name="indent.tree.less" pinned="false" current="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/client/stylesheets/indent.tree.less">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state line="27" column="6" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0">
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/client/main.html">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state line="58" column="28" selection-start="2540" selection-end="2540" vertical-scroll-proportion="-14.08">
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/client/main.js">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state line="56" column="0" selection-start="1550" selection-end="1550" vertical-scroll-proportion="0.0">
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/server/server.js">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state line="4" column="55" selection-start="186" selection-end="206" vertical-scroll-proportion="0.0">
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="hipaa.logging.js" pinned="false" current="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/lib/hipaa.logging.js">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state line="5" column="0" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0">
-                      <folding>
-                        <element signature="n#!!doc" expanded="true" />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="flare.json" pinned="false" current="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/public/flare.json">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state line="14" column="18" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0">
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="page.icd10.html" pinned="false" current="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/client/templates/page.icd10.html">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state line="11" column="27" selection-start="456" selection-end="456" vertical-scroll-proportion="-5.76">
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="methods.js" pinned="false" current="true" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/server/methods.js">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state line="45" column="17" selection-start="1789" selection-end="1789" vertical-scroll-proportion="0.8163558">
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
+            <splitter split-orientation="horizontal" split-proportion="0.42270058">
+              <split-first>
+                <leaf>
+                  <file leaf-file-name="page.graphs.less" pinned="false" current="false" current-in-tab="false">
+                    <entry file="file://$PROJECT_DIR$/client/stylesheets/page.graphs.less">
+                      <provider selected="true" editor-type-id="text-editor">
+                        <state line="20" column="13" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0">
+                          <folding />
+                        </state>
+                      </provider>
+                    </entry>
+                  </file>
+                  <file leaf-file-name="syntax.colors.less" pinned="false" current="false" current-in-tab="false">
+                    <entry file="file://$PROJECT_DIR$/client/stylesheets/syntax.colors.less">
+                      <provider selected="true" editor-type-id="text-editor">
+                        <state line="0" column="4" selection-start="4" selection-end="4" vertical-scroll-proportion="0.0">
+                          <folding />
+                        </state>
+                      </provider>
+                    </entry>
+                  </file>
+                  <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+                    <entry file="file://$PROJECT_DIR$/client/main.js">
+                      <provider selected="true" editor-type-id="text-editor">
+                        <state line="36" column="20" selection-start="1137" selection-end="1137" vertical-scroll-proportion="0.0">
+                          <folding />
+                        </state>
+                      </provider>
+                    </entry>
+                  </file>
+                  <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="true">
+                    <entry file="file://$PROJECT_DIR$/server/server.js">
+                      <provider selected="true" editor-type-id="text-editor">
+                        <state line="7" column="46" selection-start="333" selection-end="333" vertical-scroll-proportion="0.34355828">
+                          <folding />
+                        </state>
+                      </provider>
+                    </entry>
+                  </file>
+                </leaf>
+              </split-first>
+              <split-second>
+                <leaf>
+                  <file leaf-file-name="page.graphs.js" pinned="false" current="true" current-in-tab="true">
+                    <entry file="file://$PROJECT_DIR$/client/libraries/page.graphs.js">
+                      <provider selected="true" editor-type-id="text-editor">
+                        <state line="59" column="21" selection-start="2029" selection-end="2029" vertical-scroll-proportion="0.7876106">
+                          <folding />
+                        </state>
+                      </provider>
+                    </entry>
+                  </file>
+                </leaf>
+              </split-second>
+            </splitter>
           </split-second>
         </splitter>
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="indent.tree.html" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/client/templates/indent.tree.html">
+          <file leaf-file-name="page.graphs.sample.html" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/templates/page.graphs.sample.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="7" column="14" selection-start="264" selection-end="264" vertical-scroll-proportion="1.6231884">
+                <state line="9" column="38" selection-start="469" selection-end="469" vertical-scroll-proportion="0.52747256">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="page.graphs.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/templates/page.graphs.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="4" column="0" selection-start="157" selection-end="157" vertical-scroll-proportion="-1.36">
                   <folding />
                 </state>
               </provider>
@@ -142,7 +229,16 @@
           <file leaf-file-name="new page process" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/documents/new page process">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="39" column="18" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.0">
+                <state line="0" column="0" selection-start="0" selection-end="188" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="new graph process" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/documents/new graph process">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="1" column="17" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -163,30 +259,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/documents/new page process" />
-        <option value="$PROJECT_DIR$/client/libraries/page.carewatch.js" />
-        <option value="$PROJECT_DIR$/client/libraries/page.history.js" />
-        <option value="$PROJECT_DIR$/client/libraries/helpers/d3.js" />
-        <option value="$PROJECT_DIR$/lib/helpers/index.js" />
-        <option value="$PROJECT_DIR$/lib/d3.js" />
-        <option value="$PROJECT_DIR$/client/templates/indent.tree.html" />
-        <option value="$PROJECT_DIR$/client/templates/page.icd10.html" />
-        <option value="$PROJECT_DIR$/lib/hipaa.logging.js" />
-        <option value="$PROJECT_DIR$/client/libraries/indent.tree.js" />
-        <option value="$PROJECT_DIR$/client/libraries/helpers/d3.v3.min.js" />
-        <option value="$PROJECT_DIR$/client/stylesheets/indent.tree.less" />
+        <option value="$PROJECT_DIR$/public/dji.csv" />
+        <option value="$PROJECT_DIR$/client/libraries/graphs/graph.pillbox.js" />
+        <option value="$PROJECT_DIR$/public/flare-imports.json" />
+        <option value="$PROJECT_DIR$/client/libraries/graphs/graph.hierarchical.edge.bundling.js" />
+        <option value="$PROJECT_DIR$/client/libraries/graphs/graph.streamgraph.js" />
+        <option value="$PROJECT_DIR$/client/templates/page.graphs.html" />
+        <option value="$PROJECT_DIR$/client/stylesheets/syntax.colors.less" />
+        <option value="$PROJECT_DIR$/client/stylesheets/page.graphs.less" />
+        <option value="$PROJECT_DIR$/client/libraries/graphs/graph.indented.tree.js" />
         <option value="$PROJECT_DIR$/client/main.js" />
+        <option value="$PROJECT_DIR$/client/libraries/graphs/graph.force.direct.collapsible.js" />
+        <option value="$PROJECT_DIR$/documents/new graph process" />
         <option value="$PROJECT_DIR$/server/server.js" />
-        <option value="$PROJECT_DIR$/model.js" />
-        <option value="$PROJECT_DIR$/server/methods.js" />
+        <option value="$PROJECT_DIR$/client/libraries/graphs/graph.sunburst.js" />
+        <option value="$PROJECT_DIR$/client/templates/page.graphs.sample.html" />
+        <option value="$PROJECT_DIR$/client/libraries/page.graphs.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="17" />
-    <option name="y" value="35" />
-    <option name="width" value="1149" />
-    <option name="height" value="1332" />
+    <option name="x" value="32" />
+    <option name="y" value="158" />
+    <option name="width" value="1847" />
+    <option name="height" value="1244" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -270,6 +366,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="datafile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="social-network-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="social-network-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -334,6 +448,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="social-network-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="social-network-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="libraries" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -357,6 +489,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="helpers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="social-network-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="social-network-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".scrap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -395,11 +541,11 @@
       <recent name="$PROJECT_DIR$/client/libraries" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/client/libraries/helpers" />
-      <recent name="$PROJECT_DIR$/client/libraries" />
-      <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/.scrap" />
-      <recent name="$PROJECT_DIR$/lib/helpers" />
+      <recent name="$PROJECT_DIR$/public/datafile" />
+      <recent name="$PROJECT_DIR$/client/libraries" />
+      <recent name="$PROJECT_DIR$/client/libraries/graphs" />
+      <recent name="$PROJECT_DIR$/client/stylesheets" />
     </key>
   </component>
   <component name="RunManager">
@@ -440,14 +586,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="17" y="35" width="1149" height="1332" extended-state="0" />
-    <editor active="false" />
+    <frame x="32" y="158" width="1847" height="1244" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947975" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328654" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25843695" sideWeight="0.67052025" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15953948" sideWeight="0.99198574" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -514,116 +660,114 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/templates/page.snomed.html">
+    <entry file="file://$PROJECT_DIR$/client/templates/page.graphs.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="750" selection-end="750" vertical-scroll-proportion="1.1102041">
+        <state line="4" column="0" selection-start="157" selection-end="157" vertical-scroll-proportion="-1.36">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/libraries/page.snomed.about.less">
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/syntax.colors.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="4" selection-start="4" selection-end="4" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/flare.json">
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/page.graphs.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="18" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0">
+        <state line="20" column="13" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/libraries/helpers/d3.layout.js">
+    <entry file="file://$PROJECT_DIR$/client/libraries/navigation.links.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1141" column="40" selection-start="35943" selection-end="35970" vertical-scroll-proportion="4.322738">
+        <state line="35" column="21" selection-start="875" selection-end="875" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.scrap/d3.js">
+    <entry file="file://$PROJECT_DIR$/documents/new graph process">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1148" column="32" selection-start="35760" selection-end="35760" vertical-scroll-proportion="0.5011494">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/libraries/helpers/d3.v3.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="23" selection-start="96249" selection-end="96249" vertical-scroll-proportion="0.11034483">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/hipaa.logging.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/indent.tree.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="6" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0">
+        <state line="1" column="17" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/documents/new page process">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="18" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="188" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/indent.tree.html">
+    <entry file="file://$PROJECT_DIR$/client/libraries/graphs/graph.force.direct.collapsible.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="14" selection-start="264" selection-end="264" vertical-scroll-proportion="1.6231884">
+        <state line="19" column="20" selection-start="551" selection-end="551" vertical-scroll-proportion="0.6031746">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/libraries/indent.tree.js">
+    <entry file="file://$PROJECT_DIR$/client/libraries/graphs/graph.scatterplot.matrix.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="48" selection-start="433" selection-end="433" vertical-scroll-proportion="0.75636363">
+        <state line="2" column="2" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/libraries/graphs/graph.streamgraph.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="33" selection-start="695" selection-end="695" vertical-scroll-proportion="0.5714286">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/libraries/graphs/graph.coocurrence.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="0" selection-start="1550" selection-end="1550" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="0" selection-start="2234" selection-end="2234" vertical-scroll-proportion="0.44906744">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/page.icd10.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="27" selection-start="456" selection-end="456" vertical-scroll-proportion="-5.76">
+        <state line="36" column="20" selection-start="1137" selection-end="1137" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="55" selection-start="186" selection-end="206" vertical-scroll-proportion="0.0">
+        <state line="7" column="46" selection-start="333" selection-end="333" vertical-scroll-proportion="0.34355828">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/methods.js">
+    <entry file="file://$PROJECT_DIR$/client/libraries/graphs/graph.sunburst.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="17" selection-start="1789" selection-end="1789" vertical-scroll-proportion="0.8163558">
+        <state line="6" column="39" selection-start="231" selection-end="231" vertical-scroll-proportion="0.27042255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/page.graphs.sample.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="38" selection-start="469" selection-end="469" vertical-scroll-proportion="0.52747256">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/libraries/graphs/graph.indented.tree.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="35" selection-start="509" selection-end="509" vertical-scroll-proportion="-1.8249336">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/libraries/page.graphs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="21" selection-start="2029" selection-end="2029" vertical-scroll-proportion="0.7876106">
           <folding />
         </state>
       </provider>
