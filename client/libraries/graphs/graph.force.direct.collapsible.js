@@ -1,22 +1,22 @@
 function renderForceDirectCollapsible(){
 
-    var w = 1280,
-        h = 800,
+    var w = window.innerWidth,
+        h = window.innerHeight - 80,
         node,
         link,
         root;
 
     var force = d3.layout.force()
         .on("tick", tick)
-        .charge(function(d) { return d._children ? -d.size / 100 : -30; })
-        .linkDistance(function(d) { return d.target._children ? 80 : 30; })
+        .charge(function(d) { return d._children ? -d.size + 100 : -30; })
+        .linkDistance(function(d) { return d.target._children ? 200 : 50; })
         .size([w, h - 160]);
 
     var vis = d3.select("#forceDirectGraph").append("svg:svg")
         .attr("width", w)
         .attr("height", h);
 
-    d3.json("datafile/flare.json", function(json) {
+    d3.json("datafile/icd10.sample.json", function(json) {
         root = json;
         root.fixed = true;
         root.x = w / 2;
@@ -55,14 +55,14 @@ function renderForceDirectCollapsible(){
             .style("fill", color);
 
         node.transition()
-            .attr("r", function(d) { return d.children ? 4.5 : Math.sqrt(d.size) / 10; });
+            .attr("r", function(d) { return d.children ? 4.5 : 10; });
 
         // Enter any new nodes.
         node.enter().append("svg:circle")
             .attr("class", "node")
             .attr("cx", function(d) { return d.x; })
             .attr("cy", function(d) { return d.y; })
-            .attr("r", function(d) { return d.children ? 4.5 : Math.sqrt(d.size) / 10; })
+            .attr("r", function(d) { return d.children ? 4.5 : 10; })
             .style("fill", color)
             .on("click", click)
             .call(force.drag);

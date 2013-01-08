@@ -29,7 +29,7 @@ Session.set('selecting_anatomy', null);
 Session.set('display_profile_json_panel', false);
 Session.set('display_snomed_preview_panel', false);
 Session.set('display_snomed_admin_panel', false);
-Session.set("selected_graph","streamgraph");
+Session.set("selected_graph","indentedTree");
 
 Template.app_container.loggedIn = function () {
     if(Meteor.userId()){

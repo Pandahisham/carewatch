@@ -19,7 +19,7 @@ function renderIndentTree(){
         .append("svg:g")
         .attr("transform", "translate(20,30)");
 
-    d3.json("datafile/flare.json", function(json) {
+    d3.json("datafile/icd10.sample.json", function(json) {
         json.x0 = 0;
         json.y0 = 0;
         update(root = json);
@@ -55,7 +55,7 @@ function renderIndentTree(){
         nodeEnter.append("svg:text")
             .attr("dy", 3.5)
             .attr("dx", 5.5)
-            .text(function(d) { return d.name; });
+            .text(function(d) { return d.code + " - " + d.title; });
 
         // Transition nodes to their new position.
         nodeEnter.transition()

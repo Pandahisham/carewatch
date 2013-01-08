@@ -99,7 +99,7 @@ path.link {
 //-----------------------------------------------------------------
 //  Hierarchical Edge Graph
 
-.networkEdgeChart{
+#networkEdgeChart{
   path.arc {
     cursor: move;
     fill: #fff;
@@ -151,3 +151,28 @@ path.link {
   left: 0px;
 }
 
+
+
+//-----------------------------------------------------------------
+//  Horizontal Bar Chart
+
+#horizontalBarChart{
+  .bar.positive {
+    fill: steelblue;
+  }
+
+  .bar.negative {
+    fill: brown;
+  }
+
+  .axis text {
+    font: 10px sans-serif;
+  }
+
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+}

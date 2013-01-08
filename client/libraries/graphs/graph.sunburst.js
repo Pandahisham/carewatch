@@ -26,7 +26,7 @@ function renderSunburst(){
     log_event('d3 created arc(s).', LogLevel.Drawing);
 
     log_event('d3 loading input files', LogLevel.Drawing);
-    d3.json("datafile/flare.json", function(error, root) {
+    d3.json("datafile/icd10.sample.json", function(error, root) {
         log_event('d3 loaded flare.json: ' + root, LogLevel.Drawing);
 
         var path = svg.datum(root).selectAll("path")
@@ -35,7 +35,7 @@ function renderSunburst(){
             .attr("display", function(d) { return d.depth ? null : "none"; }) // hide inner ring
             .attr("d", arc)
             .style("stroke", "#fff")
-            .style("fill", function(d) { return color((d.children ? d : d.parent).name); })
+            .style("fill", function(d) { return color((d.children ? d : d.parent).title); })
             .style("fill-rule", "evenodd")
             .each(stash);
 
@@ -44,7 +44,7 @@ function renderSunburst(){
         d3.selectAll("input").on("change", function change() {
             var value = this.value === "count"
                 ? function() { return 1; }
-                : function(d) { return d.size; };
+                : function(d) { return d.code; };
 
             path
                 .data(partition.value(value).nodes)

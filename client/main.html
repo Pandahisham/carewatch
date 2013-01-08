@@ -1,5 +1,5 @@
 <head>
-  <title>Clinical Social Network App</title>
+  <title>Symptompatic</title>
 </head>
 
 <body>
@@ -20,7 +20,6 @@
         {{!> dashboardPageTemplate }}
         {{> footerBarTemplate }}
         {{> hipaaPageTemplate }}
-        {{> graphSamplePageTemplate }}
         {{> graphsPageTemplate}}
     {{else}}
         {{> guestPageTemplate }}
@@ -35,7 +34,7 @@
 <template name="headerBarTemplate">
     <div id="headerBar" data-role="header" data-theme="none">
         <ul class="nav-bar header-nav-bar">
-            <li><a id="homePageLink" href="#guestPage" onclick="showHomePage();">healthrecord.herokuapp.com</a></li>
+            <li><a id="homePageLink" href="#guestPage" onclick="showHomePage();">symptomatic.herokuapp.com</a></li>
             <li><a id="breadCrumbLink" href="#"></a></li>
             <li style="position: fixed; right: 0px;"><a href="#">{{loginButtons align="right"}}</a></li>
         </ul>
@@ -53,9 +52,7 @@
             <li><a href="#snomedPage" onclick="showPage('#snomedPage');"><span class="pictographs">E  </span>Anatomy</a></li>
             <li><a href="#hipaaPage" onclick="showPage('#hipaaPage');"><span class="pictographs">^  </span>Privacy</a></li>
             <li><a href="#icd10Page" onclick="showPage('#icd10Page');"><span class="pictographs">4  </span>ICD10</a></li>
-            <li><a href="#graphSamplePage" onclick="showPage('#graphSamplePage');"><span class="pictographs">4  </span>Graph Sample</a></li>
-
-            <li><a href="#graphsPage" onclick="showPage('#graphsPage');"><span class="pictographs">7 </span>Graphs</a></li>
+            <li><a href="#graphsPage" onclick="showPage('#graphsPage');"><span class="pictographs">4  </span>Graphs</a></li>
 
         </ul>
     </div>

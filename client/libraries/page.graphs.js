@@ -1,7 +1,7 @@
-Template.graphSamplePageTemplate.destroyed = function () {
+Template.graphsPageTemplate.destroyed = function () {
     this.handle && this.handle.stop();
 };
-Template.graphSamplePageTemplate.rendered = function () {
+Template.graphsPageTemplate.rendered = function () {
 
     var resize = Session.get("resize");
     //var self = this;
@@ -18,16 +18,22 @@ Template.graphSamplePageTemplate.rendered = function () {
                 case 'sunburst':
                     $('#breadCrumbLink').html('Patient Outcome Analysis');
                     clearGraphs();
+
+                    // flare.json
                     renderSunburst();
                     break;
                 case 'indentedTree':
                     $('#breadCrumbLink').html('ICD10 Browser');
                     clearGraphs();
+
+                    // flare.json
                     renderIndentTree();
                     break;
                 case 'forceDirectGraph':
                     $('#breadCrumbLink').html('Relationship Network');
                     clearGraphs();
+
+                    // flare.json
                     renderForceDirectCollapsible();
                     break;
                 case 'pillbox':
@@ -35,10 +41,32 @@ Template.graphSamplePageTemplate.rendered = function () {
                     clearGraphs();
                     renderPillbox();
                     break;
+                case 'bubbleChart':
+                    $('#breadCrumbLink').html('Medication Reconciliation');
+                    clearGraphs();
+
+                    // flare.json
+                    renderBubbleChart();
+                    break;
+                case 'horizontalBarChart':
+                    $('#breadCrumbLink').html('Weekly Calorie Balance');
+                    clearGraphs();
+                    renderHorizontalBarChart();
+                    break;
+                case 'collapsibleTreeChart':
+                    $('#breadCrumbLink').html('Data Browser');
+                    clearGraphs();
+
+                    // flare.json
+                    renderCollapsibleTreeChart();
+                    break;
                 default:
                     $('#breadCrumbLink').html('Patient Outcome Analysis');
                     clearGraphs();
-                    renderSunburst();
+
+                    // flare.json
+                    renderIndentTree();
+
             }
 
 
@@ -58,4 +86,7 @@ function clearGraphs(){
     $('#streamGraphChart').html('');
     $('#forceDirectGraph').html('');
     $('#sunburstChart').html('');
+    $('#bubbleChart').html('');
+    $('#horizontalBarChart').html('');
+    $('#collapsibleTreeChart').html('');
 };

@@ -1,0 +1,78 @@
+{
+    "version":  "0",
+    "title":    "ICD-10-CM INDEX TO DISEASES and INJURIES",
+    "children": [
+        {
+            "title": "Aarskog's syndrome",
+            "code":     "Q87.1"
+        },
+        {
+            "title": "Abandonment",
+            "see": "Maltreatment"
+        },
+        {
+            "title": "Abasia(-astasia) (hysterical)",
+            "code":     "F44.4"
+        },
+        {
+            "title": "Abdomen, abdominal",
+            "seeAlso": "condition",
+            "children": [
+                {"title": "acute", "code": "R10.0"},
+                {"title": "angina", "code": "K55.1"},
+                {"title": "muscle deficiency syndrome", "code": "Q79.4"}
+            ]
+        },
+        {
+            "title": "Abdominalgia",
+            "see": "Pain, abdominal"
+        },
+        {
+            "title": "Aberrant (congenital)",
+            "seeAlso": "Malposition, congential",
+            "children": [
+                {"title": "adrenal gland", "code": "Q89.1"},
+                {
+                    "title": "artery (peripheral)",
+                    "code": "Q27.8",
+                    "children":[
+                        {"title": "basilar NEC", "code": "Q28.1"},
+                        {"title": "cerebral", "code": "Q28.3"},
+                        {"title": "coronary", "code": "Q24.5"},
+                        {"title": "digestive system", "code": "Q27.8"},
+                        {"title": "eye", "code": "Q15.8"},
+                        {"title": "lower limb", "code": "Q27.8"},
+                        {"title": "precerebral", "code": "Q28.1"},
+                        {"title": "pulmonary", "code": "Q25.79"},
+                        {"title": "renal", "code": "Q27.2"}
+                    ]
+                },
+                {"title": "breast", "code": "Q83.8"},
+                {"title": "endocrine gland NEC", "code": "Q89.2"},
+                {"title": "hepatic duct", "code": "Q45.3"},
+                {"title": "pancreas", "code": "R94.8"},
+                {"title": "parathyroid gland", "code": "Q89.2"}
+            ]
+        },
+        {
+            "title": "Aberration",
+            "children": [
+                {"title": "distantial", "see": "Disturbance, visual"},
+                {"title": "mental", "code": "F99"}
+            ]
+        },
+        {
+            "title": "Ablepharia, ablepharon",
+            "code":  "Q10.3"
+        },
+        {
+            "title": "Abnormal, abnormality, abnormalities",
+            "seeAlso": "Anomaly",
+            "children": [
+                {"title": "acid-base balance (mixed)", "code": "E87.4"},
+                {"title": "albumin", "code": "R77.0"},
+                {"title": "alphafetoprotein", "code": "R77.2"}
+            ]
+        }
+    ]
+}

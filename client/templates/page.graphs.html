@@ -2,7 +2,47 @@
     <div id="graphsPage" class="page">
         <div class="doesnt-overlap-header">
             <div class="spacer row">
+                {{#constant}}
+                <div id="chart" class="chart"></div>
+                <div id="networkEdgeChart"></div>
+                <div id="streamGraphChart"></div>
+                <div id="forceDirectGraph"></div>
+                <div id="sunburstChart"></div>
+                <div id="bubbleChart"></div>
+                <div id="horizontalBarChart"></div>
+                <div id="collapsibleTreeChart"></div>
+                {{/constant}}
             </div>
+            <div class="left-anchored transparent panel hide-for-medium hide-for-small">
+                <ul class="graph-choices list">
+                    <li onclick='Session.set("selected_graph","sunburst");'>Patient Outcome Analysis</li>
+                    <li onclick='Session.set("selected_graph","indentedTree");'>ICD10 Browser</li>
+                    <li onclick='Session.set("selected_graph","forceDirectGraph");'>Relationship Network</li>
+                    <li onclick='Session.set("selected_graph","bubbleChart");'>Medication Reconciliation</li>
+                    <li onclick='Session.set("selected_graph","collapsibleTreeChart");'>Data Browser</li>
+
+                    <li>----------------------</li>
+                    <li onclick='Session.set("selected_graph","pillbox");'>Medication Pillbox</li>
+                    <li onclick='Session.set("selected_graph","streamgraph");'>EKG & ECG Graphing Algorithm</li>
+                    <li onclick='Session.set("selected_graph","horizontalBarChart");'>Weekly Calorie Balance</li>
+
+                    <li>----------------------</li>
+                    <li>Bullet Charts</li>
+                    <li>Chord Diagram</li>
+                    <li>Choropleth</li>
+                    <li>Co-Occurance</li>
+                    <li>Crossfilter</li>
+                    <li>Dendrogram</li>
+                    <li>Hierarchical Edge</li>
+                    <li>Line Chart</li>
+                    <li>Multi Series Line Chart</li>
+                    <li>Scatterplot</li>
+                    <li>Scatterplot Matrix</li>
+                    <li>Stacked Bar Chart</li>
+                    <li>Stacked Bars</li>
+                </ul>
+            </div>
+
         </div>
     </div>
 </template>
