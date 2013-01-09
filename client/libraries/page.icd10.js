@@ -1,4 +1,5 @@
 Template.icdPageTemplate.rendered = function () {
+    $("#icdEmbed").load("http://en.wikipedia.org/wiki/ICD-10");
 };
 Template.icdList.icdCatalog = function(){
     return Icd10.find();

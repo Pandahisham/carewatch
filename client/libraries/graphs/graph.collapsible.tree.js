@@ -1,3 +1,9 @@
+var options = {
+    'datefile':  "datafile/icd10.sample.json",
+    'text': 'title',
+    'size': 'count'
+};
+
 function renderCollapsibleTreeChart(){
     var m = [20, 120, 20, 120],
         w = 1280 - m[1] - m[3],
@@ -30,8 +36,8 @@ function renderCollapsibleTreeChart(){
         }
 
         // Initialize the display to show a few nodes.
-        root.children.forEach(toggleAll);
-        toggle(root.children[1]);
+        //root.children.forEach(toggleAll);
+        //toggle(root.children[1]);
         //toggle(root.children[1].children[2]);
         //toggle(root.children[9]);
         //toggle(root.children[9].children[0]);
