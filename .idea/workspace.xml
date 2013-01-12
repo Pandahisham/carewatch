@@ -2,10 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d7afeac-e599-453a-b604-6ef19812d575" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/anchors/AtlasJoint.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/anchors/AxillaryGlands.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/anchors/BackMuscles.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/anchors/BladderLymphatics.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/anchors/BrainAxial.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/anchors/BrainSagittal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/anchors/BrainSulci.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/anchors/Cecum.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/anchors/CerebroCortex.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/anchors/CircleOfWillis.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/anchors/CorotidArteries.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/anchors/CorpusCallosum.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/anchors/DuraMater.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/anchors/ForeArm.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/anchors/HeartAndLungs.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/anchors/HipJoint.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/anchors/Kidneys.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/anchors/Liver.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/anchors/Lungs.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/anchors/MedulaOblongota.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/anchors/OpticChiasma.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/anchors/OpticSystem.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/anchors/Pelvis.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/anchors/Skull.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/anchors/Stomach.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/anchors/Teeth.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/anchors/TemperomandibularNerves.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/anchors/TorsoNerves.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/anchors/VastusLateralis.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/anchors/VertebralColumn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/anchors/VertebralNerves.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/libraries/graphs/graph.collapsible.tree.js" afterPath="$PROJECT_DIR$/client/libraries/graphs/graph.collapsible.tree.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/libraries/page.icd10.js" afterPath="$PROJECT_DIR$/client/libraries/page.icd10.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.css" afterPath="$PROJECT_DIR$/client/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.html" afterPath="$PROJECT_DIR$/client/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/page.icd10.html" afterPath="$PROJECT_DIR$/client/templates/page.icd10.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/page.graphs.less" afterPath="$PROJECT_DIR$/client/stylesheets/page.graphs.less" />
     </list>
     <ignored path="social-network-app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,7 +56,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5583823">
+    <splitter split-orientation="horizontal" split-proportion="0.4445535">
       <split-first>
         <leaf>
           <file leaf-file-name="page.graphs.html" pinned="false" current="false" current-in-tab="false">
@@ -36,13 +68,40 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="page.icd10.html" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="page.icd10.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/templates/page.icd10.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="11" column="0" selection-start="445" selection-end="445" vertical-scroll-proportion="0.2073027">
+                <state line="23" column="34" selection-start="1087" selection-end="1087" vertical-scroll-proportion="-14.72">
                   <folding>
                     <element signature="n#style#0;n#object#0;n#div#0;n#div#2;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="graph.collapsible.tree.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/libraries/graphs/graph.collapsible.tree.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="38" column="7" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/main.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="7" column="16" selection-start="105" selection-end="105" vertical-scroll-proportion="0.13145539">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="page.graphs.less" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/stylesheets/page.graphs.less">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="8" column="21" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -872,10 +931,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="main.html" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/main.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="40" column="10" selection-start="1280" selection-end="1280" vertical-scroll-proportion="0.5980861">
+                <state line="10" column="0" selection-start="212" selection-end="212" vertical-scroll-proportion="0.19138756">
                   <folding />
                 </state>
               </provider>
@@ -896,9 +955,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/server/server.js" />
         <option value="$PROJECT_DIR$/client/templates/page.graphs.sample.html" />
-        <option value="$PROJECT_DIR$/client/stylesheets/page.graphs.less" />
         <option value="$PROJECT_DIR$/client/libraries/graphs/graph.bar.chart.horizontal.js" />
         <option value="$PROJECT_DIR$/client/libraries/page.graphs.js" />
         <option value="$PROJECT_DIR$/client/main.js" />
@@ -908,17 +965,19 @@
         <option value="$PROJECT_DIR$/client/libraries/graphs/graph.indented.tree.js" />
         <option value="$PROJECT_DIR$/public/datafile/icd10.sample.json" />
         <option value="$PROJECT_DIR$/client/libraries/graphs/graph.bubble.chart.js" />
-        <option value="$PROJECT_DIR$/client/libraries/graphs/graph.collapsible.tree.js" />
-        <option value="$PROJECT_DIR$/client/main.html" />
         <option value="$PROJECT_DIR$/client/libraries/page.icd10.js" />
         <option value="$PROJECT_DIR$/client/templates/page.icd10.html" />
+        <option value="$PROJECT_DIR$/client/stylesheets/page.graphs.less" />
+        <option value="$PROJECT_DIR$/client/libraries/graphs/graph.collapsible.tree.js" />
+        <option value="$PROJECT_DIR$/client/main.css" />
+        <option value="$PROJECT_DIR$/client/main.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="82" />
-    <option name="y" value="283" />
-    <option name="width" value="2352" />
+    <option name="x" value="75" />
+    <option name="y" value="401" />
+    <option name="width" value="2233" />
     <option name="height" value="1022" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -1003,89 +1062,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="datafile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="documents" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1107,96 +1084,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helpers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value=".scrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social-network-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value=".meteor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -1212,11 +1099,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images/anchors" />
       <recent name="$PROJECT_DIR$/public/datafile" />
       <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/client/libraries/helpers" />
       <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/client/libraries" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/.scrap" />
@@ -1264,14 +1151,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="82" y="283" width="2352" height="1022" extended-state="0" />
+    <frame x="75" y="401" width="2233" height="1022" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328654" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.124946326" sideWeight="0.99198574" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13167422" sideWeight="0.99198574" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1338,20 +1225,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/libraries/graphs/graph.crossfilter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="2" selection-start="38" selection-end="38" vertical-scroll-proportion="0.02919708">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/datafile/ICD10CM_FY2013_Full_XML_DIndex.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="24" selection-start="463" selection-end="463" vertical-scroll-proportion="0.23638043">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/libraries/graphs/graph.bullet.charts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -2188,13 +2061,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/libraries/graphs/graph.collapsible.tree.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="10" selection-start="1018" selection-end="1018" vertical-scroll-proportion="0.49056605">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/libraries/graphs/graph.indented.tree.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="343" selection-end="343" vertical-scroll-proportion="0.2562929">
@@ -2225,13 +2091,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="10" selection-start="1280" selection-end="1280" vertical-scroll-proportion="0.5980861">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/libraries/page.icd10.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="60" selection-start="75" selection-end="110" vertical-scroll-proportion="0.0">
@@ -2241,10 +2100,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/templates/page.icd10.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="445" selection-end="445" vertical-scroll-proportion="0.2073027">
+        <state line="23" column="34" selection-start="1087" selection-end="1087" vertical-scroll-proportion="-14.72">
           <folding>
             <element signature="n#style#0;n#object#0;n#div#0;n#div#2;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/page.graphs.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="21" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/libraries/graphs/graph.collapsible.tree.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="7" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="16" selection-start="105" selection-end="105" vertical-scroll-proportion="0.13145539">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="212" selection-end="212" vertical-scroll-proportion="0.19138756">
+          <folding />
         </state>
       </provider>
     </entry>

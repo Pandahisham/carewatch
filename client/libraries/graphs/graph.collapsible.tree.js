@@ -68,6 +68,14 @@ function renderCollapsibleTreeChart(){
             .attr("r", 1e-6)
             .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
 
+        nodeEnter.append("svg:image")
+            //.attr("class", "fizzle")
+            .attr("height", "64px")
+            .attr("width", "64px")
+            //.attr("xlink:href", "/images/grays.anatomy.thumbnails/abdominalArteries.png")
+            .attr("src", "/images/grays.anatomy.thumbnails/abdominalArteries.png")
+            .style("fill", "lightsteelblue");
+
         nodeEnter.append("svg:text")
             .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
             .attr("dy", ".35em")
@@ -84,6 +92,9 @@ function renderCollapsibleTreeChart(){
             .attr("r", 4.5)
             .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
 
+        nodeUpdate.select("image")
+            .style("fill-opacity", 1);
+
         nodeUpdate.select("text")
             .style("fill-opacity", 1);
 
@@ -95,6 +106,9 @@ function renderCollapsibleTreeChart(){
 
         nodeExit.select("circle")
             .attr("r", 1e-6);
+
+        nodeExit.select("image")
+            .style("fill-opacity", 1e-6);
 
         nodeExit.select("text")
             .style("fill-opacity", 1e-6);
