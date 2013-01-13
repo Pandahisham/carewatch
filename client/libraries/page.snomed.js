@@ -12,7 +12,7 @@ Template.snomedPageTemplate.rendered = function (){
 function setSidebarPanelHeight() {
     $('#anatomySearchPanel').css('height', window.innerHeight - 120);
     $('#anatomyAdminPanel').css('height', window.innerHeight - 120);
-}
+};
 
 Template.snomedPageTemplate.snomed_reference = function () {
     log_event('Template.snomedPageTemplate.snomed_reference', LogLevel.Trace);
@@ -25,6 +25,17 @@ Template.snomedPageTemplate.snomed_count = function () {
 
 Template.snomedPageTemplate.events({
     'click .anatomy-item': function (evt, tmpl) {
+
+        //TODO:  Click on an image in Anatomy page, and the anchor image updates
+        //
+        // 1.  upload high res images of grays anatomy screensaver
+        // figure out image size loading constraints
+        //
+        // 2.  add anchor images to Anatomy collection
+        //
+        // $('#anchorImage').attr("src", Anatomy.findOne(this._id).image);
+        //
+
         if(Session.get('selecting_anatomy')){
             Todos.update(Session.get('selecting_anatomy'), {$set: { 'anatomy' :  this._id }});
             showPage('#historyPage');

@@ -59,21 +59,23 @@ function renderCollapsibleTreeChart(){
             .data(nodes, function(d) { return d.id || (d.id = ++i); });
 
         // Enter any new nodes at the parent's previous position.
+        // these will be collapsed
         var nodeEnter = node.enter().append("svg:g")
             .attr("class", "node")
             .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
             .on("click", function(d) { toggle(d); update(d); });
 
+        // collapsed node color
         nodeEnter.append("svg:circle")
             .attr("r", 1e-6)
-            .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+            .style("fill", function(d) { return d._children ? "orange" : "lightsteelblue"; });
 
         nodeEnter.append("svg:image")
             //.attr("class", "fizzle")
             .attr("height", "64px")
             .attr("width", "64px")
             //.attr("xlink:href", "/images/grays.anatomy.thumbnails/abdominalArteries.png")
-            .attr("src", "/images/grays.anatomy.thumbnails/abdominalArteries.png")
+            .attr("xlink:href", "/images/grays.anatomy.thumbnails/abdominalArteries.png")
             .style("fill", "lightsteelblue");
 
         nodeEnter.append("svg:text")
@@ -88,12 +90,18 @@ function renderCollapsibleTreeChart(){
             .duration(duration)
             .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
 
+        // expanded node
         nodeUpdate.select("circle")
             .attr("r", 4.5)
-            .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+            .style("fill", function(d) { return d._children ? "orange" : "lightsteelblue"; });
+            //.style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
 
         nodeUpdate.select("image")
-            .style("fill-opacity", 1);
+            //.style("fill-opacity", 1);
+            .attr("height", "64px")
+            .attr("width", "64px")
+            .attr("xlink:href", "/images/grays.anatomy.thumbnails/abdominalArteries.png")
+            .style("stroke", function(d) { return d._children ? "orange" : "lightsteelblue"; });
 
         nodeUpdate.select("text")
             .style("fill-opacity", 1);

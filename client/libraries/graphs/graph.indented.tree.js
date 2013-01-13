@@ -2,8 +2,9 @@ function renderIndentTree(){
     var w = 960,
         h = (window.innerHeight - 100),
         i = 0,
-        barHeight = 20,
+        barHeight = 50,
         barWidth = w * .8,
+        //barWidth = w * .8,
         duration = 400,
         root;
 
@@ -52,9 +53,18 @@ function renderIndentTree(){
             .style("fill", color)
             .on("click", click);
 
+        nodeEnter.append("svg:image")
+            //.attr("class", "fizzle")
+            .attr("y", -32)
+            .attr("height", "64px")
+            .attr("width", "64px")
+            //.attr("xlink:href", "/images/grays.anatomy.thumbnails/abdominalArteries.png")
+            .attr("xlink:href", "/images/grays.anatomy.thumbnails/abdominalArteries.png")
+            .style("fill", "lightsteelblue");
+
         nodeEnter.append("svg:text")
             .attr("dy", 3.5)
-            .attr("dx", 5.5)
+            .attr("dx", 70)
             .text(function(d) { return d.code + " - " + d.title; });
 
         // Transition nodes to their new position.
