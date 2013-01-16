@@ -31,6 +31,8 @@ Session.set('display_snomed_preview_panel', false);
 Session.set('display_snomed_admin_panel', false);
 Session.set("selected_graph","indentedTree");
 
+Session.set("anchor_image", "/images/anchors/BrainSagittal.png");
+
 Template.app_container.loggedIn = function () {
     if(Meteor.userId()){
         log_event('Meteor.userId(): ' + Meteor.userId(), LogLevel.Info);
@@ -45,7 +47,9 @@ Template.app_container.rendered = function () {
     hidePages();
     showCurrentSessionPage();
 };
-
+Template.app_container.anchorImage = function () {
+    return Session.get("anchor_image");
+};
 
 
 

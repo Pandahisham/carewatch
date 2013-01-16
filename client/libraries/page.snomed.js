@@ -36,6 +36,10 @@ Template.snomedPageTemplate.events({
         // $('#anchorImage').attr("src", Anatomy.findOne(this._id).image);
         //
 
+        Session.set("anchor_image", this.image);
+        $('.anchorImage').css("right", "0px");
+        //$('#anchorImage').attr("src", Anatomy.findOne(this._id).image);
+
         if(Session.get('selecting_anatomy')){
             Todos.update(Session.get('selecting_anatomy'), {$set: { 'anatomy' :  this._id }});
             showPage('#historyPage');

@@ -8,9 +8,12 @@ function renderForceDirectCollapsible(){
 
     var force = d3.layout.force()
         .on("tick", tick)
-        .charge(function(d) { return d._children ? -d.size + 100 : -30; })
-        .linkDistance(function(d) { return d.target._children ? 200 : 50; })
-        .size([w, h - 160]);
+        .gravity(.05)
+        //.distance(100)
+        .charge(-100)
+        //.charge(function(d) { return d._children ? -100 : -50; })
+        .linkDistance(function(d) { return d.target._children ? 50 : 200; })
+        .size([w, h]);
 
     var vis = d3.select("#forceDirectGraph").append("svg:svg")
         .attr("width", w)
@@ -20,7 +23,7 @@ function renderForceDirectCollapsible(){
         root = json;
         root.fixed = true;
         root.x = w / 2;
-        root.y = h / 2 - 80;
+        root.y = h / 2;
         update();
     });
 

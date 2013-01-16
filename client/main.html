@@ -7,7 +7,7 @@
 </body>
 
 <template name="app_container">
-    <img id="anchorImage" class="anchorImage" src="/images/anchors/BrainSagittal.png"></img>
+    <img id="anchorImage" class="anchorImage" src="{{anchorImage}}"></img>
     {{> headerBarTemplate }}
     {{#if loggedIn}}
         {{> profilePageTemplate }}
@@ -44,12 +44,10 @@
 <template name="footerBarTemplate">
     <div id="footerActionBar" data-role="footer" data-theme="none" class="nav-bar bottom-anchor">
         <ul class="nav-bar footer-nav-bar ">
-            <!--<li><a href="#dashboardPage" onclick="showPage('#dashboardPage');">Dashboard</a></li>-->
             <li><a href="#newsPage" onclick="showPage('#newsPage');"><span class="pictographs">4  </span>Carewatch</a></li>
             <li><a href="#historyPage" onclick="showPage('#historyPage');"><span class="pictographs">4  </span>Health Diary</a></li>
             <li><a href="#communityPage" onclick="showPage('#communityPage');" id="communityPageLink"><span class="pictographs">g  </span>Community</a></li>
             <li><a href="#profilePage" onclick="showPage('#profilePage');"><span class="pictographs">f  </span>User Profile</a></li>
-            <!--<li><a href="#lifelinePage" onclick="showPage('#lifelinePage');">Lifeline</a></li>-->
             <li><a href="#snomedPage" onclick="showPage('#snomedPage');"><span class="pictographs">E  </span>Anatomy</a></li>
             <li><a href="#hipaaPage" onclick="showPage('#hipaaPage');"><span class="pictographs">^  </span>Privacy</a></li>
             <li><a href="#icd10Page" onclick="showPage('#icd10Page');"><span class="pictographs">4  </span>Diseases</a></li>

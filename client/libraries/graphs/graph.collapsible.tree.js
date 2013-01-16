@@ -15,6 +15,7 @@ function renderCollapsibleTreeChart(){
         .size([h, w]);
 
     var diagonal = d3.svg.diagonal()
+        //.projection(function(d) { return [d.y, (d.x * 1.2)]; });
         .projection(function(d) { return [d.y, d.x]; });
 
     var vis = d3.select("#collapsibleTreeChart").append("svg:svg")
@@ -72,10 +73,10 @@ function renderCollapsibleTreeChart(){
 
         nodeEnter.append("svg:image")
             //.attr("class", "fizzle")
-            .attr("height", "64px")
-            .attr("width", "64px")
+            .attr("height", "32px")
+            .attr("width", "32px")
             //.attr("xlink:href", "/images/grays.anatomy.thumbnails/abdominalArteries.png")
-            .attr("xlink:href", "/images/grays.anatomy.thumbnails/abdominalArteries.png")
+            .attr("xlink:href", function(d){ return d.image; })
             .style("fill", "lightsteelblue");
 
         nodeEnter.append("svg:text")
@@ -98,12 +99,16 @@ function renderCollapsibleTreeChart(){
 
         nodeUpdate.select("image")
             //.style("fill-opacity", 1);
-            .attr("height", "64px")
-            .attr("width", "64px")
-            .attr("xlink:href", "/images/grays.anatomy.thumbnails/abdominalArteries.png")
+            .attr("y", -16)
+            .attr("x", -16)
+            .attr("height", "32px")
+            .attr("width", "32px")
+            .attr("xlink:href", function(d){ return d.image; })
+            //.attr("xlink:href", "/images/grays.anatomy.thumbnails/abdominalArteries.png")
             .style("stroke", function(d) { return d._children ? "orange" : "lightsteelblue"; });
 
         nodeUpdate.select("text")
+            .attr("x", 16)
             .style("fill-opacity", 1);
 
         // Transition exiting nodes to the parent's new position.
